@@ -1,37 +1,16 @@
-## Welcome to GitHub Pages
+# Piotr Żuralski
 
-You can use the [editor on GitHub](https://github.com/piotr-zuralski/piotr-zuralski.github.io/edit/gh-pages/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/piotr-zuralski/piotr-zuralski.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+- [Piotr Żuralski @ KeyBase](https://keybase.io/piotr_zuralski/)
+- [Piotr Żuralski @ GitLab](https://gitlab.com/piotr-zuralski)
+- [Piotr Żuralski @ StackOverflow](https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile)
+- [Piotr Żuralski @ LinkedIn](https://www.linkedin.com/in/piotrzuralski/)
+- [Piotr Żuralski @ CodersRank](https://profile.codersrank.io/user/piotr-zuralski)
+- [Piotr Żuralski @ Twitter](https://twitter.com/piotr_zuralski)
+- [Piotr Żuralski @ Crunchbase](https://www.crunchbase.com/person/piotr-%C5%BBuralski)
+- [Piotr Żuralski @ GoldenLine](https://www.goldenline.pl/piotr-zuralski/)
+- [Piotr Żuralski @ Medium](https://medium.com/@piotr.zuralski)
+- [Piotr Żuralski @ SlideShare](https://www.slideshare.net/Piotruralski)
+- [Piotr Żuralski @ About.me](https://about.me/piotr-zuralski)
+- [Piotr Żuralski @ linktr.ee](https://linktr.ee/piotr_zuralski)
+- [piotr.zuralski.net](https://piotr.zuralski.net)
+- [zuralski.net](https://zuralski.net)

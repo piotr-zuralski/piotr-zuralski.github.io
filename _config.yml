@@ -7,9 +7,6 @@ title: Piotr Żuralski
 twitter:
   username: piotr_zuralski
   
-facebook:
-  locale: en_UK
-
 social:
   name: Piotr Żuralski
   links:
@@ -37,3 +34,11 @@ webmaster_verifications:
 #  baidu: 1234
 
 lang: en_UK
+
+
+defaults:
+  -
+    scope:
+      path:            "assets/css/*"
+    values:
+      sitemap:         false

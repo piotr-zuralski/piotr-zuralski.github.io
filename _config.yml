@@ -1,5 +1,9 @@
 encoding: UTF-8
-author: piotr-zuralski
+
+author: 
+  name: Piotr Żuralski
+  twitter: piotr_zuralski
+
 description: ""
 title: Piotr Żuralski
 #site: Piotr Żuralski
@@ -35,7 +39,6 @@ webmaster_verifications:
 
 lang: en_UK
 
-
 defaults:
   -
     scope:
@@ -45,3 +48,6 @@ defaults:
 
 plugins:
   - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-seo-tag
+

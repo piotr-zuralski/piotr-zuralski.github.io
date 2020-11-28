@@ -1,4 +1,5 @@
 encoding: UTF-8
+lang: en-UK
 
 author: 
   name: Piotr Żuralski
@@ -10,25 +11,6 @@ title: Piotr Żuralski
 
 twitter:
   username: piotr_zuralski
-  
-social:
-  name: Piotr Żuralski
-  links:
-    - https://keybase.io/piotr_zuralski/
-    - https://github.com/piotr-zuralski
-    - https://gitlab.com/piotr-zuralski
-    - https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
-    - https://www.linkedin.com/in/piotrzuralski/
-    - https://profile.codersrank.io/user/piotr-zuralski
-    - https://twitter.com/piotr_zuralski
-    - https://www.crunchbase.com/person/piotr-%C5%BBuralski
-    - https://www.goldenline.pl/piotr-zuralski/
-    - https://medium.com/@piotr.zuralski
-    - https://www.slideshare.net/Piotruralski
-    - https://about.me/piotr-zuralski
-    - https://linktr.ee/piotr_zuralski
-    - https://piotr.zuralski.net
-    - https://zuralski.net
 
 webmaster_verifications:
   google: x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM
@@ -36,8 +18,6 @@ webmaster_verifications:
 #  alexa: 1234
 #  yandex: 1234
 #  baidu: 1234
-
-lang: en_UK
 
 defaults:
   -

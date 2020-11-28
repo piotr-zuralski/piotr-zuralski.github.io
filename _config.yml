@@ -27,8 +27,8 @@ social:
     - https://zuralski.net
 
 webmaster_verifications:
-#  google: 1234
-#  bing: 1234
+  google: x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM
+  bing: 057036BF9DB13D64C6CA4552C61AC17A
 #  alexa: 1234
 #  yandex: 1234
 #  baidu: 1234
@@ -42,3 +42,6 @@ defaults:
       path:            "assets/css/*"
     values:
       sitemap:         false
+
+plugins:
+  - jekyll-sitemap

@@ -1,5 +1,6 @@
 encoding: UTF-8
 lang: en-GB
+lsi: true
 
 author: 
   name: Piotr Żuralski
@@ -25,6 +26,35 @@ defaults:
       path:            "assets/css/*"
     values:
       sitemap:         false
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+    values:
+      lang: en-GB
+      locale: en
+      layout: "default"
+      permalink: /:locale/:categories/:title:output_ext
+  -
+    scope:
+      path: "pages"
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "posts"
+      type: "posts"
+    values:
+      layout: "post"
+  -
+    scope:
+      path: "projects"
+      type: "pages"
+    values:
+      layout: "project"
+
+exclude:
+  - .github
 
 plugins:
   - jekyll-sitemap

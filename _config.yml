@@ -34,7 +34,7 @@ defaults:
       lang:      en-GB
       locale:    en
       layout:    "default"
-      permalink: /:locale/:categories/:title:output_ext
+#      permalink: /:locale/:categories/:title:output_ext
   -
     scope:
       path: "pages"

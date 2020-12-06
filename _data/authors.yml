@@ -1,21 +1,21 @@
-# https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/advanced-usage.md#author-information
+# # https://github.com/jekyll/jekyll-seo-tag/blob/v2.6.1/docs/advanced-usage.md#author-information
 
-piotr-zuralski:
+"Piotr Żuralski":
+  name: Piotr Żuralski
+  first_name: Piotr
+  last_name: Żuralski
+  image: https://gravatar.com/avatar/9b06f3431adec60bef1540a479e3c49e
+  picture: https://gravatar.com/avatar/9b06f3431adec60bef1540a479e3c49e
+  web: https://piotr.zuralski.net/
+  github: piotr-zuralski
+  gitlab: piotr-zuralski
   twitter: piotr_zuralski
-  seo:
-    name: Piotr Żuralski
-    links: 
-      - https://keybase.io/piotr_zuralski/
-      - https://github.com/piotr-zuralski
-      - https://gitlab.com/piotr-zuralski
-      - https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
-      - https://www.linkedin.com/in/piotrzuralski/
-      - https://profile.codersrank.io/user/piotr-zuralski
-      - https://twitter.com/piotr_zuralski
-      - https://www.crunchbase.com/person/piotr-%C5%BBuralski
-      - https://www.goldenline.pl/piotr-zuralski/
-      - https://medium.com/@piotr.zuralski
-      - https://www.slideshare.net/Piotruralski
-      - https://about.me/piotr-zuralski
-      - https://linktr.ee/piotr_zuralski
-      - https://piotr.zuralski.net
+  social:
+    github: piotr-zuralski
+    gitlab: piotr-zuralski
+    twitter: piotr_zuralski
+
+#   url: https://piotr.zuralski.net/
+#   google_plus:
+#   seo:
+#     name: Piotr Żuralski

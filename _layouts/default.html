@@ -1,38 +1,47 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en_UK" }}">
-  <head>
-      <meta charset="{{ site.encoding | default: "UTF-8" }}">
-      <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding | default: "UTF-8" }}">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1">
-      {% seo %}
-      <link rel="stylesheet" type="text/css" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
-      <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
-  </head>
+<html lang="{{ site.lang|default:'en_UK' }}">
 
-  <body>
-      <div class="container-lg px-3 my-5 markdown-body">
-          {% if site.title and site.title != page.title %}
-            <h1><a href="{{ "/" | absolute_url }}">{{ site.title }}</a></h1>
-          {% endif %}
-          
-          {{ content }}
-      </div>
+<head>
+    <meta charset="{{ site.encoding|default:'UTF-8' }}">
+    <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Last-Modified" content="{{ site.time|date:'%a, %d %b %Y %H:%m:%S GMT%z' }}">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="format-detection" content="telephone=no">
 
-      <footer class="page-footer">
-          <ul class="site-footer-links right">
-              <li><a href="/about" title="About">About</a></li>
-          </ul>
+    <!--  -->
+    {% seo %}
+    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <link rel="sitemap" type="application/xml" title="{{ site.title }} XML Sitemap" href="/sitemap.xml">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="/feed.xml">
+</head>
 
-          <ul class="site-footer-links">
-              <li>&copy; 2007-{{ "now" | date: "%Y" }} <span>{{ site.author.name }}</span>.</li>
-              <li><a href="/contact" title="Contact">Contact</a></li>
-          </ul>
-      </footer>
+<body>
+    {% include navigation.html %}
+    <div class="container-lg px-3 my-5 markdown-body">
+        {% if site.title and site.title != page.title %}
+        <h1><a href="{{ '/'|absolute_url }}">{{ site.title }}</a></h1>
+        {% endif %} {{ content }}
 
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
-      <script>
-          anchors.add();
-      </script>
-  </body>
+    </div>
+
+    <footer class="page-footer">
+        <ul class="site-footer-links right">
+            <li><a href="/about" title="About">About</a></li>
+        </ul>
+
+        <ul class="site-footer-links">
+            currentYear: {{ site.currentYear }} <br> experience: {{ site.experience }} <br>
+            <li>Copyright &copy; 2007-<span id="currentYear">{{ site.time|date: '%Y' }}</span></a> <span>{{ site.author.name }}</span>.</li>
+            <li><a href="/contact" title="Contact">Contact</a></li>
+        </ul>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script>
+        anchors.add();
+    </script>
+</body>
+
 </html>

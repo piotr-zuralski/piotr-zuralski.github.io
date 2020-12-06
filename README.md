@@ -1,17 +1,2 @@
-# Piotr Żuralski
+# GitHub website
 
-- [Piotr Żuralski @ KeyBase](https://keybase.io/piotr_zuralski/)
-- [Piotr Żuralski @ GitHub](https://github.com/piotr-zuralski)
-- [Piotr Żuralski @ GitLab](https://gitlab.com/piotr-zuralski)
-- [Piotr Żuralski @ StackOverflow](https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile)
-- [Piotr Żuralski @ LinkedIn](https://www.linkedin.com/in/piotrzuralski/)
-- [Piotr Żuralski @ CodersRank](https://profile.codersrank.io/user/piotr-zuralski)
-- [Piotr Żuralski @ Twitter](https://twitter.com/piotr_zuralski)
-- [Piotr Żuralski @ Crunchbase](https://www.crunchbase.com/person/piotr-%C5%BBuralski)
-- [Piotr Żuralski @ GoldenLine](https://www.goldenline.pl/piotr-zuralski/)
-- [Piotr Żuralski @ Medium](https://medium.com/@piotr.zuralski)
-- [Piotr Żuralski @ SlideShare](https://www.slideshare.net/Piotruralski)
-- [Piotr Żuralski @ About.me](https://about.me/piotr-zuralski)
-- [Piotr Żuralski @ linktr.ee](https://linktr.ee/piotr_zuralski)
-- [piotr.zuralski.net](https://piotr.zuralski.net)
-- [zuralski.net](https://zuralski.net)

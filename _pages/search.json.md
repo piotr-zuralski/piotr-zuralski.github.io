@@ -1,0 +1,22 @@
+---
+layout: null
+search: exclude
+sitemap: false
+permalink: /search.json
+---
+[
+{% for post in site.posts %} {
+    "title": "{{ post.title | escape }}",
+    "category": "{{ post.category }}",
+    "tags": "{{ post.tags | join: ', ' }}",
+    "url": "{{ site.baseurl }}{{ post.url }}",
+    "date": "{{ post.date }}"
+} {% unless forloop.last %}, {% endunless %} 
+{% endfor %} {% for page in site.page %} {
+    "title": "{{ page.title | escape }}",
+    "category": "{{ page.category }}",
+    "tags": "{{ page.tags | join: ', ' }}",
+    "url": "{{ site.baseurl }}{{ page.url }}",
+    "date": "{{ page.date }}"
+} {% unless forloop.last %}, {% endunless %} {% endfor %}
+]

@@ -1,0 +1,55 @@
+name: "Pull requests autos"
+on:
+  pull_request:
+  push:
+
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: styfle/cancel-workflow-action@0.6.0
+        with:
+          access_token: "${{ secrets.GITHUB_TOKEN }}"
+
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: github/super-linter@v3
+      env:
+        DEFAULT_BRANCH: main
+        GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+        
+  autoapprove:
+    name: autoapprove dependabot
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+    steps:
+      - uses: hmarr/auto-approve-action@v2.0.0
+        with:
+          github-token: "${{ secrets.GITHUB_TOKEN }}"
+
+  automerge:
+    name: automerge dependabot
+    runs-on: ubuntu-latest
+    if: github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]'
+    steps:
+      - uses: ahmadnassri/action-dependabot-auto-merge@v2
+        with:
+          github-token: "${{ secrets.MY_GITHUB_PAT_TOKEN }}"
+          command: squash and merge
+          approve: true
+          target: minor
+
+  pr-automation:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: PR Automation
+        uses: devjoes/pr-automation@v0.1.0
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          deleteOnMerge: true
+          deleteOnClose: true
+          branchBlackList: "totally-random-branch"

@@ -3,6 +3,12 @@ timezone: Europe/Warsaw
 lang: en-GB
 lsi: true
 safe: false
+incremental: true
+
+markdown: CommonMark
+commonmark:
+  options: ["SMART", "FOOTNOTES"]
+  extensions: ["strikethrough", "autolink", "table"]
 
 author: "Piotr Żuralski"
 
@@ -66,7 +72,7 @@ defaults:
       excerpt_separator: "<!--more-->"
   -
     scope:
-      path: "pages"
+      path: "_pages/"
       type: "pages"
     values:
       layout: "page"
@@ -76,7 +82,7 @@ defaults:
       # permalink:  "/:locale/:categories/:title:output_ext"
   -
     scope:
-      path: "pages/de"
+      path: "_pages/de"
       type: "pages"
     values:
       layout: "page"
@@ -112,15 +118,18 @@ defaults:
       # permalink:  "/:locale/:categories/:title:output_ext"
 
 exclude:
-  - ".github"
+  - ".github/"
+  - ".history/"
   - "Gemfile"
   - "Gemfile.lock"
-  - ".history/"
   - "TODO.md"
   - "README.md"
   - "Makefile"
+  - ".jekyll-cache"
 
 include:
+  - "_pages/"
+  - "_pages/*"
   - "_pages/*/*"
   - "_pages/de/*"
   - "_pages/en/*"
@@ -128,6 +137,9 @@ include:
   - "_pages/pl/*"
 
 plugins:
+  - jekyll-commonmark
+  - jekyll-include-cache
+  - jekyll-archives
   - jekyll-sitemap
   - jekyll-feed
   - jekyll-seo-tag

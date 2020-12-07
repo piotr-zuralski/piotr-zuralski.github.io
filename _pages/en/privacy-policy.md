@@ -1,7 +1,6 @@
 ---
 layout: page
-title: Privacy policy
-date: 
+# date: 
 type: page
 parent_id: '0'
 published: false
@@ -26,3 +25,4 @@ previous_page: "legal/terms-and-conditions"
 # next_page: ""
 ---
 
+# Privacy policy

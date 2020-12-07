@@ -107,6 +107,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
       sinatra (~> 1.4)
       sinatra-contrib (~> 1.4)
+    jekyll-archives (2.2.1)
+      jekyll (>= 3.6, < 5.0)
     jekyll-avatar (0.7.0)
       jekyll (>= 3.0, < 5.0)
     jekyll-coffeescript (1.1.1)
@@ -134,6 +136,8 @@ GEM
       jekyll (>= 3.7, < 5.0)
       nokogiri (~> 1.0)
       reverse_markdown (~> 1.0)
+    jekyll-include-cache (0.2.1)
+      jekyll (>= 3.7, < 5.0)
     jekyll-last-modified-at (1.3.0)
       jekyll (>= 3.7, < 5.0)
       posix-spawn (~> 0.3.9)
@@ -219,6 +223,8 @@ GEM
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
     liquid (4.0.3)
+    liquid-c (4.0.0)
+      liquid (>= 3.0.0)
     listen (3.3.2)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -303,13 +309,14 @@ DEPENDENCIES
   htmlentities
   jekyll
   jekyll-admin
-  jekyll-coffeescript
+  jekyll-archives
+  jekyll-commonmark
   jekyll-compose
   jekyll-default-layout
   jekyll-feed
   jekyll-gist
-  jekyll-github-metadata
   jekyll-import
+  jekyll-include-cache
   jekyll-last-modified-at
   jekyll-optional-front-matter
   jekyll-paginate
@@ -321,7 +328,7 @@ DEPENDENCIES
   jekyll-time-to-read
   jekyll-titles-from-headings
   jekyll-toc
-  jekyll-watch
+  liquid-c
   sequel
   tzinfo-data
   unidecode

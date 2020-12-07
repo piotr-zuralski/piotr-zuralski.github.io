@@ -1,6 +1,8 @@
 ---
-permalink: /index.html 
+permalink: index.html
 ---
+
+# Piotr Żuralski – Senior Software Engineer
 
 - [Piotr Żuralski @ KeyBase](https://keybase.io/piotr_zuralski/)
 - [Piotr Żuralski @ GitHub](https://github.com/piotr-zuralski)

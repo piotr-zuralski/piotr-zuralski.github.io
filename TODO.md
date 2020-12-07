@@ -13,7 +13,7 @@
 - <https://github.com/MichaelCurrin/jekyll-blog-demo/blob/master/Makefile>
 
 - <https://www.google.com/search?q=jekyll+i18n>
-    - <https://github.com/kurtsson/jekyll-multiple-languages-plugin>
-    - <https://github.com/liamzebedee/jekyll-i18n>
-    - <https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/>
-    - <https://polyglot.untra.io/seo/>
+  - <https://github.com/kurtsson/jekyll-multiple-languages-plugin>
+  - <https://github.com/liamzebedee/jekyll-i18n>
+  - <https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/>
+  - <https://polyglot.untra.io/seo/>

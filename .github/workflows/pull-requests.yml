@@ -1,7 +1,6 @@
 name: "Pull requests autos"
 on:
   pull_request:
-  push:
 
 jobs:
   cancel:

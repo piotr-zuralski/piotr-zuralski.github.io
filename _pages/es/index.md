@@ -5,4 +5,3 @@ published: true
 ---
 
 # Ingeniero de programación superior, Desarrollador de software
-

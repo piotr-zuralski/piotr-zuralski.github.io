@@ -1,20 +1,11 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site.lang|default:'en_UK' }}">
 
 <head>
-    <meta charset="{{ site.encoding|default:'UTF-8' }}">
-    <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="Last-Modified" content="{{ site.time|date:'%a, %d %b %Y %H:%m:%S GMT%z' }}">
-    <meta name="HandheldFriendly" content="true">
-    <meta name="format-detection" content="telephone=no">
-
-    <!--  -->
-    {% seo %}
-    <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="sitemap" type="application/xml" title="{{ site.title }} XML Sitemap" href="/sitemap.xml">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="/feed.xml">
+    {#
+    <title>Default layout title</title> #}
+    <!-- -->
+    {% include head.html %}
 </head>
 
 <body>
@@ -33,7 +24,7 @@
 
         <ul class="site-footer-links">
             currentYear: {{ site.currentYear }} <br> experience: {{ site.experience }} <br>
-            <li>Copyright &copy; 2007-<span id="currentYear">{{ site.time|date: '%Y' }}</span></a> <span>{{ site.author.name }}</span>.</li>
+            <li>Copyright &copy; 2007-<span id="current-year">{{ site.time|date: '%Y' }}</span> <span>{{ site.author.name }}</span>.</li>
             <li><a href="/contact" title="Contact">Contact</a></li>
         </ul>
     </footer>

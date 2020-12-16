@@ -6,7 +6,7 @@ safe: false
 incremental: true
 
 markdown: kramdown
-
+markdown_ext: "md"
 # markdown: CommonMark
 # commonmark:
 #   options: ["SMART", "FOOTNOTES"]

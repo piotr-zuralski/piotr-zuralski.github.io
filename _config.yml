@@ -5,6 +5,7 @@ lsi: true
 safe: false
 incremental: true
 repository: "https://github.com/piotr-zuralski/piotr-zuralski.github.io"
+github_username: "piotr-zuralski"
 
 markdown: CommonMark
 commonmark:

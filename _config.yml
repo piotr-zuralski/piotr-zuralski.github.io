@@ -4,6 +4,7 @@ lang: en-GB
 lsi: true
 safe: false
 incremental: true
+repository: "https://github.com/piotr-zuralski/piotr-zuralski.github.io"
 
 markdown: CommonMark
 commonmark:
@@ -70,52 +71,57 @@ defaults:
 #      permalink: /:locale/:categories/:title:output_ext
       author:   "Piotr Żuralski"
       excerpt_separator: "<!--more-->"
-  -
-    scope:
-      path: "_pages/"
-      type: "pages"
-    values:
-      layout: "page"
-      lang:      en-GB
-      locale:    en
-      # categories: ""
-      # permalink:  "/:locale/:categories/:title:output_ext"
-  -
-    scope:
-      path: "_pages/de"
-      type: "pages"
-    values:
-      layout: "page"
-      lang:    de-GE
-      locale:  de
-  -
-    scope:
-      path: "_pages/es"
-      type: "pages"
-    values:
-      layout: "page"
-      lang:      es-ES
-      locale:    es
-  -
-    scope:
-      path: "posts"
-      type: "posts"
-    values:
-      layout: "post"
-      lang:      en-GB
-      locale:    en
-      # categories: ""
-      # permalink:  "/:locale/:categories/:title:output_ext"
-  -
-    scope:
-      path: "projects"
-      type: "pages"
-    values:
-      layout: "project"
-      lang:      en-GB
-      locale:    en
-      # categories: ""
-      # permalink:  "/:locale/:categories/:title:output_ext"
+  -   scope:
+        path: "./_pages/"
+        type: "pages"
+      values:
+        layout:    "default"
+  # -
+  #   scope:
+  #     path: "_pages/"
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+  # -
+  #   scope:
+  #     path: "_pages/de"
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
+  #     lang:    de-GE
+  #     locale:  de
+  # -
+  #   scope:
+  #     path: "_pages/es"
+  #     type: "pages"
+  #   values:
+  #     layout: "page"
+  #     lang:      es-ES
+  #     locale:    es
+  # -
+  #   scope:
+  #     path: "posts"
+  #     type: "posts"
+  #   values:
+  #     layout: "post"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
+  # -
+  #   scope:
+  #     path: "projects"
+  #     type: "pages"
+  #   values:
+  #     layout: "project"
+  #     lang:      en-GB
+  #     locale:    en
+  #     # categories: ""
+  #     # permalink:  "/:locale/:categories/:title:output_ext"
 
 exclude:
   - ".github/"
@@ -128,13 +134,7 @@ exclude:
   - ".jekyll-cache"
 
 include:
-  - "_pages/"
-  - "_pages/*"
-  - "_pages/*/*"
-  - "_pages/de/*"
-  - "_pages/en/*"
-  - "_pages/es/*"
-  - "_pages/pl/*"
+  - "_pages"
 
 plugins:
   - jekyll-commonmark

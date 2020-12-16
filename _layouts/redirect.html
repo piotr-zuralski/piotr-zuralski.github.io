@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+    <meta name="robots" content="noindex,follow,noarchive">
+    <title>Redirecting&hellip;</title>
+    <link rel="canonical" href="{{ page.redirect.to }}">
+</head>
+
+<body>
+    <h1>Redirecting&hellip;</h1>
+    <p>
+        The document has moved <a href="{{ page.redirect.to }}">here</a>.
+    </p>
+    <script>
+        window.location = "{{ page.redirect.to }}";
+    </script>
+</body>
+
+</html>

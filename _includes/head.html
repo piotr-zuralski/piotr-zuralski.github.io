@@ -10,3 +10,6 @@
 <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 <link rel="sitemap" type="application/xml" title="{{ site.title }} XML Sitemap" href="/sitemap.xml">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="/feed.xml">
+
+<!--  -->
+{% if jekyll.environment == "production" %} {% include stats-analytics.html %} {% endif %}

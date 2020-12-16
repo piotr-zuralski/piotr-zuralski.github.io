@@ -4,14 +4,16 @@ lang: en-GB
 lsi: true
 safe: false
 incremental: true
-repository: "https://github.com/piotr-zuralski/piotr-zuralski.github.io"
+
+markdown: kramdown
+
+# markdown: CommonMark
+# commonmark:
+#   options: ["SMART", "FOOTNOTES"]
+#   extensions: ["strikethrough", "autolink", "table"]
+
+repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
-
-markdown: CommonMark
-commonmark:
-  options: ["SMART", "FOOTNOTES"]
-  extensions: ["strikethrough", "autolink", "table"]
-
 author: "Piotr Żuralski"
 
 social:

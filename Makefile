@@ -9,7 +9,7 @@ clean:
 	rm -rf _site/ src/_site/ output/
 
 install: clean
-	sudo apt install ruby ruby-all-dev gem -yq >/dev/null 
+	sudo apt-get install ruby ruby-all-dev gem -yq >/dev/null 
 	sudo gem install bundler >/dev/null
 	sudo gem update >/dev/null
 	bundle config
@@ -28,12 +28,15 @@ test:
 	act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 
 
 s serve:
-	JEKYLL_ENV=development bundle exec jekyll serve --incremental --verbose --trace
+	# JEKYLL_ENV=development 
+	bundle exec jekyll serve --incremental --verbose --trace
 
 build: build-prod
 
 build-dev: install
-	JEKYLL_ENV=development bundle exec jekyll build --incremental --verbose --trace
+	# JEKYLL_ENV=development 
+	bundle exec jekyll build --incremental --verbose --trace
 
 build-prod: install
-	JEKYLL_ENV=production bundle exec jekyll build --incremental --verbose --trace
+	# JEKYLL_ENV=production 
+	bundle exec jekyll build --incremental --verbose --trace

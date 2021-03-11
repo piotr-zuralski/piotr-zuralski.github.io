@@ -1,3 +1,4 @@
+<!-- sidebar -->
 <aside id="search-2" class="widget widget_search">
     <form role="search" method="get" id="searchform" class="searchform" action="/">
         <div>
@@ -9,11 +10,17 @@
 </aside>
 <aside id="text-4" class="widget widget_text">
     <div class="textwidget">
-      <ul>
-       {% for item in site.data.social_links %}
-          <li><a href="{{ item.url }}" title="{{ item.title }}" rel="me">{{ item.title }}</a></li>
-       {% endfor %}
-      </ul>
+      <!-- navigation social_links -->
+      {% if site.data.navigation.social_links %}
+        {% if site.data.navigation.social_links.list_title %}
+          <h3>{{ site.data.navigation.social_links.list_title }}</h3>
+        {% endif %}
+        <ul>
+         {% for item in site.data.navigation.social_links %}
+            <li><a href="{{ item.url }}" title="{{ item.title }}" rel="me">{{ item.title }}</a></li>
+         {% endfor %}
+        </ul>
+      {% endif %}
 
       <p>
         <a title="zuralski.net" href="https://zuralski.net" rel="me">zuralski.net</a><br />
@@ -21,3 +28,4 @@
       </p>
     </div>
 </aside>
+<!-- /sidebar -->

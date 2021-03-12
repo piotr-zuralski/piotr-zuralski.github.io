@@ -55,13 +55,11 @@ webmaster_verifications:
 #  yandex: 1234
 #  baidu: 1234
 
-theme: minimal-mistakes-jekyll
-
 # Filtering Content
 show_drafts         : false
 limit_posts         : 0
 future              : false
-published           : false
+unpublished         : false
 
 defaults:
   -

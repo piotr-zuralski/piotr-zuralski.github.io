@@ -49,6 +49,12 @@ social_links:
     - url: https://linktr.ee/piotr_zuralski
       title: "Piotr Żuralski at linktr.ee"
 
+my_websites:
+  - url: https://zuralski.net
+    title: "zuralski.net"
+  - url: https://piotr.zuralski.net
+    title: "piotr.zuralski.net"
+
 footer:
   - text: About
     url: about

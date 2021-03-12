@@ -1,2 +1,2 @@
-{% include _acronyms.md %}
-{% include _links.md %}
+{% include _autolink_acronyms.md %}
+{% include _autolink_links.md %}

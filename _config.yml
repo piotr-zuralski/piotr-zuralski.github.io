@@ -37,6 +37,7 @@ social:
 title: "Piotr Żuralski – Senior Software Engineer"
 description: "Piotr Żuralski, Senior Developer, Engineer, with over 10 years experience in commercial web development"
 
+locale: "en-GB"
 languages: ["en", "pl", "es", "de"]
 exclude_from_localizations: ["files", "assets", "resources"]
 
@@ -56,6 +57,12 @@ webmaster_verifications:
 #  baidu: 1234
 
 theme: minimal-mistakes-jekyll
+#remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
+title_separator: "-"
+search: true
+read_time: true
+#bing_site_verification: "057036BF9DB13D64C6CA4552C61AC17A"
 
 # Filtering Content
 show_drafts         : false

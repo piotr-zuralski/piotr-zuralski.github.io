@@ -67,11 +67,8 @@ breadcrumbs:
 
 <p><small>(Spanish: Ingeniero de programación superior, Desarrollador de software; German: Senior-Software-Entwickler, Softwareentwickler)</small></p>
 
+<!--
+<p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
+-->
 
 {% include _autolink.md %}
-
-<!--
-  currentYear: {{ site.currentYear }}
-  experience: {{ site.experience }}
-  [zuralski.net](https://zuralski.net)
--->

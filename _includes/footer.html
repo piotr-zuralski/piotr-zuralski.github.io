@@ -1,7 +1,16 @@
 <footer class="page-footer">
+  {% comment %} 
     <!-- <ul class="site-footer-links right">
         <li><a href="/about" title="About">About</a></li>
     </ul> -->
+  {% endcomment %}
+
+  <!--
+    var experience: {{ site.experience.sinceYear }}<br>
+    {% assign currentYear = 'now'|date: '%Y' %}
+    currentYear var: "{{ currentYear }}"<br>
+    experience: "{{ currentYear | minus: site.experience.sinceYear }}"
+  -->
 
     <ul class="site-footer-links">
         <li>Copyright &copy; {{ site.copyright.sinceYear }}-<span id="current-year">{{ site.time|date: '%Y' }}</span> 
@@ -9,7 +18,7 @@
         <!-- <li><a href="/contact" title="Contact">Contact</a></li> -->
     </ul>
 </footer>
-
+{% comment %} 
 <!--
 <div id="footerwidgets">
     <div id="footer-left"></div>
@@ -70,3 +79,4 @@
     </div>
 </div>
 -->
+{% endcomment %}

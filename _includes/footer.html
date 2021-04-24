@@ -13,8 +13,10 @@
   -->
 
     <ul class="site-footer-links">
-        <li>Copyright &copy; {{ site.copyright.sinceYear }}-<span id="current-year">{{ site.time|date: '%Y' }}</span> 
-        <span>{{ site.author.name }}</span>.</li>
+        <li>
+          Copyright &copy; {{ site.copyright.sinceYear }}&mdash;<span id="current-year">{{ site.time|date: '%Y' }}</span> 
+          <a href="{{ site.url }}" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
+        </li>
         <!-- <li><a href="/contact" title="Contact">Contact</a></li> -->
     </ul>
 </footer>

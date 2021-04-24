@@ -23,9 +23,12 @@ breadcrumbs:
     type: WebPage
 ---
 
+{% assign currentYear = 'now'|date: '%Y' %}
+{% assign experience = currentYear | minus: site.experience.sinceYear %}
+
 ## Summary
 
-  - Over 10 years experience with commercial [PHP] usage
+  - {{ experience }} years experience with commercial [PHP] programming
   - OOP PHP Developer ([PHP 5], [PHP 7])
   - Over 7 years experience with [PHP MVC Frameworks][PHP MVC framework]
   - RDBMS experience: [PostgreSQL] (4 years), [MySQL] (3 years), [SQLite] (2 years)
@@ -66,9 +69,5 @@ breadcrumbs:
   - Knowledge of issues related to SEO and UX
 
 <p><small>(Spanish: Ingeniero de programación superior, Desarrollador de software; German: Senior-Software-Entwickler, Softwareentwickler)</small></p>
-
-<!--
-<p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
--->
 
 {% include _autolink.md %}

@@ -1,31 +1,33 @@
 <!-- sidebar -->
-<aside id="search-2" class="widget widget_search">
-    <form role="search" method="get" id="searchform" class="searchform" action="/">
-        <div>
-            <label class="screen-reader-text" for="s">Search for:</label>
-            <input type="text" value="" name="s" id="s" />
-            <input type="submit" id="searchsubmit" value="Search" />
-        </div>
-    </form>
-</aside>
-<aside id="text-4" class="widget widget_text">
-    <div class="textwidget">
-      <!-- navigation social_links -->
-      {% if site.data.navigation.social_links %}
-        {% if site.data.navigation.social_links.list_title %}
-          <h3>{{ site.data.navigation.social_links.list_title }}</h3>
+<aside class="container__sidebar">
+  <aside id="search-2" class="widget widget_search">
+      <form role="search" method="get" id="searchform" class="searchform" action="/">
+          <div>
+              <label class="screen-reader-text" for="s">Search for:</label>
+              <input type="text" value="" name="s" id="s" />
+              <input type="submit" id="searchsubmit" value="Search" />
+          </div>
+      </form>
+  </aside>
+  <aside id="text-4" class="widget widget_text">
+      <div class="textwidget">
+        <!-- navigation social_links -->
+        {% if site.data.navigation.social_links %}
+          {% if site.data.navigation.social_links.list_title %}
+            <h3>{{ site.data.navigation.social_links.list_title }}</h3>
+          {% endif %}
+          <ul>
+          {% for item in site.data.navigation.social_links %}
+              <li><a href="{{ item.url }}" title="{{ item.title }}" rel="me">{{ item.title }}</a></li>
+          {% endfor %}
+          </ul>
         {% endif %}
-        <ul>
-         {% for item in site.data.navigation.social_links %}
-            <li><a href="{{ item.url }}" title="{{ item.title }}" rel="me">{{ item.title }}</a></li>
-         {% endfor %}
-        </ul>
-      {% endif %}
 
-      <p>
-        <a title="zuralski.net" href="https://zuralski.net" rel="me">zuralski.net</a><br />
-        <a title="piotr.zuralski.net" href="https://piotr.zuralski.net" rel="me">piotr.zuralski.net</a>
-      </p>
-    </div>
+        <p>
+          <a title="zuralski.net" href="https://zuralski.net" rel="me">zuralski.net</a><br />
+          <a title="piotr.zuralski.net" href="https://piotr.zuralski.net" rel="me">piotr.zuralski.net</a>
+        </p>
+      </div>
+  </aside>
+  <!-- /sidebar -->
 </aside>
-<!-- /sidebar -->

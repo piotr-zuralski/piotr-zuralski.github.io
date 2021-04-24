@@ -1,18 +1,16 @@
-currentYear: "{{ 'now'|date: '%Y' }}"
-<!--  -->
-experience: "{{ 'now' | date: '%Y' }}-2007"
-
 <footer class="page-footer">
-    <ul class="site-footer-links right">
+    <!-- <ul class="site-footer-links right">
         <li><a href="/about" title="About">About</a></li>
-    </ul>
+    </ul> -->
 
     <ul class="site-footer-links">
-        <li>Copyright &copy; 2007-<span id="current-year">{{ site.time|date: '%Y' }}</span> <span>{{ site.author.name }}</span>.</li>
-        <li><a href="/contact" title="Contact">Contact</a></li>
+        <li>Copyright &copy; {{ site.copyright.sinceYear }}-<span id="current-year">{{ site.time|date: '%Y' }}</span> 
+        <span>{{ site.author.name }}</span>.</li>
+        <!-- <li><a href="/contact" title="Contact">Contact</a></li> -->
     </ul>
 </footer>
 
+<!--
 <div id="footerwidgets">
     <div id="footer-left"></div>
     <div id="footer-middle"></div>
@@ -71,3 +69,4 @@ experience: "{{ 'now' | date: '%Y' }}-2007"
         </aside>
     </div>
 </div>
+-->

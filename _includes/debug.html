@@ -1,38 +1,38 @@
 {% if jekyll.environment == "development" %}
-<p>jekyll debug:</p>
+<div class="hidden">
+  <p>jekyll debug:</p>
+  <p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
+  <p>page: <pre class="jekyll-debug" id="jekyll-debug-page">{{ page | jsonify | escape }}</pre></p>
+  <p>layout: <pre class="jekyll-debug" id="jekyll-debug-layout">{{ layout | jsonify | escape }}</pre></p>
+  <p>paginator: <pre class="jekyll-debug" id="jekyll-debug-paginator">{{ paginator | jsonify | escape }}</pre></p>
+  <p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
+  <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p>
+</div>
 
-<p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
-<p>page: <pre class="jekyll-debug" id="jekyll-debug-page">{{ page | jsonify | escape }}</pre></p>
-<p>layout: <pre class="jekyll-debug" id="jekyll-debug-layout">{{ layout | jsonify | escape }}</pre></p>
-<p>paginator: <pre class="jekyll-debug" id="jekyll-debug-paginator">{{ paginator | jsonify | escape }}</pre></p>
-
-{% comment %}
-<!-- <p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p> -->
-<!-- <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p> -->
-{% endcomment %}
-<!-- -->
-currentYear: {{ site.currentYear }} <br> experience: {{ site.experience }} <br>
+<div>
+  {% comment %} 
+  {% endcomment %}
+  <!-- -->
+  var experience: {{ site.experience.sinceYear }}<br>
+  {% assign currentYear = 'now'|date: '%Y' %}
+  currentYear var: "{{ currentYear }}"<br>
+  <!--  -->
+  experience: "{{ currentYear | minus: site.experience.sinceYear }}"
+</div>
 
 <script>
-    let list = document.getElementsByClassName('jekyll-debug');
-    let element;
-    Array.from(list).forEach(function(item) {
-        element = document.getElementById(item.id);
-        // Pretty-printed JSON (indented 4 spaces).
-        element.textContent = JSON.stringify(
-            JSON.parse(
-                element.textContent
-            ), null, 4
-        );
-    });
-
-    /*
-        for (let item of list) {
-        print("[" + index + "] jest " + element);
+    function jekyllDebugFormat() {
+      let list = document.getElementsByClassName('jekyll-debug');
+      let element;
+      Array.from(list).forEach(function(item) {
+          element = document.getElementById(item.id);
+          // Pretty-printed JSON (indented 4 spaces).
+          element.textContent = JSON.stringify(
+              JSON.parse(
+                  element.textContent
+              ), null, 4
+          );
+      });
     }
-    debugs.forEach(function(element, index, array) {
-        print("[" + index + "] jest " + element);
-    });
-    */
 </script>
 {% endif %}

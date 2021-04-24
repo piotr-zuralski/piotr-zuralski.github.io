@@ -1,31 +1,23 @@
-<!-- sidebar -->
-<aside id="search-2" class="widget widget_search">
-    <form role="search" method="get" id="searchform" class="searchform" action="/">
-        <div>
-            <label class="screen-reader-text" for="s">Search for:</label>
-            <input type="text" value="" name="s" id="s" />
-            <input type="submit" id="searchsubmit" value="Search" />
-        </div>
-    </form>
-</aside>
-<aside id="text-4" class="widget widget_text">
-    <div class="textwidget">
-      <!-- navigation social_links -->
-      {% if site.data.navigation.social_links %}
-        {% if site.data.navigation.social_links.list_title %}
-          <h3>{{ site.data.navigation.social_links.list_title }}</h3>
-        {% endif %}
-        <ul>
-         {% for item in site.data.navigation.social_links %}
-            <li><a href="{{ item.url }}" title="{{ item.title }}" rel="me">{{ item.title }}</a></li>
-         {% endfor %}
-        </ul>
+{% if page.author_profile or layout.author_profile or page.sidebar %}
+<div class="sidebar sticky">
+  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+    {% if page.sidebar %}
+    {% for s in page.sidebar %}
+      {% if s.image %}
+        <img src="{{ s.image | relative_url }}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
       {% endif %}
-
-      <p>
-        <a title="zuralski.net" href="https://zuralski.net" rel="me">zuralski.net</a><br />
-        <a title="piotr.zuralski.net" href="https://piotr.zuralski.net" rel="me">piotr.zuralski.net</a>
-      </p>
-    </div>
-</aside>
-<!-- /sidebar -->
+    {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+    {% if s.text %}{{ s.text | markdownify }}{% endif %}
+    {% if s.nav %}
+      {% for _nav in [s.nav, 'my_websites'] %}
+        {% include nav_list nav=s.nav %}
+      {% endfor %}
+    {% endif %}
+    {% endfor %}
+  
+    {% if page.sidebar.nav %}
+      {% include nav_list nav=page.sidebar.nav %}
+    {% endif %}
+  {% endif %}
+</div>
+{% endif %}

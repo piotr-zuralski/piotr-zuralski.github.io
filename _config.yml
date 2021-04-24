@@ -1,6 +1,5 @@
 encoding: "utf-8"
-timezone: Europe/Warsaw
-lang: en-GB
+timezone: "Europe/Warsaw"
 lsi: true
 safe: false
 incremental: true
@@ -14,10 +13,10 @@ markdown_ext: "md"
 
 repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
-author: "Piotr Żuralski"
 
 social:
-  links:
+  name: Piotr Żuralski
+  links: # jekyll-seo-tag > social aliases (sameAs)
     - https://keybase.io/piotr_zuralski/
     - https://github.com/piotr-zuralski
     - https://gitlab.com/piotr-zuralski
@@ -32,13 +31,21 @@ social:
     - https://www.slideshare.net/Piotruralski
     - https://about.me/piotr-zuralski
     - https://linktr.ee/piotr_zuralski
-# seo:
 
+author: "Piotr Żuralski"
 title: "Piotr Żuralski – Senior Software Engineer"
 description: "Piotr Żuralski, Senior Developer, Engineer, with over 10 years experience in commercial web development"
 
+copyright:
+  year: 2007
+
+lang: "en-GB"
 locale: "en-GB"
+language: "en-GB"
+
 languages: ["en", "pl", "es", "de"]
+cookie_lang: "hl"
+
 exclude_from_localizations: ["files", "assets", "resources"]
 
 plugins_dir         : _plugins
@@ -56,19 +63,24 @@ webmaster_verifications:
 #  yandex: 1234
 #  baidu: 1234
 
-theme: minimal-mistakes-jekyll
-#remote_theme: "mmistakes/minimal-mistakes@4.22.0"
+#theme: minimal-mistakes-jekyll
+remote_theme: "mmistakes/minimal-mistakes@4.22.0"
 minimal_mistakes_skin: "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum" "sunrise"
 title_separator: "-"
 search: true
 read_time: true
-#bing_site_verification: "057036BF9DB13D64C6CA4552C61AC17A"
+breadcrumbs: true
+breadcrumb_home_label: "Home"
+breadcrumb_separator: ">"
 
 # Filtering Content
 show_drafts         : false
 limit_posts         : 0
 future              : false
 published           : false
+unpublished         : true
+
+paginate: 10
 
 defaults:
   -
@@ -81,15 +93,20 @@ defaults:
     scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout:    "default"
+      layout:    "single"
 #      permalink: /:locale/:categories/:title:output_ext
       author:   "Piotr Żuralski"
       excerpt_separator: "<!--more-->"
+      sidebar:
+        nav: social_links
+
   -   scope:
         path: "./_pages/"
         type: "pages"
       values:
-        layout:    "default"
+        layout:  "single"
+        sidebar:
+          nav: social_links
   # -
   #   scope:
   #     path: "_pages/"
@@ -140,12 +157,15 @@ defaults:
 exclude:
   - ".github/"
   - ".history/"
-  - "Gemfile"
-  - "Gemfile.lock"
   - "TODO.md"
   - "README.md"
   - "Makefile"
   - ".jekyll-cache"
+  - "LICENSE"
+  - "CNAME"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "/.tmp/"
 
 include:
   - "_pages"

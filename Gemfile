@@ -25,7 +25,7 @@ group :jekyll_plugins do
   gem "jekyll-commonmark"
 end
 
-gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+#gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem "jekyll", github: "jekyll/jekyll"
 gem "jekyll"
@@ -34,8 +34,9 @@ gem "minimal-mistakes-jekyll"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-admin", group: :jekyll_plugins
 gem "jekyll-compose", group: :jekyll_plugins
-gem "jekyll-include-cache", group: :jekyll_plugins
 
+#gem "link-checker"
+gem 'html-proofer'
 gem "unidecode" 
 gem "sequel" 
 gem "htmlentities"

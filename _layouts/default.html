@@ -1,0 +1,40 @@
+---
+---
+{%- assign page_locale = page.lang | default: page.locale | default: site.locale | slice: 0,2 | default: "en" -%}
+<!doctype html>
+<html lang="{{ page_locale }}" class="no-js">
+  <head>
+    {% include head.html %}
+    {% include head/custom.html %}
+  </head>
+  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+    {% include_cached skip-links.html %} 
+    {% include_cached browser-upgrade.html %}
+    {% include_cached masthead.html %}
+    <div class="initial-content"> 
+      {{ content }}
+    </div>
+    {% if site.search == true %}
+      <div class="search-content">   
+        {% include_cached search/search_form.html %}
+      </div>
+    {% endif %}
+    <div id="footer" class="page__footer">
+      <footer>
+        {% include footer/custom.html %}
+        {% include_cached footer.html %}
+      </footer>
+    </div>
+    {% include scripts.html %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/4.1.0/anchor.min.js" integrity="sha256-lZaRhKri35AyJSypXXs4o6OPFTbTmUoltBbDCbdzegg=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js" integrity="sha512-Meww2sXqNHxI1+5Dyh/9KAtvI9RZSA4c1K2k5iL02oiPO/RH3Q30L3M1albtqMg50u4gRTYdV4EXOQqXEI336A==" crossorigin="anonymous"></script>
+    <script>
+        var cookie_lang = Cookies.get("{{ site.cookie_lang }}");
+        if (cookie_lang !== "{{ page_locale }}") {
+            Cookies.set("{{ site.cookie_lang }}", "{{ page_locale }}", { path: "/" });
+        }
+        document.documentElement.className = document.documentElement.className.replace(/\bno-js\b/g, '') + ' js ';
+        // anchors.add();
+    </script>
+  </body>
+</html>

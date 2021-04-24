@@ -1,0 +1,13 @@
+{% seo %}
+{% if page.last_modified_at %}
+<meta property="article:modified_time" content="{{ page.last_modified_at | date_to_xmlschema }}">
+{% endif %}
+{% if paginator.previous_page %}
+<link rel="prev" href="{{ paginator.previous_page_path | absolute_url }}">
+{% endif %}
+{% if paginator.next_page %}
+<link rel="next" href="{{ paginator.next_page_path | absolute_url }}">
+{% endif %}
+{% if site.webmaster_verifications.naver %}
+<meta name="naver-site-verification" content="{{ site.webmaster_verifications.naver }}">
+{% endif %}

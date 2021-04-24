@@ -1,23 +1,43 @@
 {% if page.author_profile or layout.author_profile or page.sidebar %}
 <div class="sidebar sticky">
-  {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
+    {% if page.author_profile or layout.author_profile %}{% include author-profile.html %}{% endif %}
     {% if page.sidebar %}
-    {% for s in page.sidebar %}
-      {% if s.image %}
-        <img src="{{ s.image | relative_url }}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
-      {% endif %}
-    {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
-    {% if s.text %}{{ s.text | markdownify }}{% endif %}
-    {% if s.nav %}
-      {% for _nav in [s.nav, 'my_websites'] %}
-        {% include nav_list nav=s.nav %}
-      {% endfor %}
-    {% endif %}
-    {% endfor %}
+        {% for s in page.sidebar %}
+            {% if s.image %}
+              <img src="{{ s.image | relative_url }}" alt="{% if s.image_alt %}{{ s.image_alt }}{% endif %}">
+            {% endif %}
+            {% if s.title %}<h3>{{ s.title }}</h3>{% endif %}
+            {% if s.text %}{{ s.text | markdownify }}{% endif %}
+            {% if s.nav %}
+                {% for _nav in [s.nav, 'my_websites'] %}
+                  {% include nav_list nav=_nav %}
+                {% endfor %}
+            {% endif %}
+        {% endfor %}
   
-    {% if page.sidebar.nav %}
-      {% include nav_list nav=page.sidebar.nav %}
-    {% endif %}
+        {% if page.sidebar.nav %}
+            {% for _nav in [page.sidebar.nav, 'my_websites'] %}
+                {% include nav_list nav=_nav %}
+            {% endfor %}
+        {% endif %}
+
+        <h3>Latest Post</h3>
+        {% for post in site.posts limit:1 %}
+            {% include archive-single.html type=entries_layout %}
+        {% endfor %}
+        
+        <h3>Recent Posts</h3>
+        <ul>
+            {% for post in site.pages offset:1 limit:10 sitemap:true order:date %}
+                {% if post.search == "exclude" or post.sitemap == false or post.url contains 'assets' %}
+                    {% continue %}
+                {% endif %}
+                <li>
+                    <a href="{{ post.url | relative_url }}" title="{{ post.title }}" rel="permalink"><i class="fas fa-link" aria-hidden="true" title="permalink"></i><span class="sr-only">Permalink to </span> {{ post.title }}</a>
+                </li>
+            {% endfor %}
+        </ul>
+        
   {% endif %}
 </div>
 {% endif %}

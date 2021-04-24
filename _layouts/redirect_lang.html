@@ -1,21 +1,45 @@
+{% assign page_url = page.permalink | prepend: "/en/" | absolute_url %}
+{% assign page_locale = site.locale | slice: 0,2 | default: "en" %}
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="utf-8">
-      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-      <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
-      <meta name="robots" content="noindex,follow,noarchive">
-      <title>Redirecting&hellip;</title>
-      <link rel="canonical" href="{{ page.redirect.to }}">
-  </head>
-  
-  <body>
-      <h1>Redirecting&hellip;</h1>
-      <p>
-          The document has moved <a href="{{ page.redirect.to }}">here</a>.
-      </p>
-      <script>
-          window.location = "{{ page.redirect.to }}";
-      </script>
-  </body>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Redirecting&hellip;</title>
+        <meta name="robots" content="noindex,follow,noarchive">
+        <link rel="canonical" href="{{ page_url }}">
+    </head>
+    <body>
+        <h1>Redirecting&hellip;</h1>
+        <p>
+            The document has moved <a href="{{ page_url }}">here</a>.
+        </p>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/js-cookie/2.2.1/js.cookie.min.js" integrity="sha512-Meww2sXqNHxI1+5Dyh/9KAtvI9RZSA4c1K2k5iL02oiPO/RH3Q30L3M1albtqMg50u4gRTYdV4EXOQqXEI336A==" crossorigin="anonymous"></script>
+        <script>
+            (function() {
+                var cookie_lang = Cookies.get("{{ site.cookie_lang }}");
+                var browser_lang = (navigator.language || navigator.systemLanguage || navigator.userLanguage || "en").substr(0, 2).toLowerCase();
+                var page_lang = "{{ page_locale }}";
+                
+                {%- assign site_locales = 'var site_locales = {' -%}
+                {%- for _locale in site.languages -%}
+                    {% assign site_locales = site_locales | append: '"' | append: _locale | append: '":"' | append: _locale | append: '"' %}
+                    {% unless forloop.last %}
+                        {% assign site_locales = site_locales | append: ', ' %}
+                    {% endunless %}
+                {%- endfor -%}
+                {{ site_locales }}};
+                if (typeof site_locales[cookie_lang] === "string") {
+                    page_lang = site_locales[cookie_lang];
+                } else if (typeof site_locales[browser_lang] === "string") {
+                    page_lang = site_locales[cookie_lang];
+                }
+                var _location = "{{ '/' | absolute_url }}" + page_lang + "/{{ page.permalink }}";
+                window.location = _location;
+            })();
+        </script>
+        <noscript>
+            <meta http-equiv="refresh" content="0; url={{ page_url }}">
+        </noscript>
+    </body>
 </html>

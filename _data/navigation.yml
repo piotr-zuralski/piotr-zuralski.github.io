@@ -1,59 +1,94 @@
-nav:
-  - title: Home
-    url: 
+locale:
+  - title: "Polski (Polish)"
+    url: /pl/
+  - title: "English"
+    url: /en/
+  - title: "Español (Spanish)"
+    url: /es/
+  - title: "Deutsche (German)"
+    url: /de/
 
-  - title: Projects
-    url: project
-
-  - title: Companies
-    url: company
-
-  - title: Technologies
-    url: technology
-
-  - title: Contact
-    url: contact
-
-  - title: Sitemap
-    url: sitemap
+main:
+  - title: "Home"
+    url: /
+#  - title: "Resume"
+#    url: /resume
+#  - title: "Projects"
+#    url: /projects
+#  - title: "Companies"
+#    url: /company
+#  - title: "Technologies"
+#    url: /technology
+#  - title: "Contact"
+#    url: /contact
+#  - title: "Sitemap"
+#    url: /sitemap
+#  - title: "About me"
+#    url: /about-me
 
 social_links:
+  - title: "Social media"
+    children:
     - url: https://keybase.io/piotr_zuralski/
       title: "Piotr Żuralski at KeyBase"
+      rel: "me"
     - url: https://github.com/piotr-zuralski
       title: "Piotr Żuralski at GitHub"
+      rel: "me"
     - url: https://gitlab.com/piotr-zuralski
       title: "Piotr Żuralski at GitLab"
+      rel: "me"
     - url: https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
       title: "Piotr Żuralski at StackOverflow"
+      rel: "me"
     - url: https://www.linkedin.com/in/piotrzuralski/
       title: "Piotr Żuralski at LinkedIn"
+      rel: "me"
     - url: https://profile.codersrank.io/user/piotr-zuralski
       title: "Piotr Żuralski at CodersRank"
+      rel: "me"
     - url: https://www.hackerrank.com/piotr_zuralski
       title: "Piotr Żuralski at HackerRank"
+      rel: "me"
     - url: https://twitter.com/piotr_zuralski
       title: "Piotr Żuralski at Twitter"
+      rel: "me"
     - url: https://www.crunchbase.com/person/piotr-%C5%BBuralski
       title: "Piotr Żuralski at Crunchbase"
+      rel: "me"
     - url: http://www.goldenline.pl/piotr-zuralski/
       title: "Piotr Żuralski at GoldenLine"
+      rel: "me"
     - url: https://medium.com/@piotr.zuralski
       title: "Piotr Żuralski at Medium"
+      rel: "me"
     - url: https://dev.to/piotr_zuralski
       title: "Piotr Żuralski at Dev.to"
+      rel: "me"
     - url: https://www.slideshare.net/Piotruralski
       title: "Piotr Żuralski at SlideShare"
+      rel: "me"
     - url: https://about.me/piotr-zuralski
       title: "Piotr Żuralski at About.me"
+      rel: "me"
     - url: https://linktr.ee/piotr_zuralski
       title: "Piotr Żuralski at linktr.ee"
+      rel: "me"
+  - children:
+    - url: https://zuralski.net
+      title: "zuralski.net"
+      rel: "me"
+    - url: https://piotr.zuralski.net
+      title: "piotr.zuralski.net"
+      rel: "me"
 
 my_websites:
   - url: https://zuralski.net
     title: "zuralski.net"
+    rel: "me"
   - url: https://piotr.zuralski.net
     title: "piotr.zuralski.net"
+    rel: "me"
 
 footer:
   - text: About

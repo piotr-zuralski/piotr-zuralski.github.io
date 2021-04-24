@@ -1,24 +1,26 @@
 ---
-permalink: /en/projects/jamf-school.html
-published: true
 title: JAMF School
-#description: ""
-tags: PHP,PHP 7,Nginx,AWS
+permalink: "/en/projects/jamf-school.html"
+published: true
+tags:
+    - PHP
+    - PHP 7
+    - Nginx
+    - AWS
+    - AWS EKS
+    - AWS SNS
+    - AWS RDS
+    - Kubernetes
+    - Helm
+    - Helm Charts
 company: Jamf
 date: 2018-06-07 11:34
 last_modified_at: 2019-06-06 11:34
-
 lang: en
 ref: jamf-school
-
 sitemap:
   changefreq: weekly
   priority: 0.8
-
-#breadcrumbs:
-#  - url: page.url
-#    title: page.title
-#    type: WebPage
 ---
 
 ## About

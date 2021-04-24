@@ -1,7 +1,7 @@
 ---
 # site.title: Senior-Software-Entwickler, Softwareentwickler
+permalink: /pl/
 published: true
-permalink: pl/index.html
 ---
 
 # Starszy Programista

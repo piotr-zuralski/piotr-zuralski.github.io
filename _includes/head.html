@@ -1,13 +1,13 @@
 <meta charset="{{ site.encoding|default:'UTF-8' }}">
-<meta charset="{{ site.encoding|default:'UTF-8' }}">
 <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="Last-Modified" content="{{ site.time|date:'%a, %d %b %Y %H:%m:%S GMT%z' }}">
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
+<meta name="build-revision" content="{{ site.github.build_revision }}">
 {% include seo.html %}
-<link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
+<link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css' | append: '?v=' | append: site.github.build_revision | relative_url }}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous">
 <link rel="sitemap" type="application/xml" title="{{ site.title }} XML Sitemap" href="/sitemap.xml">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="/feed.xml">
@@ -15,22 +15,15 @@
 <!--[if IE]>
 <style>
     /* old IE unsupported flexbox fixes */
-    .greedy-nav .site-title {
-      padding-right: 3em;
-    }
-    .greedy-nav button {
-      position: absolute;
-      top: 0;
-      right: 0;
-      height: 100%;
-    }
+    .greedy-nav .site-title { padding-right: 3em; }
+    .greedy-nav button { position: absolute; top: 0; right: 0; height: 100%; }
   </style>
 <![endif]-->
-
 {% if site.head_scripts %}
   {% for script in site.head_scripts %}
     <script src="{{ script | relative_url }}"></script>
   {% endfor %}
 {% endif %}
-
-{% if jekyll.environment == "production" %} {% include stats-analytics.html %} {% endif %}
+{% if jekyll.environment == "production" %}
+    {% include stats-analytics.html %}
+{% endif %}

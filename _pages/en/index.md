@@ -1,6 +1,4 @@
 ---
-{% assign currentYear = 'now'|date: '%Y' %}
-{% assign experience = currentYear | minus: site.experience.sinceYear %}
 title: Home
 description: "Piotr Żuralski, Senior Developer, Engineer, with {{ experience }} years experience in commercial web development"
 date: 2018-06-07 11:34

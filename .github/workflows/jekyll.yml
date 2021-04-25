@@ -1,20 +1,27 @@
-# name: Jekyll site CI
+name: Jekyll site CI
 
-# on:
-#   push:
-#     branches: [ main ]
-#   pull_request:
-#     branches: [ main ]
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
 
-# jobs:
-#   build:
+jobs:
+  cancel:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - uses: styfle/cancel-workflow-action@0.9.0
+        with:
+          access_token: "${{ secrets.GITHUB_TOKEN }}"
 
-#     runs-on: ubuntu-latest
+  build:
+    runs-on: ubuntu-latest
 
-#     steps:
-#     - uses: actions/checkout@v2
-#     - name: Build the site in the jekyll/builder container
-#       run: |
-#         docker run \
-#         -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
-#         jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --incremental --verbose --trace --future"
+    steps:
+    - uses: actions/checkout@v2
+    - name: Build the site in the jekyll/builder container
+      run: |
+        docker run \
+        -v ${{ github.workspace }}:/srv/jekyll -v ${{ github.workspace }}/_site:/srv/jekyll/_site \
+        jekyll/builder:latest /bin/bash -c "chmod 777 /srv/jekyll && jekyll build --incremental --verbose --trace --future"

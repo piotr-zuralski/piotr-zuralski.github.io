@@ -1,7 +1,10 @@
 ---
+{% assign currentYear = 'now'|date: '%Y' %}
+{% assign experience = currentYear | minus: site.experience.sinceYear %}
+
 permalink: /
 title: Home
-description: ""
+description: "Piotr Żuralski, Senior Developer, Engineer, with {{ experience }} years experience in commercial web development"
 date: 2018-06-07 11:34
 last_modified_at: 2019-06-06 11:34
 permalink: /en/
@@ -22,9 +25,6 @@ breadcrumbs:
     title: page.title
     type: WebPage
 ---
-
-{% assign currentYear = 'now'|date: '%Y' %}
-{% assign experience = currentYear | minus: site.experience.sinceYear %}
 
 ## Summary
 

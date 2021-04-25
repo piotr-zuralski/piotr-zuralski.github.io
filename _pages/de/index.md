@@ -1,6 +1,6 @@
 ---
 # site.title: Senior-Software-Entwickler, Softwareentwickler
-permalink: /de/index.html
+permalink: /de/
 published: true
 ---
 

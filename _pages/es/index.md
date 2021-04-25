@@ -1,6 +1,6 @@
 ---
 # site.title: Ingeniero de programación superior, Desarrollador de software
-permalink: /es/index.html
+permalink: /es/
 published: true
 ---
 

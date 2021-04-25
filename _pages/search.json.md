@@ -4,8 +4,7 @@ search: exclude
 sitemap: false
 permalink: /search.json
 ---
-[
-{% for post in site.posts %} {
+[{% for post in site.posts %} {
     "title": "{{ post.title | escape }}",
     "category": "{{ post.category }}",
     "tags": "{{ post.tags | join: ', ' }}",
@@ -18,5 +17,4 @@ permalink: /search.json
     "tags": "{{ page.tags | join: ', ' }}",
     "url": "{{ site.baseurl }}{{ page.url }}",
     "date": "{{ page.date }}"
-} {% unless forloop.last %}, {% endunless %} {% endfor %}
-]
+} {% unless forloop.last %}, {% endunless %} {% endfor %}]

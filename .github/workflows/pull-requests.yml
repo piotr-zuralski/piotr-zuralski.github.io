@@ -15,7 +15,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: github/super-linter@v3.15.5
+      - uses: github/super-linter@v3.17.0
         id: lint
         env:
           DEFAULT_BRANCH: main

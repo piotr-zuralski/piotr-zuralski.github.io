@@ -32,7 +32,7 @@ jobs:
           checkName: lint
           ref: "${{ github.event.pull_request.head.sha || github.sha }}"
 
-      - uses: "actions/github-script@v3.1"
+      - uses: "actions/github-script@v4.0.2"
         with:
           debug: true
           github-token: "${{ secrets.GITHUB_TOKEN }}"

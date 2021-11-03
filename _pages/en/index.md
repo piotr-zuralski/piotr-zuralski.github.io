@@ -21,6 +21,8 @@ breadcrumbs:
     type: WebPage
 ---
 
+{%- assign currentYear = 'now'|date: '%Y' -%}
+{%- assign experience = currentYear | minus: site.experience.sinceYear -%}
 <!-- # Senior Engineer -->
 
 ## Summary

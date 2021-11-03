@@ -1,0 +1,89 @@
+---
+search: exclude
+sitemap: false
+published: true
+permalink: /_debug.html
+robots: noindex,follow
+---
+
+<p>static_files</p>
+<ul>
+    {% for file in site.static_files %}
+        <li><a href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"">{{ file.path }}?v={{ file.modified_time | date: '%s' }}</a></li>
+    {% endfor %}
+</ul>
+
+<p>static_files stylesheet</p>
+<ul>
+    {% for file in site.static_files | where: "stylesheet", "true" %}
+        <li><a href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"">{{ file.path }}?v={{ file.modified_time | date: '%s' }}</a></li>
+    {% endfor %}
+</ul>
+
+<p>static_files javascript</p>
+<ul>
+    {% for file in site.static_files | where: "javascript", "true" %}
+        <li><a href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"">{{ file.path }}?v={{ file.modified_time | date: '%s' }}</a></li>
+    {% endfor %}
+</ul>
+
+<p>pages</p>
+<ul>
+    {% for item in site.pages %}
+        <li><a href="{{ item.url }}" title="{{ item.title | default: item.url }}">{{ item.url }} - "{{ item.title }}"</a></li>
+    {% endfor %}
+</ul>
+
+<p>posts</p>
+<ul>
+    {% for item in site.posts %}
+        <li><a href="{{ item.url }}" title="{{ item.title | default: item.url }}">{{ item.url }} - "{{ item.title }}"</a></li>
+    {% endfor %}
+</ul>
+
+<p>
+    site.locale: {{ site.locale | jsonify }}<br/>
+    page.locale: {{ page.locale | jsonify }}<br/>
+</p>
+
+<div>
+  <p>jekyll debug: <a href="javascript:void();" onclick="jekyllDebugFormat();">format jekyll</a></p>
+  <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p>
+  <p>page: <pre class="jekyll-debug" id="jekyll-debug-page">{{ page | jsonify | escape }}</pre></p>
+  <p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
+  <p>layout: <pre class="jekyll-debug" id="jekyll-debug-layout">{{ layout | jsonify | escape }}</pre></p>
+  <p>paginator: <pre class="jekyll-debug" id="jekyll-debug-paginator">{{ paginator | jsonify | escape }}</pre></p>
+  <p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
+  <p>static_files: <pre class="jekyll-debug" id="jekyll-debug-static_files">{{ site.static_files | jsonify | escape }}</pre></p>
+</div>
+
+<pre>
+{% comment %}comment{% endcomment %}<br/>
+<!-- html comment --><br/>
+site.experience: "{{ site.experience }}"<br/>
+site.experience.sinceYear: "{{ site.experience.sinceYear }}"<br/>
+{%- assign currentYear = 'now'|date: '%Y' -%}
+currentYear: "{{ currentYear }}"<br/>
+{%- assign experience = currentYear | minus: site.experience.sinceYear -%}
+experience: "{{ experience }}"<br/>
+---<br/>
+{%- assign site.experience.currentYear = currentYear -%}
+{%- assign site.experience.experience = experience -%}
+site.experience: "{{ site.experience }}"<br/>
+</pre>
+
+<script>
+    function jekyllDebugFormat() {
+      let list = document.getElementsByClassName('jekyll-debug');
+      let element;
+      Array.from(list).forEach(function(item) {
+          element = document.getElementById(item.id);
+          // Pretty-printed JSON (indented 4 spaces).
+          element.textContent = JSON.stringify(
+              JSON.parse(
+                  element.textContent
+              ), null, 4
+          );
+      });
+    }
+</script>

@@ -20,7 +20,7 @@ tags: []
 #   display_name: Piotr Żuralski
 #   first_name: Piotr
 #   last_name: Żuralski
-permalink: "en/legal/privacy-policy"
+permalink: "/en/legal/privacy-policy"
 previous_page: "legal/terms-and-conditions"
 # next_page: ""
 ---

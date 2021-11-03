@@ -1,6 +1,6 @@
 ---
 title: Home
-description: "Piotr Żuralski, Senior Developer, Engineer, with {{ experience }} years experience in commercial web development"
+description: "Senior Engineer, with {{ experience }} years experience in commercial web development"
 date: 2018-06-07 11:34
 last_modified_at: 2019-06-06 11:34
 published: true
@@ -21,7 +21,7 @@ breadcrumbs:
     type: WebPage
 ---
 
-<!-- # Senior Software Engineer -->
+<!-- # Senior Engineer -->
 
 ## Summary
 

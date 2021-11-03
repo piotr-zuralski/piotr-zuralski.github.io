@@ -1,5 +1,4 @@
 ---
-# site.title: Senior-Software-Entwickler, Softwareentwickler
 permalink: /de/
 published: true
 ---

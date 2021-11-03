@@ -25,6 +25,9 @@ breadcrumbs:
 {%- assign experience = currentYear | minus: site.experience.sinceYear -%}
 <!-- # Senior Engineer -->
 
+Backend developer with 13+ years of experience in commercial web development.
+Eager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for Continuous Integration with Continuous Deployment. Constantly delivers high quality code.
+
 ## Summary
 
   - {{ experience }} years experience with commercial [PHP] programming

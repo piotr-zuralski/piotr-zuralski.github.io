@@ -87,11 +87,11 @@ defaults:
     values:
       layout:    "default"
 #      permalink: /:locale/:categories/:title:output_ext
-  -   scope:
-        path: "./_pages/"
-        type: "pages"
-      values:
-        layout:    "default"
+  # -   scope:
+  #       path: "./_pages/"
+  #       type: "pages"
+  #     values:
+  #       layout:    "default"
   # -
   #   scope:
   #     path: "_pages/"

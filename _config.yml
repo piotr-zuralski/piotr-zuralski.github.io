@@ -1,6 +1,7 @@
 encoding: "utf-8"
-timezone: Europe/Warsaw
-lang: en-GB
+timezone: Europe/London
+lang:     en-GB
+locale:   en
 lsi: true
 safe: false
 incremental: true
@@ -12,9 +13,12 @@ markdown_ext: "md"
 #   options: ["SMART", "FOOTNOTES"]
 #   extensions: ["strikethrough", "autolink", "table"]
 
+url: "https://piotr-zuralski.github.io"
 repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
-author: "Piotr Żuralski"
+# author: "Piotr Żuralski"
+author:   piotr-zuralski
+excerpt_separator: "<!--more-->"
 
 social:
   links:
@@ -39,9 +43,12 @@ description: "Piotr Żuralski, Senior Developer, Engineer, with over 10 years ex
 
 copyright:
   sinceYear: 2007
+  currentYear: 2020
 
 experience:
   sinceYear: 2007
+  currentYear: 2020
+  experience: 13
 
 languages: ["en", "pl", "es", "de"]
 exclude_from_localizations: ["files", "assets", "resources"]
@@ -80,8 +87,6 @@ defaults:
     values:
       layout:    "default"
 #      permalink: /:locale/:categories/:title:output_ext
-      author:   "Piotr Żuralski"
-      excerpt_separator: "<!--more-->"
   -   scope:
         path: "./_pages/"
         type: "pages"
@@ -97,14 +102,43 @@ defaults:
   #     locale:    en
   #     # categories: ""
   #     # permalink:  "/:locale/:categories/:title:output_ext"
-  # -
-  #   scope:
-  #     path: "_pages/de"
-  #     type: "pages"
-  #   values:
-  #     layout: "page"
-  #     lang:    de-GE
-  #     locale:  de
+  -
+    scope:
+      path: "_pages/de/"
+      type: "pages"
+    values:
+      # layout: "page"
+      timezone: Europe/Berlin
+      lang:    de-GE
+      locale:  de
+  -
+    scope:
+      path: "_pages/en/"
+      type: "pages"
+    values:
+      # layout: "page"
+      timezone: Europe/London
+      lang:     en-GB
+      locale:   en
+  -
+    scope:
+      path: "_pages/es/"
+      type: "pages"
+    values:
+      # layout: "page"
+      timezone: Europe/Madrid
+      lang:     es-ES
+      locale:   es
+  -
+    scope:
+      path: "_pages/pl/"
+      type: "pages"
+    values:
+      # layout:   "page"
+      timezone: Europe/Warsaw
+      lang:     pl-PL
+      locale:   pl
+
   # -
   #   scope:
   #     path: "_pages/es"

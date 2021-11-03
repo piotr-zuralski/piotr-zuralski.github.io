@@ -35,7 +35,7 @@ Eager to achieve set goals and successfully complete the product lifecycle by de
   - Over 7 years experience with [PHP MVC Frameworks][PHP MVC framework]
   - RDBMS experience: [PostgreSQL] (4 years), [MySQL] (3 years), [SQLite] (2 years)
   - More than 3 years experience working in project teams using [Scrum] (Agile), [Kanban] or Waterfall
-  - [High Traffic] optimisation (29 816 208 PV a month), application [Horizontal Scaling], [High Availability]
+  - [High Traffic] optimisation (70k requests/min), application [Horizontal Scaling], [High Availability]
   - Experience with caching solutions (file cache, APC, [Memcached], [Redis], [Varnish])
   - [DevOps] experience of setting up Linux distributions and configuring common services
   - Feeling good in Linux and Unix operating environments

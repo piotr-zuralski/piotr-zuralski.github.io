@@ -1,3 +1,5 @@
+{%- assign currentYear = 'now'|date: '%Y' -%}
+{%- assign experience = currentYear | minus: site.experience.sinceYear -%}
 ---
 title: Home
 description: "Senior Engineer, with {{ experience }} years experience in commercial web development"

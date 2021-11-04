@@ -1,6 +1,6 @@
+<!-- navigation menu: {{ menu }} -->
 {% if site.data.navigation[menu] %}
   {%- assign _menu = site.data.navigation[menu] -%}
-  <!-- navigation {{ _menu }} -->
   {%- assign heading = heading | default: 'h2' -%}
 
   {% if _menu.list_title %}
@@ -15,5 +15,5 @@
         {% endfor %}
     </ul>
   </nav>
-  <!-- /navigation {{ _menu }} -->
 {% endif %}
+<!-- /navigation menu: {{ menu }} -->

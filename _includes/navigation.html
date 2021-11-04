@@ -1,7 +1,7 @@
 {% if site.data.navigation[menu] %}
-  {%- _menu = site.data.navigation[menu] -%}
+  {%- assign _menu = site.data.navigation[menu] -%}
   <!-- navigation {{ _menu }} -->
-  {%- heading = heading | default: 'h2' -%}
+  {%- assign heading = heading | default: 'h2' -%}
 
   {% if _menu.list_title %}
   <{{- heading -}}>{{ _menu.list_title }}</{{- heading -}}>

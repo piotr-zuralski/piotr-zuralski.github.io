@@ -1,0 +1,10 @@
+<!-- header.html -->
+{% assign heading = 'h2' %}
+{% assign locale = page.locale | default: site.locale %}
+{% if page.url == '/' or page.url == '/pl/' or page.url == '/en/'  %}
+    {% assign heading = 'h1' %}
+{% endif %}    
+{% if site.title and site.title != page.title %}
+    <{{ heading }} class="no-anchorjs"><a href="{{ '/' | append: locale | append: '/' }}" title="{{ site.title }}">{{ site.title }}</a></{{ heading }}>
+{% endif %}
+<!-- /header.html -->

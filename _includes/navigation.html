@@ -1,4 +1,4 @@
-<!-- navigation menu: {{ menu }}, page.menu: {{ page.menu }} -->
+<!-- navigation menu: {{ menu }}, include.menu: {{ include.menu }} -->
 {% if site.data.navigation[menu] %}
   {%- assign _menu = site.data.navigation[menu] -%}
   {%- assign heading = heading | default: 'h2' -%}

@@ -4,11 +4,8 @@
       {% include head.html %}
   </head>
   <body>
-      {% comment %}
-          {% include navigation.html menu="menu" %}
-      {% endcomment %}
-      
       <div class="container">
+        {% include navigation.html menu="menu" display_menu_name=false %}
         {% include main_content.html %}
         {% include sidebar.html %}
       </div>

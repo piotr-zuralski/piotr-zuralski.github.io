@@ -3,8 +3,8 @@
 {%- assign menu = site.data.navigation[menu_name] -%}
 {%- if menu -%}
   {%- assign heading = include.heading | default: 'h2' -%}
-  
-  {%- if menu.list_title -%}
+
+  {%- if menu.list_title and include.display_menu_name == true -%}
     <{{- heading -}}>{{ menu.list_title }}</{{- heading -}}>
   {%- endif -%}
 

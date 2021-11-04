@@ -1,0 +1,7 @@
+---
+layout: null
+search: exclude
+sitemap: false
+permalink: /humans.txt
+published: true
+---

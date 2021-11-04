@@ -2,7 +2,7 @@
 layout: null
 search: exclude
 sitemap: false
-permalink: robots.txt
+permalink: /robots.txt
 published: true
 ---
 Sitemap: {{ '/sitemap.xml' | absolute_url }}

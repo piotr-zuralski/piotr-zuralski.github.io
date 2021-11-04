@@ -1,6 +1,6 @@
-<!-- navigation menu: {{ menu }}, include.menu: {{ include.menu }} -->
-{% if site.data.navigation[menu] %}
-  {%- assign _menu = site.data.navigation[menu] -%}
+<!-- navigation.html menu: {{ include.menu }} -->
+{% if site.data.navigation[include.menu] %}
+  {%- assign _menu = site.data.navigation[include.menu] -%}
   {%- assign heading = heading | default: 'h2' -%}
 
   {% if _menu.list_title %}
@@ -11,9 +11,12 @@
         {% for item in _menu.items %}
         <li class="{% if item.url == page.url %}active{% endif %}">
             <a href="{{ item.url }}#ref={{- menu -}}" title="{{ item.title }}">{{ item.title }}</a>
+            {%- if item.item -%}
+              {% include navigation-subnavigation.html menu="{{ item.items }}" %}
+            {%- endif -%}
         </li>
         {% endfor %}
     </ul>
   </nav>
 {% endif %}
-<!-- /navigation menu: {{ menu }} -->
+<!-- /navigation.html menu: {{ include.menu }} -->

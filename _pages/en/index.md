@@ -61,7 +61,7 @@ Eager to achieve set goals and successfully complete the product lifecycle by de
   - Working in team: Scrum (Agile), Kanban, Waterfall, Pair programming
   - Front-end: [HTML 4], [HTML 5], [XHTML 1], [JS], [AJAX], [CSS 2], [CSS 3]
   - Front-end Frameworks and Libraries: [jQuery], [jQuery UI], [MooTools], [Twitter Bootstrap]
-  - CI: Jenkins, Travis CI, GitLab
+  - CI: GitLab, Jenkins, GitHub Actions, Travis CI
   - Building tools: Make, [Apache Ant], [Phing] (PHP)
   - Application Testing: [Selenium], [jMeter]
   - Collaboration/Wiki software: DokuWiki, MediaWiki, TWiki, Redmine, Atlassian Confluence, GitHub, GitLab

@@ -3,7 +3,7 @@
   
   {%- if site.data.navigation.locales -%}
     <aside id="locale-switcher-2" class="widget widget_locale-switcher">
-      {% include locale-switcher.html %}
+      {% include locale-switcher.html locale='{{ page.locale | default: site.locale }}' %}
     </aside>
   {%- endif -%}
 
@@ -20,7 +20,7 @@
   
   <aside id="text-4" class="widget widget_text">
       <div class="textwidget">
-        {% include navigation.html menu="social_links" heading="h3" %}
+        {% include navigation.html menu='social_links' heading='h3' %}
       </div>
   </aside>
   <!-- /sidebar -->

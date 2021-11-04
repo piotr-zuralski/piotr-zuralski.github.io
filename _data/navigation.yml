@@ -1,3 +1,22 @@
+locales:
+  items:
+    - title:    English
+      url:      /en/
+      lang:     en-GB
+      locale:   en
+    - title:    polski (Polish)
+      url:      /pl/
+      lang:     pl-PL
+      locale:   pl
+    - title:    Deutsch (German)
+      url:      /de/
+      lang:     de-GE
+      locale:   de
+    - title:    español (Spanish)
+      url:      /es/
+      lang:     es-ES
+      locale:   es
+
 menu:
   items:
     - title: Home

@@ -1,0 +1,11 @@
+<nav role="navigation" aria-label="Change language">
+<ul>
+    {% for locale in site.data.navigation.locales %}
+        <li class="{% if locale.locale == page.locale %}active{% endif %}"></li>
+            <a href="{{ locale.url }}" title="{{ locale.title }}" lang="{{ locale.locale }}">
+                {{ locale.title }}
+            </a>
+        </li>
+    {% endfor %}
+    </ul>
+</nav>

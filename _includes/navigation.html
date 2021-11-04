@@ -10,7 +10,7 @@
 
   {%- if menu.items -%}
     <nav>
-      <ul>
+      <ul class="{{ inclues.list_class }}">
           {% for item in menu.items %}
           <li class="{% if item.url == page.url %}active{% endif %}">
               <a href="{{ item.url }}#ref={{- menu_name -}}" title="{{ item.title }}">{{ item.title }}</a>

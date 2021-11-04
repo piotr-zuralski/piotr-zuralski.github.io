@@ -3,15 +3,15 @@ menu:
     - title: Home
       url: /
     - title: Projects
-      url: /project
+      url: /projects/
     - title: Companies
-      url: /company
+      url: /companies/
     - title: Technologies
-      url: /technology
+      url: /technologies/
     - title: Contact
-      url: /contact
+      url: /contact.html
     - title: Sitemap
-      url: /sitemap
+      url: /sitemap.html
 
 social_links:
   items:

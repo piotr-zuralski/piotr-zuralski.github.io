@@ -12,6 +12,8 @@
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="/feed.xml"/>
 <script>
   window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 </script>
 {% if jekyll.environment == "production" %}
   {% include stats-analytics.html %}

@@ -1,10 +1,11 @@
 <!-- sidebar -->
 <aside class="container__sidebar">
   <aside id="search-2" class="widget widget_search">
-      <form role="search" method="get" id="searchform" class="searchform" action="/">
+      <form role="search" method="get" id="searchform" class="searchform" action="/search.html">
           <div>
               <label class="screen-reader-text" for="s">Search for:</label>
               <input type="text" value="" name="s" id="s" />
+              <input type="hidden" value="{{ page.locale | default: site.locale }}" name="locale" />
               <input type="submit" id="searchsubmit" value="Search" />
           </div>
       </form>

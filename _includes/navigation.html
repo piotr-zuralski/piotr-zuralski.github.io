@@ -1,5 +1,6 @@
 <!-- navigation.html menu: {{ include.menu }} -->
 {%- assign _menu = site.data.navigation[include.menu] -%}
+<!-- navigation.html _menu: {{ _menu | jsonify | escape }} -->
 {% if _menu %}
   {%- assign heading = include.heading | default: 'h2' -%}
   {% if _menu.list_title %}

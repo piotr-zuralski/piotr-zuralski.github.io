@@ -5,15 +5,15 @@ sitemap: false
 permalink: /sitemap.xsl
 ---
 
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="{{ site.encoding|default:'UTF-8' }}"?>
 <xsl:stylesheet version="1.0" xmlns:html="http://www.w3.org/TR/REC-html40" xmlns:sitemap="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
-    <xsl:output method="html" version="1.0" encoding="UTF-8" indent="yes" />
+    <xsl:output method="html" version="1.0" encoding="{{ site.encoding|default:'UTF-8' }}" indent="yes" />
     <xsl:template match="/">
         <html xmlns="http://www.w3.org/1999/xhtml">
 
         <head>
             <title>XML Sitemap</title>
-            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+            <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}" />
             <meta name="robots" content="noindex,follow" />
             <style type="text/css">
                 body {

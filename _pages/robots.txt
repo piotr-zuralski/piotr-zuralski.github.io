@@ -1,0 +1,18 @@
+---
+layout: null
+search: exclude
+sitemap: false
+permalink: robots.txt
+published: true
+---
+Sitemap: {{ '/sitemap.xml' | absolute_url }}
+
+User-agent: *
+Disallow: /wp-*
+Disallow: /xmlrpc.php
+Disallow: /license.*
+Disallow: /readme.*
+Disallow: /comments/feed/
+Disallow: /feed/
+Disallow: /*/feed/
+Disallow: /*/comments/feed/

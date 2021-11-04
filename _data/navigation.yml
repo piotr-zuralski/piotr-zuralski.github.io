@@ -1,27 +1,24 @@
 nav:
-  - title: Home
-    url: 
+  items:
+    - title: Home
+      url: /
+    - title: Projects
+      url: /project
+    - title: Companies
+      url: /company
+    - title: Technologies
+      url: /technology
+    - title: Contact
+      url: /contact
+    - title: Sitemap
+      url: /sitemap
 
-  - title: Projects
-    url: project
-
-  - title: Companies
-    url: company
-
-  - title: Technologies
-    url: technology
-
-  - title: Contact
-    url: contact
-
-  - title: Sitemap
-    url: sitemap
-
-social_links:
-    - url: https://keybase.io/piotr_zuralski/
-      title: "Piotr Żuralski at KeyBase"
+social_items:
+  items:
     - url: https://github.com/piotr-zuralski
       title: "Piotr Żuralski at GitHub"
+    - url: https://keybase.io/piotr_zuralski/
+      title: "Piotr Żuralski at KeyBase"
     - url: https://gitlab.com/piotr-zuralski
       title: "Piotr Żuralski at GitLab"
     - url: https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
@@ -50,9 +47,10 @@ social_links:
       title: "Piotr Żuralski at linktr.ee"
 
 footer:
-  - text: About
-    url: about
-#     links:
+  items:
+    - text: About
+      url: about
+#     items:
 #       - text: Overview
 #         url: /docs/
 #       - text: Secondary documentation page
@@ -61,17 +59,17 @@ footer:
 #         url: /docs/three/
 #   - text: Navigation section
 #     url: /docs/
-#     links:
+#     items:
 #       - text: Demo link A
 #         url: /two/a/
 #       - text: Demo link B
 #         url: /two/b/
 #       - text: Demo link C
 #         url: /two/c/
-  - text: Legal
-    url: 
-    links:
-      - text: Terms & Conditions
-        url: legal/terms-and-conditions
-      - text: Privacy policy
-        url: legal/privacy-policy
+    - text: Legal
+      url: 
+      items:
+        - text: Terms & Conditions
+          url: legal/terms-and-conditions
+        - text: Privacy policy
+          url: legal/privacy-policy

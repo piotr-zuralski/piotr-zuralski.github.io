@@ -1,12 +1,19 @@
-{% if site.data.navigation.nav %}
-  {% if site.data.navigation.nav.list_title %}
-  <h2>{{ site.data.navigation.nav.list_title }}</h2>
+{% if site.data.navigation[menu] %}
+  {%- _menu = site.data.navigation[menu] -%}
+  <!-- navigation {{ _menu }} -->
+  {%- heading = heading | default: 'h2' -%}
+
+  {% if _menu.list_title %}
+  <{{- heading -}}>{{ _menu.list_title }}</{{- heading -}}>
   {% endif %}
-  <ul>
-      {% for item in site.data.navigation.nav %}
-      <li class="{% if item.url == page.url %}active{% endif %}">
-          <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
-      </li>
-      {% endfor %}
-  </ul>
+  <nav>
+    <ul>
+        {% for item in _menu.items %}
+        <li class="{% if item.url == page.url %}active{% endif %}">
+            <a href="{{ item.url }}#ref={{- menu -}}" title="{{ item.title }}">{{ item.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+  </nav>
+  <!-- /navigation {{ _menu }} -->
 {% endif %}

@@ -1,0 +1,15 @@
+---
+layout: null
+search: exclude
+sitemap: false
+permalink: /manifest.json
+---
+{
+    "short_name": "{{ site.title }}",
+    "name": "{{ site.title }}",
+    "icons": [],
+    "start_url": "/",
+    "display": "fullscreen",
+    "theme_color": "#000000",
+    "background_color": "#ffffff"
+}

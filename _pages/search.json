@@ -4,17 +4,21 @@ search: exclude
 sitemap: false
 permalink: /search.json
 ---
-[{% for post in site.posts %} {
-    "title": "{{ post.title | escape }}",
-    "category": "{{ post.category }}",
-    "tags": "{{ post.tags | join: ', ' }}",
-    "url": "{{ site.baseurl }}{{ post.url }}",
-    "date": "{{ post.date }}"
-} {% unless forloop.last %}, {% endunless %} 
-{% endfor %} {% for page in site.page %} {
-    "title": "{{ page.title | escape }}",
-    "category": "{{ page.category }}",
-    "tags": "{{ page.tags | join: ', ' }}",
+{%- assign pages = site.posts | concat: site.pages -%}
+[ 
+{%- for page in pages -%}
+    {%- assign title = page.title | jsonify | replace: '"', '' | replace: 'null', '' | strip -%}
+    {%- assign content = page.content | markdownify | strip_html | jsonify | replace: '"', '' | replace: 'null', '' | replace: '\n', ' ' | strip -%}
+    {% if page.search != 'exclude' and page.sitemap != false and title != '' and title != 'null' %} 
+    {
+    "title": "{{ title }}",
+    "dateCreated": "{{ page.date | date_to_xmlschema }}",
+    "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+    "category": "{{ page.category | jsonify }}",
+    "tags": "{{ page.tags | jsonify }}",
     "url": "{{ site.baseurl }}{{ page.url }}",
-    "date": "{{ page.date }}"
-} {% unless forloop.last %}, {% endunless %} {% endfor %}]
+    "content": "{{ content }}"
+    } {%- unless forloop.last -%}, {%- endunless -%}
+    {% endif %}
+{%- endfor -%}
+]

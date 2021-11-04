@@ -1,5 +1,7 @@
 <!-- navigation.html menu: {{ include.menu }} -->
 {%- assign _menu = include.menu -%}
+<!-- navigation.html _menu: {{ _menu | jsonify | escape }} -->
+<!-- navigation.html site.data.navigation: {{ site.data.navigation | jsonify | escape }} -->
 {%- assign _menu = site.data.navigation[_menu] -%}
 <!-- navigation.html _menu: {{ _menu | jsonify | escape }} -->
 {% if _menu %}

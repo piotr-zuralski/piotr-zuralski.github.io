@@ -1,20 +1,26 @@
-<!-- navigation.html menu: {{ include.menu }} -->
-{%- assign _menu = include.menu -%}
-{%- assign _menu = site.data.navigation[_menu] -%}
-{%- assign heading = include.heading | default: 'h2' -%}
-{% if _menu.list_title %}
-<{{- heading -}}>{{ _menu.list_title }}</{{- heading -}}>
-{% endif %}
-<nav>
-  <ul>
-      {% for item in _menu.items %}
-      <li class="{% if item.url == page.url %}active{% endif %}">
-          <a href="{{ item.url }}#ref={{- menu -}}" title="{{ item.title }}">{{ item.title }}</a>
-          {%- if item.item -%}
-            {% include navigation-subnavigation.html menu="{{ item.items }}" %}
-          {%- endif -%}
-      </li>
-      {% endfor %}
-  </ul>
-</nav>
-<!-- /navigation.html menu: {{ include.menu }} -->
+{%- assign menu_name = include.menu -%}
+<!-- navigation.html menu: {{ menu_name }} -->
+{%- assign menu = site.data.navigation[menu_name] -%}
+{%- if menu -%}
+  {%- assign heading = include.heading | default: 'h2' -%}
+  
+  {%- if menu.list_title -%}
+    <{{- heading -}}>{{ menu.list_title }}</{{- heading -}}>
+  {%- endif -%}
+
+  {%- if menu.items -%}
+    <nav>
+      <ul>
+          {% for item in menu.items %}
+          <li class="{% if item.url == page.url %}active{% endif %}">
+              <a href="{{ item.url }}#ref={{- menu_name -}}" title="{{ item.title }}">{{ item.title }}</a>
+              {%- if item.item -%}
+                {% include navigation-subnavigation.html menu="{{ item.items }}" %}
+              {%- endif -%}
+          </li>
+          {% endfor %}
+      </ul>
+    </nav>
+  {%- endif -%}
+{%- endif -%}
+<!-- /navigation.html menu: {{ menu_name }} -->

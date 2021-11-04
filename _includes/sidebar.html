@@ -1,9 +1,11 @@
 <!-- sidebar -->
 <aside class="container__sidebar">
   
-  <aside id="locale-switcher-2" class="widget widget_locale-switcher">
-    {% include locale-switcher.html %}
-  </aside>
+  {%- if site.data.navigation.locales -%}
+    <aside id="locale-switcher-2" class="widget widget_locale-switcher">
+      {% include locale-switcher.html %}
+    </aside>
+  {%- endif -%}
 
   <aside id="search-2" class="widget widget_search">
       <form role="search" method="get" id="searchform" class="searchform" action="/search.html">
@@ -15,6 +17,7 @@
           </div>
       </form>
   </aside>
+  
   <aside id="text-4" class="widget widget_text">
       <div class="textwidget">
         {% include navigation.html menu="social_links" heading="h3" %}

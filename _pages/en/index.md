@@ -1,6 +1,6 @@
 ---
 title: Home
-description: "Senior Engineer, with {{ site.experience.experience }} years experience in commercial web development"
+description: "Senior Engineer, with {{ experience }} years experience in commercial web development"
 date: 2018-06-07 11:34
 last_modified_at: 2019-06-06 11:34
 published: true
@@ -25,8 +25,8 @@ breadcrumbs:
 {%- assign experience = currentYear | minus: site.experience.sinceYear -%}
 <!-- # Senior Engineer -->
 
-Backend developer with 13+ years of experience in commercial web development.
-Eager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for Continuous Integration with Continuous Deployment. Constantly delivers high quality code.
+Backend developer with {{ experience }} years of experience in commercial web development.<br/>
+Eager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for Continuous Integration with Continuous Deployment. Constantly delivers high quality code.<br/>
 
 ## Summary
 
@@ -70,6 +70,6 @@ Eager to achieve set goals and successfully complete the product lifecycle by de
   - IDE: Eclipse, NetBeans, JetBrains PhpStorm, JetBrains PyCharm, JetBrains IntelliJ
   - Knowledge of issues related to SEO and UX
 
-<p><small>(Spanish: Ingeniero de programación superior, Desarrollador de software; German: Senior-Software-Entwickler, Softwareentwickler)</small></p>
+<p><small>(Spanish: <a href="/es/" title="Ingeniero de programación superior" lang="es">Ingeniero de programación superior</a>, <a href="/es/" title="Desarrollador de software" lang="es">Desarrollador de software</a>; German: <a href="/de/" title="Senior-Software-Entwickler" lang="de">Senior-Software-Entwickler</a>, <a href="/de/" title="Softwareentwickler" lang="de">Softwareentwickler</a>)</small></p>
 
 {% include _autolink.md %}

@@ -13,7 +13,7 @@
   {% comment %} 
   {% endcomment %}
   <!-- -->
-  var experience: {{ site.experience.sinceYear }}<br>
+  var experience: {{ site.experience.sinceYear }}<br/>
   {% assign site.currentYear = 'now'|date: '%Y' %}
   {% assign site.experience = site.currentYear | minus: site.experience.sinceYear %}
   experience: "{{ site.experience }}"

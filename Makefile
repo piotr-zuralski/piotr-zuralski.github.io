@@ -18,7 +18,8 @@ install: clean
 	# bundle exec jekyll help
 	# bundle exec jekyll serve --incremental --verbose --trace
 
-install-and-serve: install serve
+# install-and-serve: install serve
+install-and-serve: serve
 
 test:
 	# act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04

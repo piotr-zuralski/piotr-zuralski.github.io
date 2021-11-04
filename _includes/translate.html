@@ -1,9 +1,4 @@
 {%- assign locale = include.locale | default: 'en' -%}
 {%- assign phrase = include.phrase | default: '' -%}
-{%- assign translated = phrase -%}
-
-{%- if site.data.navigation[locale][phrase] -%}
-    {%- assign translated = site.data.navigation[locale][phrase] -%}
-{%- endif -%}
-
+{%- assign translated = site.data.translate[locale][phrase] | default: phrase -%}
 {{- translated -}}

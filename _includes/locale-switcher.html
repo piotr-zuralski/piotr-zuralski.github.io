@@ -1,4 +1,7 @@
-<nav role="navigation" aria-label="{% include navigation.html locale='{{ include.locale | default: page.locale | default: site.locale }}' phrase='change_language' %}">
+<!-- locale-switcher.html -->
+{% assign locale = include.locale | default: page.locale | default: site.locale %}
+<!-- locale-switcher, locale: {{ locale }} -->
+<nav role="navigation" aria-label="{% include translate.html locale=locale phrase='change_language' %}"> 
 <ul>
     {% for locale in site.data.navigation.locales.items %}
         <li class="{% if locale.locale == page.locale %}active{% endif %}">
@@ -9,3 +12,4 @@
     {% endfor %}
     </ul>
 </nav>
+<!-- /locale-switcher.html -->

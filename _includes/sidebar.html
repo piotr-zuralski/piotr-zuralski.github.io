@@ -1,9 +1,10 @@
 <!-- sidebar -->
 <aside class="container__sidebar">
-  
+  {% assign locale = page.locale | default: site.locale %}
+
   {%- if site.data.navigation.locales -%}
     <aside id="locale-switcher-2" class="widget widget_locale-switcher">
-      {% include locale-switcher.html locale='{{ page.locale | default: site.locale }}' %}
+      {% include locale-switcher.html locale=locale %}
     </aside>
   {%- endif -%}
 
@@ -12,7 +13,7 @@
           <div>
               <label class="screen-reader-text" for="s">Search for:</label>
               <input type="text" value="" name="s" id="s" />
-              <input type="hidden" value="{{ page.locale | default: site.locale }}" name="locale" />
+              <input type="hidden" value="{{ locale }}" name="locale" />
               <input type="submit" id="searchsubmit" value="Search" />
           </div>
       </form>

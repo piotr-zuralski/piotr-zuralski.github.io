@@ -1,4 +1,4 @@
-nav:
+menu:
   items:
     - title: Home
       url: /
@@ -13,7 +13,7 @@ nav:
     - title: Sitemap
       url: /sitemap
 
-social_items:
+social_links:
   items:
     - url: https://github.com/piotr-zuralski
       title: "Piotr Żuralski at GitHub"

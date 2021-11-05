@@ -5,3 +5,9 @@ sitemap: false
 permalink: /humans.txt
 published: true
 ---
+
+/* SITE */
+	Last update: {{ 'now' | date: '%Y/%m/%d' }}
+	Language: English / Polski / Deutsch / Español
+	Doctype: HTML5
+	IDE: Visual Studio Code

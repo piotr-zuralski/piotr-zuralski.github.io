@@ -75,31 +75,31 @@ future: false
 unpublished: false
 
 defaults:
-  - scope:
-      path: "assets/css/*"
-    values:
-      layout: null
-      search: exclude
-      sitemap: false
-      stylesheet: true
-  - scope:
-      path: "assets/scss/*"
-    values:
-      layout: null
-      search: exclude
-      sitemap: false
-      stylesheet: true
-  - scope:
-      path: "assets/js/*"
-    values:
-      layout: null
-      search: exclude
-      sitemap: false
-      javascript: true
-  - scope:
-      path: "" # an empty string here means all files in the project
-    values:
-      layout: "default"
+  -   scope:
+        path: "assets/css/*"
+      values:
+        layout: null
+        search: exclude
+        sitemap: false
+        stylesheet: true
+  -   scope:
+        path: "assets/scss/*"
+      values:
+        layout: null
+        search: exclude
+        sitemap: false
+        stylesheet: true
+  -   scope:
+        path: "assets/js/*"
+      values:
+        layout: null
+        search: exclude
+        sitemap: false
+        javascript: true
+  -   scope:
+        path: "" # an empty string here means all files in the project
+      values:
+        layout: "default"
 
   #   scope:
   #     path: "_pages/"
@@ -110,43 +110,43 @@ defaults:
   #     locale:    en
   #     # categories: ""
   #     # permalink:  "/:locale/:categories/:title:output_ext"
-  - scope:
-      path: "_pages/"
-      type: "pages"
-    values:
-      layout: "default"
-  - scope:
-      path: "_pages/de/"
-      type: "pages"
-    values:
-      layout: "default"
-      timezone: Europe/Berlin
-      lang: de-GE
-      locale: de
-  - scope:
-      path: "_pages/en/"
-      type: "pages"
-    values:
-      layout: "default"
-      timezone: Europe/London
-      lang: en-GB
-      locale: en
-  - scope:
-      path: "_pages/es/"
-      type: "pages"
-    values:
-      layout: "default"
-      timezone: Europe/Madrid
-      lang: es-ES
-      locale: es
-  - scope:
-      path: "_pages/pl/"
-      type: "pages"
-    values:
-      layout: "default"
-      timezone: Europe/Warsaw
-      lang: pl-PL
-      locale: pl
+  -   scope:
+        path: "_pages/"
+        type: "pages"
+      values:
+        layout: "default"
+  -   scope:
+        path: "_pages/de/"
+        type: "pages"
+      values:
+        layout: "default"
+        timezone: Europe/Berlin
+        lang: de-GE
+        locale: de
+  -   scope:
+        path: "_pages/en/"
+        type: "pages"
+      values:
+        layout: "default"
+        timezone: Europe/London
+        lang: en-GB
+        locale: en
+  -   scope:
+        path: "_pages/es/"
+        type: "pages"
+      values:
+        layout: "default"
+        timezone: Europe/Madrid
+        lang: es-ES
+        locale: es
+  -   scope:
+        path: "_pages/pl/"
+        type: "pages"
+      values:
+        layout: "default"
+        timezone: Europe/Warsaw
+        lang: pl-PL
+        locale: pl
   # -
   #   scope:
   #     path: "posts"

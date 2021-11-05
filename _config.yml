@@ -111,29 +111,34 @@ defaults:
   #     # categories: ""
   #     # permalink:  "/:locale/:categories/:title:output_ext"
   - scope:
-      path: _pages/de/
-      type: pages
+      path: "_pages/"
+      type: "pages"
+    values:
+      type: "pages"
+  - scope:
+      path: "_pages/de/"
+      type: "pages"
     values:
       timezone: Europe/Berlin
       lang: de-GE
       locale: de
   - scope:
-      path: _pages/en/
-      type: pages
+      path: "_pages/en/"
+      type: "pages"
     values:
       timezone: Europe/London
       lang: en-GB
       locale: en
   - scope:
-      path: _pages/es/
-      type: pages
+      path: "_pages/es/"
+      type: "pages"
     values:
       timezone: Europe/Madrid
       lang: es-ES
       locale: es
   - scope:
-      path: _pages/pl/
-      type: pages
+      path: "_pages/pl/"
+      type: "pages"
     values:
       timezone: Europe/Warsaw
       lang: pl-PL

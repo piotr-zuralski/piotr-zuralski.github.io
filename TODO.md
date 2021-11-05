@@ -17,3 +17,5 @@
   - <https://github.com/liamzebedee/jekyll-i18n>
   - <https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/>
   - <https://polyglot.untra.io/seo/>
+
+- <https://talk.jekyllrb.com/t/how-do-you-make-jekyll-execute-liquid-variables-in-front-matter/1638/>

@@ -104,6 +104,11 @@ defaults:
   #     # permalink:  "/:locale/:categories/:title:output_ext"
   -
     scope:
+      path: _pages/
+    values:
+      type: pages
+  -
+    scope:
       path: _pages/de/
       # type: "pages"
     values:

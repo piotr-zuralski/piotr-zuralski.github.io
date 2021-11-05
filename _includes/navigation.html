@@ -10,13 +10,22 @@
 
   {%- if menu.items -%}
     <nav>
-      <ul class="{{ include.list_class }}">
+      <ul {% if include.list_class %}class="{{- include.list_class -}}"{% endif %}>
           {% for item in menu.items %}
+          {%- assign li_attrs = [] -%}
+          {%- assign a_attrs = [] -%}
+          {%- if item.url == page.url -%}
+          {%- assign li_attrs.class = 'active' -%}
+          {%- endif -%}
+          <!--  
+          li_attrs: "{{ li_attrs }}",
+          {{ li_attrs | join: "= " }}
+          -->
           <li class="{% if item.url == page.url %}active{% endif %}">
               <a href="{{ item.url }}#ref={{- menu_name -}}" title="{{ item.title }}">{{ item.title }}</a>
               {%- if item.item -%}
                 {% include navigation-subnavigation.html menu='{{ item.items }}' %}
-              {%- endif -%}
+              {% endif %}
           </li>
           {% endfor %}
       </ul>

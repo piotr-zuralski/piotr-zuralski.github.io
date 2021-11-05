@@ -20,17 +20,23 @@ locales:
 menu:
   items:
     - title: Home
-      url: /
+      url: /en/
+      ref: index
     - title: Projects
-      url: /projects/
+      url: /en/projects/
+      ref: projects
     - title: Companies
-      url: /companies/
+      url: /en/companies/
+      ref: companies
     - title: Technologies
-      url: /technologies/
+      url: /en/technologies/
+      ref: technologies
     - title: Contact
-      url: /contact.html
+      url: /en/contact.html
+      ref: contact
     - title: Sitemap
-      url: /sitemap.html
+      url: /en/sitemap.html
+      ref: sitemap
 
 social_links:
   items:

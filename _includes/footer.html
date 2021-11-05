@@ -1,7 +1,7 @@
+<!-- footer.html -->
 {%- assign locale = page.locale | default: site.locale -%}
 {%- assign locale_page = '/' | append: locale | append: '/' -%}
-
-<footer class="page-footer">
+<footer class="footer page-footer">
   {% comment %} 
     <!-- <ul class="site-footer-links right">
         <li><a href="/about" title="About">About</a></li>
@@ -9,11 +9,31 @@
   {% endcomment %}
 
   <!--
+    page.locale: "{{ page.locale }}"<br/>
+    site.locale:  "{{ site.locale }}"<br/>
     var experience: {{ site.experience.sinceYear }}<br/>
     {% assign currentYear = 'now'|date: '%Y' %}
     currentYear var: "{{ currentYear }}"<br/>
     experience: "{{ currentYear | minus: site.experience.sinceYear }}"
   -->
+
+  <span class="site-footer-copyright text-center">
+      Copyright &copy; {{ site.copyright.sinceYear }}&mdash;<span id="current-year">{{ site.time | date: '%Y' }}</span>
+      <a href="{{ locale_page | absolute_url }}" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
+  </span>
+
+
+  {% if site.data.navigation.footer and site.data.navigation.footer.items %}
+      <span class="site-footer-links text-left"></span>
+          <ul class="list-inline">
+              {% for item in site.data.navigation.footer.items %}
+              <li class="{% if item.url == page.url %}active{% endif %}">
+                  <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
+              </li>
+              {% endfor %}
+          </ul>
+      </span>
+  {% endif %}
 
     <ul class="site-footer-links">
         <li>
@@ -85,3 +105,4 @@
 </div>
 -->
 {% endcomment %}
+<!-- /footer.html -->

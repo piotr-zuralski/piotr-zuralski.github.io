@@ -8,7 +8,6 @@ permalink: /en/
 redirect_from:
   - /home.html
   - /
-lang: en
 ref: home
 
 sitemap:

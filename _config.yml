@@ -2,6 +2,8 @@ encoding: "utf-8"
 timezone: Europe/London
 lang: en-GB
 locale: en
+_lang: ""
+_locale: ""
 lsi: true
 safe: false
 incremental: true

@@ -102,18 +102,11 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-  - scope:
-      path: "_pages/"
-      type: "pages"
-    values:
-      layout: "default"
       timezone: Europe/London
       lang: en-GB
       locale: en
-      _lang: en-GB
-      _locale: en
   - scope:
-      path: "_pages/de/"
+      path: "/de/"
       type: "pages"
     values:
       layout: "default"
@@ -123,7 +116,7 @@ defaults:
       _lang: de-GE
       _locale: de
   - scope:
-      path: "_pages/en/"
+      path: "/en/"
       type: "pages"
     values:
       layout: "default"
@@ -133,7 +126,7 @@ defaults:
       _lang: en-GB
       _locale: en
   - scope:
-      path: "_pages/es/"
+      path: "/es/"
       type: "pages"
     values:
       layout: "default"
@@ -143,7 +136,7 @@ defaults:
       _lang: es-ES
       _locale: es
   - scope:
-      path: "_pages/pl/"
+      path: "/pl/"
       type: "pages"
     values:
       layout: "default"

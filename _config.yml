@@ -104,8 +104,8 @@ defaults:
   #     # permalink:  "/:locale/:categories/:title:output_ext"
   -
     scope:
-      path: "_pages/de/"
-      type: "pages"
+      path: _pages/de/
+      # type: "pages"
     values:
       # layout: "page"
       timezone: Europe/Berlin
@@ -113,8 +113,8 @@ defaults:
       locale:  de
   -
     scope:
-      path: "_pages/en/"
-      type: "pages"
+      path: _pages/en/
+      # type: pages
     values:
       # layout: "page"
       timezone: Europe/London
@@ -122,8 +122,8 @@ defaults:
       locale:   en
   -
     scope:
-      path: "_pages/es/"
-      type: "pages"
+      path: _pages/es/
+      # type: "pages"
     values:
       # layout: "page"
       timezone: Europe/Madrid
@@ -131,8 +131,8 @@ defaults:
       locale:   es
   -
     scope:
-      path: "_pages/pl/"
-      type: "pages"
+      path: _pages/pl/
+      # type: "pages"
     values:
       # layout:   "page"
       timezone: Europe/Warsaw
@@ -169,17 +169,17 @@ defaults:
   #     # permalink:  "/:locale/:categories/:title:output_ext"
 
 exclude:
-  - ".github/"
-  - ".history/"
-  - "Gemfile"
-  - "Gemfile.lock"
-  - "TODO.md"
-  - "README.md"
-  - "Makefile"
-  - ".jekyll-cache"
+  - .github/
+  - .history/
+  - Gemfile
+  - Gemfile.lock
+  - TODO.md
+  - README.md
+  - Makefile
+  - .jekyll-cache
 
 include:
-  - "_pages"
+  - _pages/
 
 plugins:
   - jekyll-commonmark

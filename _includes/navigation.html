@@ -15,7 +15,7 @@
           {%- assign li_attrs = [] -%}
           {%- assign a_attrs = [] -%}
           {%- if item.url == page.url -%}
-          {%- assign li_attrs.class = 'active' -%}
+            {% assign class = li_attrs[class] | push: 'active' %}
           {%- endif -%}
           <!--  
           li_attrs: "{{ li_attrs }}",

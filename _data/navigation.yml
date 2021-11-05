@@ -72,35 +72,35 @@ social_links:
       title: "Piotr Żuralski at linktr.ee"
 
 footer:
-  items:
-    - title: About
-      url: /en/about
-      ref: about
-#     items:
-#       - title: Overview
-#         url: /docs/
-#       - title: Secondary documentation page
-#         url: /docs/two/
-#       - title: Tertiary docs
-#         url: /docs/three/
-#   - title: Navigation section
-#     url: /docs/
-#     items:
-#       - title: Demo link A
-#         url: /two/a/
-#       - title: Demo link B
-#         url: /two/b/
-#       - title: Demo link C
-#         url: /two/c/
-    - title: Legal
-      url: /en/legal/
-      items:
-        - title: Terms & Conditions
-          url: /en/legal/terms-and-conditions
-          items:
-            - title: Privacy policy
-              url: /en/legal/privacy-policy
-              items:
-                - title: ABC
-                  url: /en/?abc
+#   items:
+#     - title: About
+#       url: /en/about
+#       ref: about
+# #     items:
+# #       - title: Overview
+# #         url: /docs/
+# #       - title: Secondary documentation page
+# #         url: /docs/two/
+# #       - title: Tertiary docs
+# #         url: /docs/three/
+# #   - title: Navigation section
+# #     url: /docs/
+# #     items:
+# #       - title: Demo link A
+# #         url: /two/a/
+# #       - title: Demo link B
+# #         url: /two/b/
+# #       - title: Demo link C
+# #         url: /two/c/
+#     - title: Legal
+#       url: /en/legal/
+#       items:
+#         - title: Terms & Conditions
+#           url: /en/legal/terms-and-conditions
+#           items:
+#             - title: Privacy policy
+#               url: /en/legal/privacy-policy
+#               items:
+#                 - title: ABC
+#                   url: /en/?abc
 

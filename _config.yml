@@ -1,7 +1,7 @@
 encoding: "utf-8"
 timezone: Europe/London
-lang:     en-GB
-locale:   en
+lang: en-GB
+locale: en
 lsi: true
 safe: false
 incremental: true
@@ -53,10 +53,10 @@ experience:
 languages: ["en", "pl", "es", "de"]
 exclude_from_localizations: ["files", "assets", "resources"]
 
-plugins_dir         : _plugins
-layouts_dir         : _layouts
-data_dir            : _data
-includes_dir        : _includes
+plugins_dir: _plugins
+layouts_dir: _layouts
+data_dir: _data
+includes_dir: _includes
 
 twitter:
   username: piotr_zuralski
@@ -69,30 +69,38 @@ webmaster_verifications:
 #  baidu: 1234
 
 # Filtering Content
-show_drafts         : false
-limit_posts         : 0
-future              : false
-unpublished         : false
+show_drafts: false
+limit_posts: 0
+future: false
+unpublished: false
 
 defaults:
-  -
-    scope:
-      path:      "assets/css/*"
+  - scope:
+      path: "assets/css/*"
     values:
-      sitemap:   false
-      permalink: pretty
-  -
-    scope:
+      layout: null
+      search: exclude
+      sitemap: false
+      stylesheet: true
+  - scope:
+      path: "assets/scss/*"
+    values:
+      layout: null
+      search: exclude
+      sitemap: false
+      stylesheet: true
+  - scope:
+      path: "assets/js/*"
+    values:
+      layout: null
+      search: exclude
+      sitemap: false
+      javascript: true
+  - scope:
       path: "" # an empty string here means all files in the project
     values:
-      layout:    "default"
-#      permalink: /:locale/:categories/:title:output_ext
-  # -   scope:
-  #       path: "./_pages/"
-  #       type: "pages"
-  #     values:
-  #       layout:    "default"
-  # -
+      layout: "default"
+
   #   scope:
   #     path: "_pages/"
   #     type: "pages"
@@ -102,57 +110,39 @@ defaults:
   #     locale:    en
   #     # categories: ""
   #     # permalink:  "/:locale/:categories/:title:output_ext"
-  -
-    scope:
+  - scope:
       path: _pages/
       type: pages
     values:
       type: pages
-  -
-    scope:
+  - scope:
       path: _pages/de/
-      # type: "pages"
+      type: pages
     values:
-      # layout: "page"
       timezone: Europe/Berlin
-      lang:    de-GE
-      locale:  de
-  -
-    scope:
+      lang: de-GE
+      locale: de
+  - scope:
       path: _pages/en/
-      # type: pages
+      type: pages
     values:
-      # layout: "page"
       timezone: Europe/London
-      lang:     en-GB
-      locale:   en
-  -
-    scope:
+      lang: en-GB
+      locale: en
+  - scope:
       path: _pages/es/
-      # type: "pages"
+      type: pages
     values:
-      # layout: "page"
       timezone: Europe/Madrid
-      lang:     es-ES
-      locale:   es
-  -
-    scope:
+      lang: es-ES
+      locale: es
+  - scope:
       path: _pages/pl/
-      # type: "pages"
+      type: pages
     values:
-      # layout:   "page"
       timezone: Europe/Warsaw
-      lang:     pl-PL
-      locale:   pl
-
-  # -
-  #   scope:
-  #     path: "_pages/es"
-  #     type: "pages"
-  #   values:
-  #     layout: "page"
-  #     lang:      es-ES
-  #     locale:    es
+      lang: pl-PL
+      locale: pl
   # -
   #   scope:
   #     path: "posts"

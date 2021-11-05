@@ -105,6 +105,7 @@ defaults:
   -
     scope:
       path: _pages/
+      type: pages
     values:
       type: pages
   -

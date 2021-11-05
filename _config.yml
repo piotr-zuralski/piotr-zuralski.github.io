@@ -100,21 +100,14 @@ defaults:
       path: "" # an empty string here means all files in the project
     values:
       layout: "default"
-
-  #   scope:
-  #     path: "_pages/"
-  #     type: "pages"
-  #   values:
-  #     layout: "page"
-  #     lang:      en-GB
-  #     locale:    en
-  #     # categories: ""
-  #     # permalink:  "/:locale/:categories/:title:output_ext"
   - scope:
       path: "_pages/"
       type: "pages"
     values:
       layout: "default"
+      timezone: Europe/London
+      lang: en-GB
+      locale: en
   - scope:
       path: "_pages/de/"
       type: "pages"

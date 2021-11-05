@@ -17,7 +17,7 @@ url: "https://piotr-zuralski.github.io"
 repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
 # author: "Piotr Żuralski"
-author:   piotr-zuralski
+author: piotr-zuralski
 excerpt_separator: "<!--more-->"
 
 social:

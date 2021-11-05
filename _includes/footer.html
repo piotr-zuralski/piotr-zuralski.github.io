@@ -31,18 +31,9 @@
       <a href="{{ locale_page | absolute_url }}" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
   </span>
 
-
-  {% if site.data.navigation.footer and site.data.navigation.footer.items %}
-      <span class="site-footer-links text-left"></span>
-          <ul class="list-inline">
-              {% for item in site.data.navigation.footer.items %}
-              <li class="{% if item.url == page.url %}active{% endif %}">
-                  <a href="{{ item.url }}" title="{{ item.title }}">{{ item.title }}</a>
-              </li>
-              {% endfor %}
-          </ul>
-      </span>
-  {% endif %}
+  <span class="site-footer-links text-left">
+    {% include navigation.html menu='footer' display_menu_name=false list_class='list-inline' %}
+  </span>
 
 {% comment %} 
 <!--

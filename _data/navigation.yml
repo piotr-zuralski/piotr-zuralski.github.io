@@ -71,30 +71,31 @@ social_links:
     - url: https://linktr.ee/piotr_zuralski
       title: "Piotr Żuralski at linktr.ee"
 
-# footer:
-#   items:
-#     - text: About
-#       url: about
-# #     items:
-# #       - text: Overview
-# #         url: /docs/
-# #       - text: Secondary documentation page
-# #         url: /docs/two/
-# #       - text: Tertiary docs
-# #         url: /docs/three/
-# #   - text: Navigation section
-# #     url: /docs/
-# #     items:
-# #       - text: Demo link A
-# #         url: /two/a/
-# #       - text: Demo link B
-# #         url: /two/b/
-# #       - text: Demo link C
-# #         url: /two/c/
-#     - text: Legal
-#       url: 
-#       items:
-#         - text: Terms & Conditions
-#           url: legal/terms-and-conditions
-#         - text: Privacy policy
-#           url: legal/privacy-policy
+footer:
+  items:
+    - title: About
+      url: /en/about
+      ref: about
+#     items:
+#       - title: Overview
+#         url: /docs/
+#       - title: Secondary documentation page
+#         url: /docs/two/
+#       - title: Tertiary docs
+#         url: /docs/three/
+#   - title: Navigation section
+#     url: /docs/
+#     items:
+#       - title: Demo link A
+#         url: /two/a/
+#       - title: Demo link B
+#         url: /two/b/
+#       - title: Demo link C
+#         url: /two/c/
+    - title: Legal
+      url: /en/legal/
+      items:
+        - title: Terms & Conditions
+          url: legal/terms-and-conditions
+        - title: Privacy policy
+          url: legal/privacy-policy

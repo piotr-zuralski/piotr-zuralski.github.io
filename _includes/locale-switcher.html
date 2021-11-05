@@ -4,7 +4,7 @@
 <nav role="navigation" aria-label="{% include translate.html locale=locale phrase='change_language' %}"> 
 <ul>
     {% for locale in site.data.navigation.locales.items %}
-        <li class="{% if locale.locale == page.locale %}active{% endif %}">
+        <li {%- if locale.locale == page.locale %} class="active{%- endif -%}">
             <a href="{{ locale.url }}" title="{{ locale.title }}" lang="{{ locale.locale }}">
                 {{ locale.title }}
             </a>

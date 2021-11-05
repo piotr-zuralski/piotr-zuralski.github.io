@@ -8,7 +8,7 @@ permalink: /en/
 redirect_from:
   - /home.html
   - /
-ref: home
+ref: index
 
 sitemap:
   changefreq: weekly

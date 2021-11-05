@@ -1,28 +1,24 @@
 ---
-layout: page
-# date: 
-type: page
-parent_id: '0'
+description: ""
+date: 2018-06-07 11:34
 published: false
-# password: ''
-# status: draft
-categories: []
-tags: []
-# meta:
-#   inline_featured_image: '0'
-#   _edit_last: '1'
-#   _wp_page_template: default
-#   hefo_before: '0'
-#   hefo_after: '0'
-# author:
-#   login: piotr-zuralski
-#   email: piotr.zuralski@gmail.com
-#   display_name: Piotr Żuralski
-#   first_name: Piotr
-#   last_name: Żuralski
-permalink: /en/legal/privacy-policy
-previous_page: "legal/terms-and-conditions"
-# next_page: ""
+permalink: /en/legal/privacy-policy.html
+redirect_from:
+  - /legal/
+  - /en/legal/
+  - /privacy-policy/
+  - /privacy-policy.html
+ref: privacy-policy
+
+sitemap:
+  changefreq: weekly
+  priority: 0.8
+
+breadcrumbs:
+  - url: page.url
+    title: page.title
+    type: WebPage
+
 ---
 
 # Privacy policy

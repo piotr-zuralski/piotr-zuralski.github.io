@@ -35,14 +35,6 @@
       </span>
   {% endif %}
 
-    <ul class="site-footer-links">
-        <li>
-          Copyright &copy; {{ site.copyright.sinceYear }}&mdash;<span id="current-year">{{ site.time|date: '%Y' }}</span> 
-          <a href="{{ locale_page | absolute_url }}" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
-        </li>
-        <!-- <li><a href="/contact" title="Contact">Contact</a></li> -->
-    </ul>
-</footer>
 {% comment %} 
 <!--
 <div id="footerwidgets">
@@ -105,4 +97,5 @@
 </div>
 -->
 {% endcomment %}
+</footer>
 <!-- /footer.html -->

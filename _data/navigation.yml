@@ -97,5 +97,10 @@ footer:
       items:
         - title: Terms & Conditions
           url: legal/terms-and-conditions
-        - title: Privacy policy
-          url: legal/privacy-policy
+          items:
+            - title: Privacy policy
+              url: legal/privacy-policy
+              items:
+                - title: ABC
+                  url: /en/?abc
+

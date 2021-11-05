@@ -10,7 +10,7 @@
 
   {%- if menu.items -%}
     <nav>
-      <ul {% if include.list_class %}class="{{- include.list_class -}}"{% endif %}>
+      <ul {%- if include.list_class %} class="{{- include.list_class -}}"{%- endif -%}>
           {% for item in menu.items %}
           {%- assign li_attrs = [] -%}
           {%- assign a_attrs = [] -%}

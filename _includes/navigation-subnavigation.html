@@ -1,6 +1,6 @@
 <!-- navigation-subnavigation.html items: {{ include.items }} -->
-{%- if include.items -%}
-    <ul {% if include.list_class %}class="{{- include.list_class -}}"{% endif %}>
+{% if include.items %}
+    <ul {%- if include.list_class %} class="{{- include.list_class -}}"{%- endif -%}>
         {% for item in include.items %}
         <li{%- if item.url == page.url %} class="active"{%- endif -%}>
             {%- if item.url contains 'http' -%}
@@ -15,5 +15,5 @@
         </li>
         {% endfor %}
     </ul>
-{%- endif -%}
+{% endif %}
 <!-- /navigation-subnavigation.html -->

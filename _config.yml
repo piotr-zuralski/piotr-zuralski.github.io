@@ -108,6 +108,8 @@ defaults:
       timezone: Europe/London
       lang: en-GB
       locale: en
+      _lang: en-GB
+      _locale: en
   - scope:
       path: "_pages/de/"
       type: "pages"
@@ -116,6 +118,8 @@ defaults:
       timezone: Europe/Berlin
       lang: de-GE
       locale: de
+      _lang: de-GE
+      _locale: de
   - scope:
       path: "_pages/en/"
       type: "pages"
@@ -124,6 +128,8 @@ defaults:
       timezone: Europe/London
       lang: en-GB
       locale: en
+      _lang: en-GB
+      _locale: en
   - scope:
       path: "_pages/es/"
       type: "pages"
@@ -132,6 +138,8 @@ defaults:
       timezone: Europe/Madrid
       lang: es-ES
       locale: es
+      _lang: es-ES
+      _locale: es
   - scope:
       path: "_pages/pl/"
       type: "pages"
@@ -140,6 +148,8 @@ defaults:
       timezone: Europe/Warsaw
       lang: pl-PL
       locale: pl
+      _lang: pl-PL
+      _locale: pl
   # -
   #   scope:
   #     path: "posts"

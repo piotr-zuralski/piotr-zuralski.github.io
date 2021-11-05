@@ -27,7 +27,7 @@
               <a href="{{ item.url }}{%- if is_external == false -%}#ref={{- menu_name -}}{%- endif -%}" title="{{ item.title }}"{%- if is_external == true %} rel="external" target="_blank"{% endif %}>{{ item.title }}</a>
               {%- if item.item -%}
                 {% include navigation-subnavigation.html menu='{{ item.items }}' %}
-              {% endif %}
+              {% endif -%}
           </li>
           {% endfor %}
       </ul>

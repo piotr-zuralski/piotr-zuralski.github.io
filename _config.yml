@@ -119,6 +119,7 @@ defaults:
       path: "_pages/de/"
       type: "pages"
     values:
+      layout: "default"
       timezone: Europe/Berlin
       lang: de-GE
       locale: de
@@ -126,6 +127,7 @@ defaults:
       path: "_pages/en/"
       type: "pages"
     values:
+      layout: "default"
       timezone: Europe/London
       lang: en-GB
       locale: en
@@ -133,6 +135,7 @@ defaults:
       path: "_pages/es/"
       type: "pages"
     values:
+      layout: "default"
       timezone: Europe/Madrid
       lang: es-ES
       locale: es
@@ -140,6 +143,7 @@ defaults:
       path: "_pages/pl/"
       type: "pages"
     values:
+      layout: "default"
       timezone: Europe/Warsaw
       lang: pl-PL
       locale: pl

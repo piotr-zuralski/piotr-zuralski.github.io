@@ -1,22 +1,31 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="{{ site.lang|default:'en-GB' }}">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
-    <meta name="robots" content="noindex,follow,noarchive">
-    <title>Redirecting&hellip;</title>
-    <link rel="canonical" href="{{ page.redirect.to }}">
-</head>
+    <head>
+        <meta charset="{{ site.encoding|default:'UTF-8' }}">
+        <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}">
+        <meta name="Cache-Control" content="public, max-age=900, s-maxage=1800, stale-while-revalidate, proxy-revalidate, must-revalidate">
+        <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
+        <meta name="robots" content="noindex,follow,noarchive">
+        <title>Redirecting&hellip;</title>
+        <link rel="canonical" href="{{ page.redirect.to }}">
+    </head>
 
-<body>
-    <h1>Redirecting&hellip;</h1>
-    <p>
-        The document has moved <a href="{{ page.redirect.to }}">here</a>.
-    </p>
-    <script>
-        window.location = "{{ page.redirect.to }}";
-    </script>
-</body>
-
+    <body>
+        <h1>Redirecting&hellip;</h1>
+        <p>
+            The document has moved <a href="{{ page.redirect.to }}" title="Click here to get to new location">here</a>.
+        </p>
+        <script>
+            let url = "{{ page.redirect_to | default: page.redirect.to }}";
+            let q = (location.search && !location.search.indexOf('?')) ? '' : '?';
+            let h = (location.hash && !location.hash.indexOf('#')) ? '' : '#';
+            if (location.search) {
+                url += q + location.search;
+            }
+            if (location.hash) {
+                url += h + location.hash;
+            }
+            window.location = url;
+        </script>
+    </body>
 </html>

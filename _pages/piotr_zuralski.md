@@ -3,9 +3,9 @@ permalink: /piotr-zuralski/
 ref: piotr-zuralski
 ---
 
-# Hey <span aria-label="waving hand" alt="waving hand">👋</span>
+# About me
 
-I'm Piotr - Site Reliability Engineer.
+Hey, I'm Piotr - Site Reliability Engineer.
 
 {% comment %}
 <!--

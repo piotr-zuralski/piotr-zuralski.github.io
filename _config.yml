@@ -83,13 +83,6 @@ defaults:
       sitemap: false
       stylesheet: true
   - scope:
-      path: "assets/scss/*"
-    values:
-      layout: null
-      search: exclude
-      sitemap: false
-      stylesheet: true
-  - scope:
       path: "assets/js/*"
     values:
       layout: null

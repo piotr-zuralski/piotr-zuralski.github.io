@@ -22,21 +22,21 @@ menu:
     - title: Home
       url: /en/
       ref: index
-    - title: Projects
-      url: /en/projects/
-      ref: projects
-    - title: Companies
-      url: /en/companies/
-      ref: companies
-    - title: Technologies
-      url: /en/technologies/
-      ref: technologies
-    - title: Contact
-      url: /en/contact.html
-      ref: contact
-    - title: Sitemap
-      url: /en/sitemap.html
-      ref: sitemap
+    # - title: Projects
+    #   url: /en/projects/
+    #   ref: projects
+    # - title: Companies
+    #   url: /en/companies/
+    #   ref: companies
+    # - title: Technologies
+    #   url: /en/technologies/
+    #   ref: technologies
+    # - title: Contact
+    #   url: /en/contact.html
+    #   ref: contact
+    # - title: Sitemap
+    #   url: /en/sitemap.html
+    #   ref: sitemap
 
 social_links:
   items:

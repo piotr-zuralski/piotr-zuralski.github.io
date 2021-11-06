@@ -13,9 +13,14 @@ markdown_ext: "md"
 #   options: ["SMART", "FOOTNOTES"]
 #   extensions: ["strikethrough", "autolink", "table"]
 
+title: "Piotr Żuralski – Senior Engineer"
+description: "Senior Engineer, Developer, with over 10 years experience in commercial web development"
+
 url: "https://piotr-zuralski.github.io"
 repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
+twitter:
+  username: piotr_zuralski
 # author: "Piotr Żuralski"
 author: piotr-zuralski
 excerpt_separator: "<!--more-->"
@@ -38,8 +43,12 @@ social:
     - https://linktr.ee/piotr_zuralski
 # seo:
 
-title: "Piotr Żuralski – Senior Engineer"
-description: "Senior Engineer, Developer, with over 10 years experience in commercial web development"
+webmaster_verifications:
+  google: "x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM"
+  bing: "057036BF9DB13D64C6CA4552C61AC17A"
+#  alexa: 1234
+#  yandex: 1234
+#  baidu: 1234
 
 copyright:
   sinceYear: 2007
@@ -57,16 +66,6 @@ plugins_dir: _plugins
 layouts_dir: _layouts
 data_dir: _data
 includes_dir: _includes
-
-twitter:
-  username: piotr_zuralski
-
-webmaster_verifications:
-  google: "x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM"
-  bing: "057036BF9DB13D64C6CA4552C61AC17A"
-#  alexa: 1234
-#  yandex: 1234
-#  baidu: 1234
 
 # Filtering Content
 show_drafts: false

@@ -8,14 +8,14 @@ locales:
       url:      /pl/
       lang:     pl-PL
       locale:   pl
-    - title:    Deutsch (German)
-      url:      /de/
-      lang:     de-GE
-      locale:   de
     - title:    español (Spanish)
       url:      /es/
       lang:     es-ES
       locale:   es
+    - title:    Deutsch (German)
+      url:      /de/
+      lang:     de-GE
+      locale:   de
 
 menu:
   items:

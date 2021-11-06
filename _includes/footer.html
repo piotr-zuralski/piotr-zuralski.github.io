@@ -1,7 +1,7 @@
 <!-- footer.html -->
 {%- assign locale = page.locale | default: site.locale -%}
 {%- assign locale_page = '/' | append: locale | append: '/' -%}
-<footer class="footer page-footer">
+<footer class="footer page-footer border-top border-gray-light">
   {% comment %} 
     <!-- <ul class="site-footer-links right">
         <li><a href="/about" title="About">About</a></li>
@@ -25,6 +25,12 @@
   <span class="site-footer-links text-left">
     {% include navigation.html menu='footer' display_menu_name=false list_class='list-inline' %}
   </span>
+
+  {% if site.github.private != true and site.github.license %}
+      <div class="text-right text-gray">
+          This site is open source. {% github_edit_link "Improve this page" %}.
+      </div>
+  {% endif %}
 
 {% comment %} 
 <!--

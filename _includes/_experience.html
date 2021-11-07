@@ -1,0 +1,6 @@
+{%- assign locale = page.locale | default: site.locale -%}
+{%- assign currentYear = 'now'|date: '%Y' -%}
+{%- assign experience = currentYear | minus: site.experience.sinceYear -%}
+
+{%- assign site.experience.currentYear = currentYear -%}
+{%- assign site.experience.experience = experience -%}

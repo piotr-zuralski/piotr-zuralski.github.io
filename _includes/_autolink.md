@@ -1,6 +1,4 @@
-{%- assign locale = page.locale | default: site.locale -%}
-{% assign currentYear = 'now'|date: '%Y' %}
-{% assign experience = currentYear | minus: site.experience.sinceYear %}
+{% include _experience.html %}
 
-{% include _acronyms.md %}
-{% include _links.md %}
+{% include _autolink_acronyms.md %}
+{% include _autolink_links.md %}

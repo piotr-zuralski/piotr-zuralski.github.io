@@ -6,15 +6,13 @@
     <!-- <ul class="site-footer-links right">
         <li><a href="/about" title="About">About</a></li>
     </ul> -->
-  {% endcomment %}
+  {% endcomment -%}
 
   <!--
     page.locale: "{{ page.locale }}", page.lang: "{{ page.lang }}"<br/>
     site.locale:  "{{ site.locale }}", site.lang:  "{{ site.lang }}"<br/>
     page.ref: "{{ page.ref }}"<br/>
-    
-    {%- assign currentYear = 'now'|date: '%Y' -%}
-    var experience: {{ site.experience.sinceYear }}<br/>currentYear var: "{{ currentYear }}"<br/> experience: "{{ currentYear | minus: site.experience.sinceYear }}"
+    {% include _experience.html %}
   -->
 
   <span class="site-footer-copyright text-center">

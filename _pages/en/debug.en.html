@@ -64,15 +64,9 @@ ref: debug
 <pre>
 {% comment %}comment{% endcomment %}<br/>
 <!-- html comment --><br/>
-site.experience: "{{ site.experience }}"<br/>
-site.experience.sinceYear: "{{ site.experience.sinceYear }}"<br/>
-{%- assign currentYear = 'now'|date: '%Y' -%}
+{% include _experience.html %}
 currentYear: "{{ currentYear }}"<br/>
-{%- assign experience = currentYear | minus: site.experience.sinceYear -%}
 experience: "{{ experience }}"<br/>
----<br/>
-{%- assign site.experience.currentYear = currentYear -%}
-{%- assign site.experience.experience = experience -%}
 site.experience: "{{ site.experience }}"<br/>
 </pre>
 

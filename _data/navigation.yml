@@ -1,21 +1,21 @@
 locales:
   items:
-    - title:    English
-      url:      /en/
-      lang:     en-GB
-      locale:   en
-    - title:    polski (Polish)
-      url:      /pl/
-      lang:     pl-PL
-      locale:   pl
-    - title:    español (Spanish)
-      url:      /es/
-      lang:     es-ES
-      locale:   es
-    - title:    Deutsch (German)
-      url:      /de/
-      lang:     de-GE
-      locale:   de
+    - title: English
+      url: /en/
+      lang: en-GB
+      locale: en
+    - title: polski (Polish)
+      url: /pl/
+      lang: pl-PL
+      locale: pl
+    - title: español (Spanish)
+      url: /es/
+      lang: es-ES
+      locale: es
+    - title: Deutsch (German)
+      url: /de/
+      lang: de-GE
+      locale: de
 
 menu:
   items:
@@ -40,22 +40,23 @@ menu:
 
 social_links:
   items:
-    - url: https://github.com/piotr-zuralski
-      title: "Piotr Żuralski at GitHub"
-    - url: https://nofluffjobs.com/profile/piotrzuralski
-      title: "Piotr Żuralski at No Fluff Jobs"
-    - url: https://keybase.io/piotr_zuralski/
-      title: "Piotr Żuralski at KeyBase"
-    - url: https://gitlab.com/piotr-zuralski
-      title: "Piotr Żuralski at GitLab"
-    - url: https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
-      title: "Piotr Żuralski at StackOverflow"
     - url: https://www.linkedin.com/in/piotrzuralski/
       title: "Piotr Żuralski at LinkedIn"
+    - url: https://github.com/piotr-zuralski
+      title: "Piotr Żuralski at GitHub"
     - url: https://profile.codersrank.io/user/piotr-zuralski
       title: "Piotr Żuralski at CodersRank"
+    - url: https://nofluffjobs.com/profile/piotrzuralski
+      title: "Piotr Żuralski at No Fluff Jobs"
+    - url: https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
+      title: "Piotr Żuralski at StackOverflow"
+    - url: https://gitlab.com/piotr-zuralski
+      title: "Piotr Żuralski at GitLab"
     - url: https://www.hackerrank.com/piotr_zuralski
       title: "Piotr Żuralski at HackerRank"
+    - url: https://gitconnected.com/piotr-zuralski
+      title: "Piotr Żuralski at Gitconnected"
+
     - url: https://twitter.com/piotr_zuralski
       title: "Piotr Żuralski at Twitter"
     - url: https://www.crunchbase.com/person/piotr-%C5%BBuralski
@@ -72,12 +73,17 @@ social_links:
       title: "Piotr Żuralski at About.me"
     - url: https://linktr.ee/piotr_zuralski
       title: "Piotr Żuralski at linktr.ee"
+    - url: https://keybase.io/piotr_zuralski/
+      title: "Piotr Żuralski at KeyBase"
 
 footer:
-#   items:
-#     - title: About
-#       url: /en/about
-#       ref: about
+  items:
+    - title: About
+      url: /piotr-zuralski/
+      ref: about
+    - title: Privacy policy
+      url: /en/legal/terms-and-conditions
+      ref: privacy-policy
 # #     items:
 # #       - title: Overview
 # #         url: /docs/

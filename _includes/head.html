@@ -7,12 +7,15 @@
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
 {% seo %}
-<link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
-<link rel="stylesheet" type="text/css" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}"/>
+<link rel="preconnect" href="https://www.googletagmanager.com/"/>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com/"/>
+<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
+<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}"/>
+<link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}"/>
 <link rel="robots" type="text/plain" href="{{ '/robots.txt' | relative_url }}"/>
-<link rel="author" type="text/plain" href="/humans.txt"/>
-<link rel="sitemap" type="application/xml" href="/sitemap.xml"/>
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="/feed.xml"/>
+<link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}"/>
+<link rel="manifest" type="application/json" href="{{ '/manifest.json' | relative_url }}"/>
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="{{ '/feed.xml' | relative_url }}"/>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

@@ -44,3 +44,5 @@ Site Reliability Engineer, Senior Software Engineer, Technical Lead, Tech Lead, 
 
 - [Piotr Żuralski @ GitHub](https://github.com/piotr-zuralski)
 - [piotr-zuralski.github.io](https://piotr-zuralski.github.io/)
+
+{% include _autolink.md %}

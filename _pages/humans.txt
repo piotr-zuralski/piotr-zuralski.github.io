@@ -8,6 +8,8 @@ published: true
 
 /* SITE */
 	Last update: {{ 'now' | date: '%Y/%m/%d' }}
-	Language: English / Polski / Deutsch / Español
+  Standards: HTML5, CSS3, Javascript
+  Software: Jekyll
+	Language: English
 	Doctype: HTML5
 	IDE: Visual Studio Code

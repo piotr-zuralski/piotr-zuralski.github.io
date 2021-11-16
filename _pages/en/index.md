@@ -1,6 +1,6 @@
 ---
 title: Home
-description: "Senior Engineer, with 13+ years experience in commercial web development"
+description: "Senior Engineer, with 13+ years of experience in commercial web development"
 date: 2018-06-07 11:34
 last_modified_at: 2019-06-06 11:34
 published: true
@@ -23,12 +23,12 @@ breadcrumbs:
 {% include _experience.html %}
 <!-- # Senior Engineer -->
 
-Backend developer with {{ experience }} years of experience in commercial web development.<br/>
+Backend developer with {{ experience }}+ years of experience in commercial web development.<br/>
 Eager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for Continuous Integration with Continuous Deployment. Constantly delivers high quality code.<br/>
 
 ## Summary
 
-  - {{ experience }} years experience with commercial [PHP] programming
+  - {{ experience }}+ years of experience with commercial [PHP] programming
   - OOP PHP Developer ([PHP 5], [PHP 7])
   - Over 7 years experience with [PHP MVC Frameworks][PHP MVC framework]
   - RDBMS experience: [PostgreSQL] (4 years), [MySQL] (3 years), [SQLite] (2 years)

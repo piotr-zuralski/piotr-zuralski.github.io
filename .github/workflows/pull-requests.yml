@@ -39,28 +39,28 @@ jobs:
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
-            
+
             await github.issues.addAssignees({
               owner: repo.owner,
               repo: repo.repo,
               issue_number: pr.number,
               assignees: [repo.owner],
             });
-            
+
             await github.pulls.requestReviewers({
               owner: repo.owner,
               repo: repo.repo,
               pull_number: pr.number,
               reviewers: [repo.owner],
             });
-            
+
             await github.pulls.createReview({
               owner: repo.owner,
               repo: repo.repo,
               pull_number: pr.number,
               event: 'APPROVE',
             });
-                        
+
             await github.pulls.merge({
               merge_method: "squash",
               owner: repo.owner,

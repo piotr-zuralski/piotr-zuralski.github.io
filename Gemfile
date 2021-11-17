@@ -10,9 +10,8 @@ group :jekyll_plugins do
   gem "jekyll-readme-index"
   gem "jekyll-titles-from-headings"
   gem "jekyll-relative-links"
-  
+
   gem "jekyll-include-cache"
-  gem "jekyll-feed"
   gem "jekyll-seo-tag"
   gem "jekyll-sitemap"
   # gem "jekyll-watch"
@@ -31,10 +30,9 @@ gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem "jekyll"
 gem "liquid-c"
 gem "github-pages", group: :jekyll_plugins
-gem "jekyll-admin", group: :jekyll_plugins
 gem "jekyll-compose", group: :jekyll_plugins
 
-gem "unidecode" 
-gem "sequel" 
+gem "unidecode"
+gem "sequel"
 gem "htmlentities"
 gem "github-pages-health-check"

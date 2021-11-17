@@ -21,27 +21,8 @@ repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
 twitter:
   username: piotr_zuralski
-# author: "Piotr Żuralski"
 author: piotr-zuralski
 excerpt_separator: "<!--more-->"
-
-social:
-  links:
-    - https://keybase.io/piotr_zuralski/
-    - https://github.com/piotr-zuralski
-    - https://gitlab.com/piotr-zuralski
-    - https://stackoverflow.com/users/3580681/piotr-%C5%BBuralski?tab=profile
-    - https://www.linkedin.com/in/piotrzuralski/
-    - https://profile.codersrank.io/user/piotr-zuralski
-    - https://www.hackerrank.com/piotr_zuralski
-    - https://twitter.com/piotr_zuralski
-    - https://www.crunchbase.com/person/piotr-%C5%BBuralski
-    - http://www.goldenline.pl/piotr-zuralski/
-    - https://medium.com/@piotr.zuralski
-    - https://www.slideshare.net/Piotruralski
-    - https://about.me/piotr-zuralski
-    - https://linktr.ee/piotr_zuralski
-# seo:
 
 webmaster_verifications:
   google: "x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM"
@@ -49,6 +30,8 @@ webmaster_verifications:
 #  alexa: 1234
 #  yandex: 1234
 #  baidu: 1234
+
+google_analytics: UA-2579235-14
 
 copyright:
   sinceYear: 2007
@@ -151,12 +134,19 @@ defaults:
 exclude:
   - .github/
   - .history/
+  - .jekyll-cache
+  - .pre-commit-config.yaml
   - Gemfile
   - Gemfile.lock
-  - TODO.md
-  - README.md
   - Makefile
-  - .jekyll-cache
+  - node_modules/
+  - package.json
+  - Pipfile
+  - Pipfile.lock
+  - README.md
+  - TODO.md
+  - vendor/
+  - yarn.lock
 
 include:
   - _pages
@@ -183,7 +173,6 @@ plugins:
   - jekyll-include-cache
   - jekyll-archives
   - jekyll-sitemap
-  - jekyll-feed
   - jekyll-seo-tag
   - jekyll-time-to-read
   - jekyll-redirect-from

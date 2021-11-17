@@ -1,0 +1,724 @@
+{
+    "$schema": "https://github.com/jsonresume/resume-schema/raw/v1.0.0/schema.json",
+    "meta": {
+        "theme": "stackoverflow"
+    },
+    "basics": {
+        "name": "Piotr Żuralski",
+        "label": "Senior Engineer",
+        "image": "https://avatars.githubusercontent.com/u/20515925?v=4",
+        "email": "piotr@zuralski.net",
+        "phone": "",
+        "url": "https://piotr.zuralski.net/",
+        "summary": "Backend developer with 13+ years of experience in commercial web development.\nEager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for  Continuous Integration with Continuous Deployment. Constantly delivers high-quality code.",
+        "location": {
+            "address": "",
+            "postalCode": "80-288",
+            "city": "Gdańsk",
+            "region": "pomorskie",
+            "countryCode": "PL"
+        },
+        "locationAsString": "Gdańsk, Poland",
+        "yearsOfExperience": 13,
+        "profiles": [
+            {
+                "network": "LinkedIn",
+                "url": "https://www.linkedin.com/in/piotrzuralski/",
+                "username": "piotrzuralski"
+            },
+            {
+                "network": "GitHub",
+                "username": "piotr-zuralski",
+                "url": "https://github.com/piotr-zuralski"
+            },
+            {
+                "network": "Stack Overflow",
+                "url": "https://stackoverflow.com/users/3580681/piotr-zuralski?tab=profile",
+                "username": "piotr-zuralski"
+            },
+            {
+                "network": "CodersRank",
+                "url": "https://profile.codersrank.io/user/piotr-zuralski",
+                "username": "piotr-zuralski"
+            }
+        ]
+    },
+    "work": [
+        {
+            "position": "Senior Site Reliability Engineer",
+            "company": "Jamf",
+            "startDate": "2020-10-31",
+            "summary": "- application performance optimization\n- solution analysis\n- supporting with expert knowledge\n- software development, deployment, verification, validation",
+            "url": "https://jamf.com",
+            "location": "Katowice, Poland (remote)",
+            "highlights": [
+                "technological and quality supervision over software development"
+            ],
+            "keywords": [
+                "git",
+                "GitLab",
+                "GitLab CI",
+                "GitHub",
+                "Amazon Web Services",
+                "Atlassian Jira",
+                "Atlassian Confluence",
+                "HashiCorp Terraform",
+                "Docker",
+                "Kubernetes",
+                "Helm",
+                "RabbitMQ",
+                "Redis",
+                "Elasticsearch",
+                "Elasticsearch-Logstash-Kibana",
+                "Jenkins",
+                "Python",
+                "Shell scripts",
+                "Spinnaker",
+                "PHP",
+                "PHP 7",
+                "Grafana",
+                "Amazon Aurora",
+                "AWS RDS",
+                "Linux",
+                "MacOS",
+                "MySQL",
+                "AWS ElastiCache",
+                "AWS EC2",
+                "AWS EKS",
+                "AWS S3",
+                "AWS ECR",
+                "AWS MQ",
+                "AWS VPC",
+                "Nginx",
+                "Visual Studio Code",
+                "System and Organization Controls (SOC) 2",
+                "ISO-27001",
+                "Continuous Integration",
+                "Continuous Delivery",
+                "Continuous Deployment",
+                "Prometheus",
+                "OpenTelemetry",
+                "Vagrant",
+                "Jaeger",
+                "Compliance",
+                "Security"
+            ]
+        },
+        {
+            "company": "Ingenico",
+            "endDate": "2020-06-30",
+            "highlights": [],
+            "position": "Senior Software Engineer",
+            "startDate": "2018-10-31",
+            "summary": "- application performance optimization\n- migration to Azure cloud\n- solution analysis\n- creating technical documentation\n- software development, testing, verification\n- supporting with expert knowledge\n- technological and quality supervision over software development\n- web application development, deployment\n\nUsed technologies: PHP, MySQL, JBoss, Docker, Azure, Git, SugarCRM, Shell, Ansible",
+            "url": "https://ingenico.com/",
+            "keywords": [
+                "git",
+                "Microsoft Azure",
+                "Azure DevOps",
+                "Azure Pipelines",
+                "Azure Web Apps",
+                "Azure Monitor",
+                "Azure Linux Virtual Machines",
+                "Azure Application Insights",
+                "Azure VPN Gateway",
+                "Azure Virtual Network",
+                "CRM",
+                "MySQL",
+                "Linux",
+                "Windows",
+                "Ansible",
+                "Atlassian Jira",
+                "Atlassian Confluence",
+                "Docker",
+                "Shell scripts",
+                "PHP",
+                "PHP 7",
+                "Apache HTTP Server",
+                "Nginx",
+                "Red Hat JBoss",
+                "Java EE",
+                "Java Enterprise Edition",
+                "ISO-9001",
+                "Compliance",
+                "Security"
+            ]
+        },
+        {
+            "company": "Berlingske Media",
+            "endDate": "2018-10-31",
+            "highlights": [],
+            "position": "Senior Software Engineer / Technical Lead",
+            "startDate": "2016-07-31",
+            "summary": "- developing, organizing and managing a team of several developers\n- supporting with expert knowledge\n- technological and quality supervision over software development\n- web application development, deployment\n- application performance optimization\n- software development, testing, verification, validation and risk analysis\n- solution analysis\n- estimating the workload of commissioned tasks and projects\n- creating technical documentation and supervision over documentation\n\nUsed technologies: PHP, Symfony, AWS, MySQL, Redis, Git, Elasticsearch, Jira, Docker, GitHub, RabbitMQ, JavaScript, Varnish, Behat, BlackFire, Jenkins",
+            "url": "https://berlingskemedia.dk/",
+            "keywords": [
+                "git",
+                "GitHub",
+                "Atlassian Jira",
+                "Atlassian Confluence",
+                "Puppet",
+                "Docker",
+                "JavaScript",
+                "TypeScript",
+                "jQuery",
+                "Varnish",
+                "Behat",
+                "PHPUnit",
+                "BlackFire",
+                "RabbitMQ",
+                "Redis",
+                "Linux",
+                "MySQL",
+                "Elasticsearch",
+                "Elasticsearch-Logstash-Kibana",
+                "NewRelic",
+                "Shell scripts",
+                "Jenkins",
+                "PHP",
+                "PHP 7",
+                "Symfony",
+                "Amazon Web Services",
+                "AWS RDS",
+                "AWS EC2",
+                "AWS S3",
+                "AWS VPC",
+                "AWS SQS",
+                "Nginx",
+                "DevOps",
+                "TeamLead",
+                "PHPStan",
+                "Security"
+            ]
+        },
+        {
+            "company": "Sii Poland",
+            "position": "Senior Software Engineer",
+            "startDate": "2016-07-31",
+            "url": "https://sii.pl/",
+            "ignore_experience": true,
+            "summary": "",
+            "highlights": [
+                "working for the company’s clients",
+                "supporting with expert knowledge",
+                "technical interviews - stationary and on-line",
+                "presales process support - analyse, estimations",
+                "reporting"
+            ],
+            "keywords": [
+                "ISO-9001",
+                "ISO-27001",
+                "ISO-13485",
+                "Common Criteria",
+                "Windows",
+                "Compliance",
+                "Security"
+            ]
+        },
+        {
+            "company": "Hexagram",
+            "endDate": "2016-06-30",
+            "highlights": [],
+            "position": "Senior Engineer",
+            "startDate": "2015-10-31",
+            "summary": "As part of a project team, creating new features, implementing new features, maintenance and creating a new marketing platform for company’s clients. \n\nUsed technologies/tools: PHP 5, Symfony 2, Laravel 5, Doctrine 2, MySQL, Memcache, Redis, Git, HTML5, JavaScript, REST API, AWS - Amazon Web Services, Facebook Ads API, Wordpress API, Google Analytics API, Outbrain Amplify API.\n\nProjects:\n− Enterprise Ad Manager - marketing platform based on Symfony 2 (REST API) and AngularJS\n− Enterprise Ad Manager v2 - creating new marketing platform based on Laravel 5 (Facebook Ads API, Wordpress API, Outbrain Amplify API)",
+            "url": "https://hexagram.com/",
+            "keywords": [
+                "PHP",
+                "PHP 7",
+                "PHP 5",
+                "Symfony",
+                "Laravel",
+                "Doctrine 2",
+                "Redis",
+                "Memcached",
+                "HTML5",
+                "git",
+                "Amazon Web Services",
+                "AWS Redshift",
+                "AWS RDS",
+                "AWS EC2",
+                "AWS S3",
+                "AWS VPC",
+                "AWS CodeDeploy",
+                "Nginx",
+                "MySQL",
+                "JavaScript",
+                "REST API",
+                "oAuth",
+                "Atlassian Bitbucket",
+                "Atlassian Jira",
+                "Atlassian Confluence",
+                "Facebook Ads API",
+                "Wordpress API",
+                "Google API",
+                "Google Analytics API",
+                "Outbrain Amplify API",
+                "AngularJS",
+                "Docker",
+                "TypeScript",
+                "jQuery",
+                "Behat",
+                "PHPUnit",
+                "Linux"
+            ]
+        },
+        {
+            "company": "zuralski.net",
+            "ignore_experience": true,
+            "highlights": [],
+            "position": "Owner",
+            "startDate": "2015-10-31",
+            "url": "https://zuralski.net/",
+            "summary": ""
+        },
+        {
+            "company": "Invicta",
+            "endDate": "2015-10-31",
+            "highlights": [],
+            "position": "Senior Developer",
+            "startDate": "2014-01-31",
+            "summary": "As part of Agile project team, creating new websites and developing new functionality for existing websites of Medical Laboratories and Clinics\n\nUsed technologies/tools: PHP 5, Symfony 2, Doctrine 2, Twig, PostgreSQL 9, Redis, git, HTML5, Bower, Twitter Bootstrap, JavaScript, jQuery, SOAP, REST, JSON, Behat, Redmine, Jenkins, Apache Ant, PHPUnit, PHP Depend, PHP Mess Detector, PHP Copy/Paste Detector, oAuth 2.0, Jaspersoft iReport, Capistrano.\n\n\nResponsibilities: creating PHP dev and prod app environment, managing dev and prod servers.\n\n\nprojects:\n * patient portal for an extensive service to exchange medical and personal data with clinic's partners\n * website for creating inquiry polls, integration via oAuth 2.0 with other company's website and desktop applications\n * website for ordering and receiving laboratory, microbiology and cytology test results with advanced administration for partners (reports, invoices, partners units, staff and patients management)\n * website for IVF recipients with extensive options to find desired donor\n * Single sign-on application integrated with 3 different user authentication data source backends, with JSON REST API to receive user data, privileges and documents (regulations, granted permission for data processing)",
+            "url": "https://invicta.pl/",
+            "keywords": [
+                "PHP",
+                "PHP 7",
+                "PHP 5",
+                "Symfony",
+                "Jaspersoft iReport",
+                "Doctrine 2",
+                "Capistrano",
+                "Twig",
+                "PostgreSQL",
+                "PostgreSQL 8",
+                "PostgreSQL 9",
+                "Redis",
+                "Memcached",
+                "HTML5",
+                "git",
+                "Bootstrap",
+                "JavaScript",
+                "jQuery",
+                "Bower",
+                "NPM",
+                "composer",
+                "REST API",
+                "SOAP",
+                "JSON",
+                "Behat",
+                "Redmine",
+                "Jenkins",
+                "Apache Ant",
+                "PHING",
+                "PHPUnit",
+                "PHP Depend",
+                "PHP Mess Detector",
+                "PHP Copy/Paste Detector",
+                "oAuth",
+                "Nginx",
+                "Docker",
+                "TypeScript",
+                "Linux",
+                "Windows"
+            ]
+        },
+        {
+            "company": "Blue Media SA",
+            "endDate": "2013-12-31",
+            "highlights": [],
+            "position": "Senior PHP Developer",
+            "startDate": "2011-05-31",
+            "summary": "As part of a R&D team creating new features, designing, development, deployment, and projects maintenance.\n\nUsed technologies/tools: PHP 5, Zend Framework 1, Doctrine 2, PostgreSQL 8, Memcache, FPDF, mPDF, XML, XHTML, JavaScript, jQuery, SOAP WebServices, Subversion (SVN), git, GitLab, Atlassian Jira, Atlassian Confluence, GNU Privacy Guard (GPG), Electronic signature\n\nprojects: \n- own company CRM - deployment and maintenance\n- BlueCash.pl - development - system for fast interbank transfers\n- Kaska.pl - development, deployment and maintaince - system for temporary loans\n- BlueFinance.pl - development, deployment and maintaince\n- Inseco.pl Insurance Platform - design, development, deployment and maintaince\n-- cooperation with insurance companies, implementation of new products - REST, SOAP WebServices\n-- technical support for external partners of Insurance Platform\n-- data exchange integration with external systems (REST API, SSH, FTP, SOAP)",
+            "url": "https://bluemedia.pl/",
+            "keywords": [
+                "PHP",
+                "PHP 5",
+                "Zend Framework 1",
+                "Doctrine 2",
+                "PostgreSQL",
+                "PostgreSQL 8",
+                "Redis",
+                "Memcached",
+                "FPDF",
+                "mPDF",
+                "XML",
+                "CSV",
+                "SSH",
+                "FTP",
+                "XHTML",
+                "HTML5",
+                "JavaScript",
+                "jQuery",
+                "SOAP",
+                "Subversion",
+                "git",
+                "GitLab",
+                "Atlassian Jira",
+                "Atlassian Confluence",
+                "GNU Privacy Guard",
+                "Nginx",
+                "Apache HTTP Server",
+                "composer",
+                "REST API",
+                "JSON",
+                "PHPUnit",
+                "oAuth",
+                "Linux",
+                "Windows"
+            ]
+        },
+        {
+            "company": "Gratka Technologie Sp. z o.o.",
+            "endDate": "2011-01-31",
+            "highlights": [],
+            "position": "PHP Developer",
+            "startDate": "2009-05-31",
+            "summary": "As part of Agile project team, creating new websites and developing new functionality for existing websites, belonging to a group of content websites of Polskapresse\n\nUsed technologies/tools: PHP 5, MySQL 5, MongoDB, Memcached, PHP Unit, Smarty, Subversion (SVN), Mercurial (hg), JavaScript.\n\nProjects:\n- development of online payment service\n- development of extended platform for building websites without IT support and distributing content around platform websites, \"WebSpiro\" system\n- development of internal websites supporting work of Polskapresse Customer Service Office\n- development of internal websites supporting work of Scrum Masters\n- creating platform \"Hermes\" to use for mobile marketing via SMS Premium",
+            "url": "http://gratka-technologie.pl",
+            "keywords": [
+                "PHP",
+                "PHP 5",
+                "Mercurial (hg)"
+            ]
+        },
+        {
+            "company": "Wirtualna Polska",
+            "endDate": "2009-04-30",
+            "highlights": [],
+            "position": "Junior Developer",
+            "startDate": "2008-07-31",
+            "summary": "As part of project team, creating new websites, developing new functionality for existing websites and maintenance of produced websites, optimization of created websites for high-traffic, belonging to a group of Lifestyle and Entertainment group of websites from the first Polish web portal, Wirtualna Polska.\n\nUsed technologies/tools: PHP 4, MySQL 5, Oracle, SLAMD, XHTML 1.0, Concurrent Versions System (CVS), JavaScript. \n\nProjects:\n- creation of CentralaGier.pl\n- development of Ulubiency.wp.pl\n- creation of Niewiarygodne.pl\n- creation of Horoskop.wp.pl\n- development of Film.wp.pl\n- development of Kobieta.wp.pl\n- development of NoCoTy.pl",
+            "url": "http://onas.wp.pl/",
+            "keywords": [
+                "PHP",
+                "PHP 4"
+            ]
+        },
+        {
+            "company": "Engine Sp. z o.o.",
+            "endDate": "2008-06-30",
+            "highlights": [],
+            "position": "Junior Web Application Developer",
+            "startDate": "2007-10-31",
+            "summary": "Creating websites using PHP 4 and PHP 5, website implementation, website maintenance, minor administrative tasks with FreeBSD, repair and ordering of new hardware and supplies.\n\nUsed technologies/tools: PHP 4 and 5, PostgreSQL, MySQL 5, Smarty, Apache 2, Concurrent Versions System (CVS), XHTML 1.0, JavaScript.\n\nProjects:\n- development of Heyah.pl, Mixanki.pl (Polska Telefonia Cyfrowa, one of mobile providers), creation of mini-websites for Heyah.pl\n- development of BMW.pl, MINI.com.pl, BMWFs.pl, BMW-Motorrad.pl, BMW-Partnerzy.pl and 16 websites of Authorised BMW Dealers\n- development of Oetker.pl\n- creation of ZmienSie.activia.pl, Danacol.pl (for Danone)\n- development of ClearChannel.com.pl \n- development of Multimedia.pl (one of ISP)\n- development of Hanza-Hotel.com.pl\n- development of AstorHotel.pl\n- development of FarmFrites.pl\n- development of FFP.pl",
+            "url": "http://engine.pl/",
+            "keywords": [
+                "PHP",
+                "PHP 4",
+                "PHP 5"
+            ]
+        },
+        {
+            "company": "LCC Sp. z o.o.",
+            "ignore_experience": true,
+            "position": "Customer Advisor",
+            "startDate": "2006-10-31",
+            "endDate": "2007-06-30",
+            "location": "",
+            "name": "",
+            "description": "",
+            "summary": "Working for Telekomunikacja Polska S.A.\n\nPhone support for Telekomunikacja Polska (one of the top 10 ISP companies) clients: receiving reports of failures and damages, opening and handling of problem reports, individual problem solving with client during the call, cooperation with technical departments, monitoring customers' expectations and problems during the process of customer service.\n\nTechnical support and maintenance of services: Neostrada (ADSL based Internet connection), VoIP,  TP dial-up number, TP Internet packages, TP email account.\n\nServicing tickets from customers in PROVISIO system and PeopleSoft.",
+            "highlights": []
+        }
+    ],
+    "volunteer": [
+        {
+            "organization": "Związek Harcerstwa Rzeczypospolitej",
+            "position": "Scout, Volunteer",
+            "url": "https://zhr.pl/",
+            "startDate": "2004-08-31",
+            "endDate": "2004-08-31",
+            "summary": "\"Caritas school pencils\" action - collection of school supplies for children from poor families.",
+            "highlights": []
+        },
+        {
+            "organization": "Związek Harcerstwa Rzeczypospolitej",
+            "position": "Scout, Volunteer",
+            "url": "https://zhr.pl",
+            "startDate": "2001-12-31",
+            "endDate": "2001-12-31",
+            "summary": "\"Kilo\" action - collecting food for Christmas for poor families.",
+            "highlights": []
+        },
+        {
+            "organization": "Związek Harcerstwa Rzeczypospolitej",
+            "position": "Scout",
+            "url": "https://zhr.pl",
+            "startDate": "2000-12-31",
+            "endDate": "2008-12-31",
+            "summary": "Activity in the 70th Scout Team in Sopot (70 Sopocka Drużyna Harcerzy im. Zawiszy Czarnego - Sulima)",
+            "highlights": []
+        }
+    ],
+    "education": [
+        {
+            "institution": "WSB University in Gdańsk",
+            "area": "Software Development",
+            "studyType": "Bachelor of Engineering - BE",
+            "startDate": "2017-12-31",
+            "endDate": "2021-03-30",
+            "gpa": "",
+            "courses": [],
+            "summary": ""
+        },
+        {
+            "institution": "1st Specialised Secondary School in Sopot, Poland",
+            "area": "Information Technology",
+            "studyType": "A-level",
+            "startDate": "2003-12-31",
+            "endDate": "2006-12-31",
+            "gpa": "",
+            "courses": []
+        }
+    ],
+    "skills": [
+        {
+            "name": "PHP",
+            "level": "master",
+            "rating": 5,
+            "yearsOfExperience": 13,
+            "keywords": [
+                "PHP",
+                "PHP 4",
+                "PHP 5",
+                "PHP 7",
+                "Doctrine 2",
+                "Symfony",
+                "Zend Framework 1",
+                "Laravel",
+                "PHPUnit",
+                "Behat",
+                "PHPSpec",
+                "Codeception",
+                "composer",
+                "PHPStan"
+            ]
+        },
+        {
+            "name": "Web Services",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "HTML",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Web Applications",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "MySQL",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "JSON",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Continuous Integration",
+            "level": "advanced",
+            "keywords": [
+                "GitLab",
+                "Jenkins",
+                "Travis CI",
+                "GitHub Actions"
+            ]
+        },
+        {
+            "name": "Continuous Deployment",
+            "level": "advanced",
+            "keywords": [
+                "GitLab",
+                "Jenkins",
+                "Spinnaker"
+            ]
+        },
+        {
+            "name": "Compliance",
+            "level": "intermediate",
+            "keywords": [
+                "ISO-27001",
+                "ISO-9001",
+                "ISO-13485",
+                "Common Criteria",
+                "System and Organization Controls (SOC) 2",
+                "GDPR"
+            ]
+        },
+        {
+            "name": "Code Review",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Unix",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Ubuntu",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Memcached",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "SOAP",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "PostgreSQL",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "OOP",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "REST",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Eclipse",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Scrum",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Nginx",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Agile",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "User Experience",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Web Development",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "SEO",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "E-commerce",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Version control",
+            "level": "advanced",
+            "keywords": [
+                "git",
+                "Mercurial (hg)",
+                "Subversion (SVN)",
+                "Concurrent Versions System (CVS)"
+            ]
+        },
+        {
+            "name": "Usability",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "Jira",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "AJAX",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "JavaScript",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "XHTML",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "MVC",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "jQuery",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "XML",
+            "level": "",
+            "keywords": []
+        },
+        {
+            "name": "HTML5",
+            "level": "",
+            "keywords": []
+        }
+    ],
+    "languages": [
+        {
+            "language": "Polish",
+            "fluency": "Native speaker"
+        },
+        {
+            "language": "English",
+            "fluency": "Advanced (C2)"
+        },
+        {
+            "language": "German",
+            "fluency": "Intermediate (B1)"
+        },
+        {
+            "language": "Spanish",
+            "fluency": "Beginner (A2)"
+        }
+    ],
+    "references": [
+        {
+            "name": "Kamil Rutkowski",
+            "reference": "Piotr is a great developer and highly skilled \r\nHis work is always high quality and delivered on time. It's a pleasure to work with him."
+        },
+        {
+            "name": "Krystian Wesołowski",
+            "reference": "Piotra, jako programistę wyróżniają dwie cechy, które z pewnością zasługują na uznanie. Pierwszą jest szukanie najlepszego, docelowego rozwiązania. Stara się realizować zadania w taki sposób, aby przygotować  funkcjonalność \"na lata\", nie \"na chwilę\". Drugą jest zrozumienie biznesu i umiejętność przełożenia technologii na biznes i odwrotnie. Serdecznie polecam Piotra, jako doświadczonego programistę."
+        }
+    ],
+    "awards": [],
+    "interests": [
+        
+    ],
+    "publications": [],
+    "certificates": [],
+    "projects": []
+}

@@ -14,7 +14,7 @@
           {% for item in menu.items -%}
           {%- if (item.environment == nil or (item.environment != nil and (item.environment == jekyll.environment))) -%}
           {%- if item.display == nil %}
-            <li{%- if item.url == page.url %} class="active"{%- endif -%}> 
+            <li{%- if item.url == page.url %} class="active"{%- endif -%}>
                 {%- if item.url contains 'http' -%}
                   {%- assign is_external = true -%}
                 {%- else -%}

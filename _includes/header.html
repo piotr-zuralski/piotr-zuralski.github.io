@@ -4,7 +4,7 @@
 {%- assign locale_page = '/' | append: locale | append: '/' -%}
 {% if page.url == '/' or page.url == locale_page %}
     {% assign heading = 'h1' %}
-{% endif %}    
+{% endif %}
 {% if site.title and site.title != page.title %}
     <{{ heading }} class="no-anchorjs"><a href="{{ locale_page | absolute_url }}" title="{{ site.title }}">{{ site.title }}</a></{{ heading }}>
 {% endif %}

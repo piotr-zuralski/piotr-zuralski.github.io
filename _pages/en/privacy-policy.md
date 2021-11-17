@@ -1,6 +1,5 @@
 ---
-description: ""
-date: 2018-06-07 11:34
+date: 2015-06-07 11:34
 published: false
 permalink: /en/legal/privacy-policy.html
 redirect_from:
@@ -22,3 +21,5 @@ breadcrumbs:
 ---
 
 # Privacy policy
+
+{% include _autolink.md %}

@@ -6,16 +6,57 @@
 <meta name="Last-Modified" content="{{ page.last_modified_at | default: site.time | date_to_xmlschema }}">
 <meta name="HandheldFriendly" content="true">
 <meta name="format-detection" content="telephone=no">
+<meta property="_environment" content="{{ jekyll.environment }}">
+<meta property="X-Frame-Options" content="DENY">
+<meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191919" media="(prefers-color-scheme: dark)">
 {% seo %}
-<link rel="preconnect" href="https://www.googletagmanager.com/"/>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com/"/>
+<link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://cdn.polyfill.io" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin="anonymous"/>
+<link rel="preconnect" href="https://browser-update.org" crossorigin="anonymous"/>
 <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
 <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}"/>
-<link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}"/>
-<link rel="robots" type="text/plain" href="{{ '/robots.txt' | relative_url }}"/>
-<link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}"/>
-<link rel="manifest" type="application/json" href="{{ '/manifest.json' | relative_url }}"/>
+<!--
+{% for file in site.static_files %}
+  {%- if file.extname == '.css' or file.extname == '.scss' -%}
+    <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"/>
+  {% endif %}
+{%- endfor -%}
+-->
+{% comment -%}
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-icon-114.png" type="image/png">
+<link rel="icon" href="/favicon.ico"/>
+<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+{%- endcomment %}
+
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="{{ '/feed.xml' | relative_url }}"/>
+{% assign locale = include.locale | default: page.locale | default: site.locale %}
+{% for locale in site.data.navigation.locales.items %}
+    {%- if locale.locale != page.locale -%}
+      <link rel="alternate" type="text/html" href="{{ locale.url | relative_url }}" hreflang="{{ locale.locale }}" rev="{{ '/' | append: page.locale | append: '/' | relative_url }}"/>
+    {%- endif %}
+{% endfor %}
+<link rel="archives" type="text/html" href="{{ '/en/sitemap.html' | relative_url }}"/>
+<link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}"/>
+{% comment -%}<!-- <link rel="icon shortcut" href="/favicon.ico"/> -->{%- endcomment %}
+<link rel="manifest" type="application/json" href="{{ '/manifest.json' | relative_url }}"/>
+<link rel="robots" type="text/plain" href="{{ '/robots.txt' | relative_url }}"/>
+<link rel="search" type="application/opensearchdescription+xml" href="{{ '/opensearch.xml' | relative_url }}"/>
+<link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}"/>
+<link rel="sidebar" type="text/html" href="#sidebar"/>
+
+{% if jekyll.environment == "development" %}
+  {% if page.tags %}
+    {% for tag in page.tags %}
+      <link rel="tag" type="text/html" href="{{ '/en/tag/' | append: tag | append: '.html' | relative_url }}"/>
+    {% endfor %}
+  {% endif %}
+{% endif %}
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}

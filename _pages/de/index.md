@@ -5,6 +5,7 @@ date: 2018-06-07 11:34
 last_modified_at: 2019-06-06 11:34
 published: true
 permalink: /de/
+locale: de
 ref: index
 
 sitemap:
@@ -19,3 +20,5 @@ breadcrumbs:
 ---
 
 # Senior-Software-Entwickler, Softwareentwickler
+
+{% include _autolink.md %}

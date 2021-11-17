@@ -22,8 +22,8 @@ xsl: true
 {% for page in pages %}<url>
 <loc>{{ page.url | replace:'/index.html','/' | absolute_url | xml_escape }}</loc>
 <lastmod>{{ page.last_modified_at | default: "now" | date_to_xmlschema }}</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.5</priority>
+<changefreq>{{ page.sitemap.changefreq | default: "weekly" }}</changefreq>
+<priority>{{ page.sitemap.priority | default: "0.5" }}</priority>
 </url>
 {% endfor %}
 {% assign static_files = page.static_files | where_exp:'page','page.sitemap != false' | where_exp:'page','page.name != "404.html"' %}

@@ -1,0 +1,15 @@
+---
+layout: null
+search: exclude
+sitemap: true
+permalink: /opensearch.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/" xmlns:moz="http://www.mozilla.org/2006/browser/search/">
+  <ShortName>{{ site.name | default: site.title }}</ShortName>
+  <Description>Search</Description>
+  <Url type="text/html" method="get" template="{{ '/search.html' | absolute_url }}?locale=en&amp;s={searchTerms}"/>
+  <InputEncoding>UTF-8</InputEncoding>
+  <moz:SearchForm>{{ '/' | absolute_url }}</moz:SearchForm>
+  <Url type="application/opensearchdescription+xml" rel="self" template="{{ '/opensearch.xml' | absolute_url }}"/>
+</OpenSearchDescription>

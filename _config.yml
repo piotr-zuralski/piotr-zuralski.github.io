@@ -14,7 +14,7 @@ markdown_ext: "md"
 #   extensions: ["strikethrough", "autolink", "table"]
 
 title: "Piotr Żuralski – Senior Engineer"
-description: "Senior Engineer, Developer, with over 10 years experience in commercial web development"
+description: "Senior Engineer, Developer, with 13+ years of experience in commercial web development"
 
 url: "https://piotr-zuralski.github.io"
 repository: "piotr-zuralski/piotr-zuralski.github.io"
@@ -77,14 +77,14 @@ defaults:
   - scope:
       path: "assets/css/*"
     values:
-      layout: null
+      layout: ""
       search: exclude
       sitemap: false
       stylesheet: true
   - scope:
       path: "assets/js/*"
     values:
-      layout: null
+      layout: ""
       search: exclude
       sitemap: false
       javascript: true
@@ -160,6 +160,23 @@ exclude:
 
 include:
   - _pages
+
+jekyll-archives:
+  enabled:
+    - tags
+    - categories
+  layouts:
+    year: archive-year
+    month: archive-month
+    day: archive-day
+    category: archive-category
+    tag: archive-tag
+  permalinks:
+    # year: '/:year/'
+    # month: '/:year/:month/'
+    # day: '/:year/:month/:day/'
+    tag: '/tag/:name.html'
+    category: '/category/:name/'
 
 plugins:
   - jekyll-commonmark

@@ -21,10 +21,10 @@ group :jekyll_plugins do
   gem "jekyll-last-modified-at"
   gem "jekyll-redirect-from"
   gem "jekyll-import"
-  gem "jekyll-archives"
   gem "jekyll-commonmark"
 end
 
+gem "jekyll-archives"
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 # gem "jekyll", github: "jekyll/jekyll"

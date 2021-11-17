@@ -1,23 +1,38 @@
-{% if jekyll.environment == "development" %}
-<div class="hidden">
-  <p>jekyll debug:</p>
-  <p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
+<pre>
+  {% comment %}comment{% endcomment %}<br/>
+  <!-- html comment --><br/>
+  jekyll.environment: {{ jekyll.environment }}<br/>
+  page.locale: {{ page.locale | jsonify }}, page.lang: {{ page.lang | jsonify }}<br/>
+  site.locale: {{ site.locale | jsonify }}, site.lang: {{ site.lang | jsonify }}<br/>
+  page.ref: {{ page.ref | jsonify }}<br/>
+  page.tag: {{ page.tag | jsonify }}, page.tags: {{ page.tags | jsonify }}<br/>
+  {% include _experience.html %}
+</pre>
+
+<span class="label label-info">
+  <a href="javascript:void()" onclick="toogleDebug();">show jekyll debug</a>
+</span>
+
+<div style="display: none;" id="jekyll-debug-container">
+  <p>jekyll debug: <a href="javascript:void();" onclick="jekyllDebugFormat();">format jekyll</a></p>
+  <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p>
   <p>page: <pre class="jekyll-debug" id="jekyll-debug-page">{{ page | jsonify | escape }}</pre></p>
+  <p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
   <p>layout: <pre class="jekyll-debug" id="jekyll-debug-layout">{{ layout | jsonify | escape }}</pre></p>
   <p>paginator: <pre class="jekyll-debug" id="jekyll-debug-paginator">{{ paginator | jsonify | escape }}</pre></p>
   <p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
-  <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p>
-</div>
-
-<div>
-  {% comment %} 
-  {% endcomment %}
-  <!-- -->
-  {% include _experience.html %}
-  experience: "{{ site.experience }}"
+  <p>static_files: <pre class="jekyll-debug" id="jekyll-debug-static_files">{{ site.static_files | jsonify | escape }}</pre></p>
 </div>
 
 <script>
+    function toogleDebug() {
+        var debug = document.getElementById('jekyll-debug-container');
+        if (debug.style.display == 'none') {
+            debug.style.display = 'block';
+        } else {
+            debug.style.display = 'none';
+        }
+    }
     function jekyllDebugFormat() {
       let list = document.getElementsByClassName('jekyll-debug');
       let element;
@@ -32,4 +47,3 @@
       });
     }
 </script>
-{% endif %}

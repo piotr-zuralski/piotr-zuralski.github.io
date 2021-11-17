@@ -3,6 +3,7 @@ description: "Ingeniero Senior, con 13 años de experiencia en desarrollo web co
 date: 2018-06-07 11:34
 published: true
 permalink: /es/
+locale: es
 redirect_from:
 ref: index
 
@@ -19,3 +20,4 @@ breadcrumbs:
 
 # Ingeniero de programación superior, Desarrollador de software
 
+{% include _autolink.md %}

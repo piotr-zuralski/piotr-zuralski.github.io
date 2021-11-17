@@ -1,11 +1,11 @@
 <!-- sidebar -->
-<aside class="container__sidebar">
+<aside class="container__sidebar" id="sidebar">
   {% assign locale = page.locale | default: site.locale %}
 
   {%- if site.data.navigation.locales -%}
     <aside id="locale-switcher-2" class="widget widget_locale-switcher">
       {% include locale-switcher.html locale=locale %}
-    </aside>
+    </aside><br/>
   {%- endif -%}
 
   <aside id="search-2" class="widget widget_search">
@@ -17,12 +17,28 @@
               <input type="submit" id="searchsubmit" value="Search" />
           </div>
       </form>
-  </aside>
+  </aside><br/>
   
   <aside id="text-4" class="widget widget_text">
       <div class="textwidget">
         {% include navigation.html menu='social_links' heading='h3' %}
       </div>
-  </aside>
+  </aside><br/>
+  
+  {% if jekyll.environment == "development" %}
+    <aside id="text-5" class="widget widget_text">
+        <div class="textwidget">
+          <h3 class="no-anchorjs">Tag Cloud</h1>
+            {% assign tags = site.tags | sort %}
+            {% for tag in tags %}
+              <span class="site-tag">
+                  <a href="{{ locale }}/tag/{{ tag | first | slugify }}/" title="{{ tag }}" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                        {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
+                  </a>
+              </span>
+            {% endfor %}
+        </div>
+    </aside><br/>
+  {% endif %}
   <!-- /sidebar -->
 </aside>

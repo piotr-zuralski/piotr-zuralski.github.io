@@ -12,23 +12,19 @@
     <nav>
       <ul {%- if include.list_class %} class="{{- include.list_class -}}"{%- endif -%}>
           {% for item in menu.items %}
-          {%- assign li_attrs = [] -%}
-          {%- assign a_attrs = [] -%}
-          {%- if item.url == page.url -%}
-            {%- assign class = li_attrs[class] | push: 'active' -%}
-          {%- endif -%}
-          <!--   li_attrs: "{{ li_attrs }}", {{ li_attrs | join: "= " }} -->
-          <li{%- if item.url == page.url %} class="active"{%- endif -%}>
-              {%- if item.url contains 'http' -%}
-                {%- assign is_external = true -%}
-              {%- else -%}
-                {%- assign is_external = false -%}
-              {%- endif -%}
-              <a href="{{ item.url }}{%- if is_external == false -%}#ref={{- menu_name -}}{%- endif -%}" title="{{ item.title }}"{%- if is_external == true %} rel="external" target="_blank"{% endif %}>{{ item.title }}</a>
-              {%- if item.items %}
-                {% include navigation-subnavigation.html items=item.items %}
-              {% endif -%}
-          </li>
+          {% if item.environment == null or (item.environment == jekyll.environment) %}
+            <li{%- if item.url == page.url %} class="active"{%- endif -%}>
+                {%- if item.url contains 'http' -%}
+                  {%- assign is_external = true -%}
+                {%- else -%}
+                  {%- assign is_external = false -%}
+                {%- endif -%}
+                <a href="{{ item.url }}{%- if is_external == false -%}#ref={{- menu_name -}}{%- endif -%}" title="{{ item.title }}"{%- if is_external == true %} rel="external" target="_blank"{% endif %}>{{ item.title }}</a>
+                {%- if item.items %}
+                  {% include navigation-subnavigation.html items=item.items %}
+                {% endif -%}
+            </li>
+            {% endif -%}
           {% endfor %}
       </ul>
     </nav>

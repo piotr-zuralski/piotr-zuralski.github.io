@@ -1,6 +1,6 @@
 {% if site.google_analytics %}
   <script async="" src="https://www.googletagmanager.com/gtag/js?id={{ site.google_analytics }}"></script>
   <script>
-    gtag('config', '{{ site.google_analytics }}');
+    gtag('config', '{{ site.google_analytics }}', {'anonymize_ip': true, 'forceSSL': true});
   </script>
 {% endif %}

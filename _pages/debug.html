@@ -45,43 +45,5 @@ ref: debug
     {% endfor %}
 </ul>
 
-<p>
-    site.locale: {{ site.locale | jsonify }}<br/>
-    page.locale: {{ page.locale | jsonify }}<br/>
-</p>
-
-<div>
-  <p>jekyll debug: <a href="javascript:void();" onclick="jekyllDebugFormat();">format jekyll</a></p>
-  <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p>
-  <p>page: <pre class="jekyll-debug" id="jekyll-debug-page">{{ page | jsonify | escape }}</pre></p>
-  <p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
-  <p>layout: <pre class="jekyll-debug" id="jekyll-debug-layout">{{ layout | jsonify | escape }}</pre></p>
-  <p>paginator: <pre class="jekyll-debug" id="jekyll-debug-paginator">{{ paginator | jsonify | escape }}</pre></p>
-  <p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
-  <p>static_files: <pre class="jekyll-debug" id="jekyll-debug-static_files">{{ site.static_files | jsonify | escape }}</pre></p>
-</div>
-
-<pre>
-{% comment %}comment{% endcomment %}<br/>
-<!-- html comment --><br/>
-{% include _experience.html %}
-currentYear: "{{ currentYear }}"<br/>
-experience: "{{ experience }}"<br/>
-site.experience: "{{ site.experience }}"<br/>
-</pre>
-
-<script>
-    function jekyllDebugFormat() {
-      let list = document.getElementsByClassName('jekyll-debug');
-      let element;
-      Array.from(list).forEach(function(item) {
-          element = document.getElementById(item.id);
-          // Pretty-printed JSON (indented 4 spaces).
-          element.textContent = JSON.stringify(
-              JSON.parse(
-                  element.textContent
-              ), null, 4
-          );
-      });
-    }
-</script>
+{% include debug.html %}
+{% include _autolink.md %}

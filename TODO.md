@@ -18,4 +18,6 @@
   - <https://forestry.io/blog/creating-a-multilingual-blog-with-jekyll/>
   - <https://polyglot.untra.io/seo/>
 
+- <https://jekyllcodex.org/without-plugins/>
+
 - <https://talk.jekyllrb.com/t/how-do-you-make-jekyll-execute-liquid-variables-in-front-matter/1638/>

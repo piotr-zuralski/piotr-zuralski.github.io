@@ -1,4 +1,7 @@
 <!-- footer.html -->
+{% if jekyll.environment == "development" %}
+  {% include debug.html %}
+{% endif %}
 {%- assign locale = page.locale | default: site.locale -%}
 {%- assign locale_page = '/' | append: locale | append: '/' -%}
 <footer class="footer page-footer border-top border-gray-light">
@@ -7,13 +10,6 @@
         <li><a href="/about" title="About">About</a></li>
     </ul> -->
   {% endcomment -%}
-
-  <!--
-    page.locale: "{{ page.locale }}", page.lang: "{{ page.lang }}"<br/>
-    site.locale:  "{{ site.locale }}", site.lang:  "{{ site.lang }}"<br/>
-    page.ref: "{{ page.ref }}"<br/>
-    {% include _experience.html %}
-  -->
 
   <span class="site-footer-copyright text-center">
       Copyright &copy; {{ site.copyright.sinceYear }}&mdash;<span id="current-year">{{ site.time | date: '%Y' }}</span>

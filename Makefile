@@ -9,9 +9,9 @@ clean:
 	rm -rf _site/ src/_site/ output/
 
 install: clean
-	sudo apt-get install ruby ruby-all-dev gem -yq >/dev/null 
-	sudo gem install bundler >/dev/null
-	sudo gem update >/dev/null
+	# sudo apt-get install ruby ruby-all-dev gem -yq >/dev/null 
+	# sudo gem install bundler >/dev/null
+	# sudo gem update >/dev/null
 	bundle config
 	# bundle config set --local path vendor/bundle
 	bundle install >/dev/null 
@@ -19,7 +19,10 @@ install: clean
 	# bundle exec jekyll serve --incremental --verbose --trace
 
 # install-and-serve: install serve
-install-and-serve: serve
+install-and-serve: clean serve
+
+lint:
+	bundle exec jekyll doctor
 
 test:
 	# act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04
@@ -28,16 +31,18 @@ test:
 	# ACTIONS_RUNNER_DEBUG=true
 	act -P ubuntu-latest=nektos/act-environments-ubuntu:18.04 
 
-s serve:
+s s-dev serve:
 	# JEKYLL_ENV=development 
 	bundle exec jekyll serve --incremental --verbose --trace
 
+s-prod serve-prod:
+	JEKYLL_ENV=production bundle exec jekyll serve
+
 build: build-prod
 
-build-dev: install
+b b-dev build-dev: install
 	# JEKYLL_ENV=development 
 	bundle exec jekyll build --incremental --verbose --trace
 
-build-prod: install
-	# JEKYLL_ENV=production 
-	bundle exec jekyll build --incremental --verbose --trace
+b-prod build-prod: install
+	JEKYLL_ENV=production bundle exec jekyll build

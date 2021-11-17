@@ -16,9 +16,9 @@ tags: [sitemap]
 {%- assign pages = site.posts | concat: site.pages | where: "locale", locale | sort: 'title' -%}
 {% if pages %}
 <ul>
-  {%- for page in pages -%} 
+  {%- for page in pages -%}
     {%- assign title = page.title | jsonify | replace: '"', '' | replace: 'null', '' | strip -%}
-    {%- if page.search != 'exclude' and page.sitemap != false and title != '' and title != 'null' -%} 
+    {%- if page.search != 'exclude' and page.sitemap != false and title != '' and title != 'null' -%}
       <li><a href="{{ page.url | replace: 'index.html', '' | relative_url }}" title="{{ title }}">{{ title }}
       {% if jekyll.environment == "development" %}
        ({{ page.locale | jsonify }})

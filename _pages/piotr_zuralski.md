@@ -18,8 +18,8 @@ Here are some ideas to get you started:
 - 💬 Ask me about ...
 - 📫 How to reach me: ...
 - 😄 Pronouns: ...
-- ⚡ Fun fact: ... 
---> 
+- ⚡ Fun fact: ...
+-->
 {% endcomment %}
 
 🔭  &nbsp; I'm currently working on more automations (Kubernetes, monitoring, CI/CD)<br>
@@ -33,7 +33,7 @@ PHP, Symfony, Shell Script/Bash, Python, Html5, JavaScript, Markdown, git, Linux
 
 {% if jekyll.environment == "production" %}<!-- {% endif %}
 
-<a href="#"><img src="https://github-readme-stats.vercel.app/api?username=piotr-zuralski&show_icons=true&theme=gotham" alt="Piotr Żuralski contributions stats" height="125px" width="33%" /></a> 
+<a href="#"><img src="https://github-readme-stats.vercel.app/api?username=piotr-zuralski&show_icons=true&theme=gotham" alt="Piotr Żuralski contributions stats" height="125px" width="33%" /></a>
 
 <a href="#"><img src="https://github-readme-streak-stats.herokuapp.com/?user=piotr-zuralski&theme=dark" alt="Piotr Żuralski contributions stats" height="125px" width="33%" /></a>
 

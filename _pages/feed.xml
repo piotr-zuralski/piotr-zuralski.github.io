@@ -58,7 +58,7 @@ permalink: /feed.xml
   {% endunless %}
   {% if posts %}
     {% assign posts = posts | sort: "date" | reverse %}
-  {% else %}  
+  {% else %}
     {% assign posts = [] %}
   {% endif %}
   {% assign posts_limit = site.feed.posts_limit | default: 10 %}

@@ -20,6 +20,7 @@ build-dependencies: clean
 # sudo gem update >/dev/null
 	pipenv shell || true
 	pipenv install
+	pre-commit install
 	yarn install
 	wget "https://gist.github.com/piotr-zuralski/757f25c60197178bb5f9688bf0603276/raw/5e59c115b5f5db0d39ceac9b0d6755eba1db66ed/resume.json" -O _includes/resume.json
 	yarn run resume export --theme stackoverflow --resume _includes/resume.json _includes/resume.html

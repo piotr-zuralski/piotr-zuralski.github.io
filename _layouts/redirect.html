@@ -16,7 +16,7 @@
             The document has moved <a href="{{ page.redirect.to }}" title="Click here to get to new location">here</a>.
         </p>
         <script>
-            let url = "{{ page.redirect.to }}";
+            let url = document.querySelector("link[rel='canonical']").getAttribute("href");
             let q = (location.search && !location.search.indexOf('?')) ? '' : '?';
             let h = (location.hash && !location.hash.indexOf('#')) ? '' : '#';
             if (location.search) {

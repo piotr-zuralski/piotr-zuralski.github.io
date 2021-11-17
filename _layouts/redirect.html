@@ -1,9 +1,7 @@
 <!doctype html>
 <html lang="{{ site.lang|default:'en-GB' }}">
     <head>
-        <meta charset="{{ site.encoding|default:'UTF-8' }}">
-        <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}">
-        <meta name="Cache-Control" content="public, max-age=900, s-maxage=1800, stale-while-revalidate, proxy-revalidate, must-revalidate">
+        {% include page-common-head.html %}
         <meta http-equiv="refresh" content="0; url={{ page.redirect.to }}">
         <meta name="robots" content="noindex,follow,noarchive">
         <title>Redirecting&hellip;</title>

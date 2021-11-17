@@ -25,8 +25,6 @@ menu:
     - title: Resume
       url: /en/resume.html
       ref: resume
-      expression: jekyll.environment == "development"
-      environment: development
     # - title: Projects
     #   url: /en/projects/
     #   ref: projects
@@ -42,8 +40,6 @@ menu:
     - title: Sitemap
       url: /en/sitemap.html
       ref: sitemap
-      expression: jekyll.environment == "development"
-      environment: development
 
 social_links:
   items:
@@ -56,34 +52,45 @@ social_links:
     - url: https://profile.codersrank.io/user/piotr-zuralski
       title: "Piotr Żuralski at CodersRank"
     - url: https://nofluffjobs.com/profile/piotrzuralski
-      title: "Piotr Żuralski at No Fluff Jobs"
+      title: "Piotr Żuralski at NoFluffJobs"
     - url: https://stackoverflow.com/users/3580681/piotr-zuralski?tab=profile
       title: "Piotr Żuralski at StackOverflow"
     - url: https://www.hackerrank.com/piotr_zuralski
       title: "Piotr Żuralski at HackerRank"
+      display: false
     - url: https://gitconnected.com/piotr-zuralski
       title: "Piotr Żuralski at Gitconnected"
 
     - url: https://twitter.com/piotr_zuralski
       title: "Piotr Żuralski at Twitter"
+      display: false
     - url: https://www.crunchbase.com/person/piotr-%C5%BBuralski
       title: "Piotr Żuralski at Crunchbase"
+      display: false
     - url: http://www.goldenline.pl/piotr-zuralski/
       title: "Piotr Żuralski at GoldenLine"
+      display: false
     - url: https://medium.com/@piotr.zuralski
       title: "Piotr Żuralski at Medium"
+      display: false
     - url: https://dev.to/piotr_zuralski
       title: "Piotr Żuralski at Dev.to"
+      display: false
     - url: https://www.slideshare.net/Piotruralski
       title: "Piotr Żuralski at SlideShare"
-    # - url: https://about.me/piotr-zuralski
-    #   title: "Piotr Żuralski at About.me"
-    # - url: https://linktr.ee/piotr_zuralski
-    #   title: "Piotr Żuralski at linktr.ee"
+      display: false
+    - url: https://about.me/piotr-zuralski
+      title: "Piotr Żuralski at About.me"
+      display: false
+    - url: https://linktr.ee/piotr_zuralski
+      title: "Piotr Żuralski at linktr.ee"
+      display: false
     - url: https://keybase.io/piotr_zuralski/
       title: "Piotr Żuralski at KeyBase"
+      display: false
     - url: https://gitlab.com/piotr-zuralski
       title: "Piotr Żuralski at GitLab"
+      display: false
 
 footer:
   items:

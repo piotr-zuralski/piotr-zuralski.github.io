@@ -12,8 +12,9 @@
     <nav>
       <ul {%- if include.list_class %} class="{{- include.list_class -}}"{%- endif -%}>
           {% for item in menu.items %}
-          {% if item.environment == null or (item.environment == jekyll.environment) %}
-            <li{%- if item.url == page.url %} class="active"{%- endif -%}>
+          {% if (item.environment == nil or (item.environment != nil and (item.environment == jekyll.environment))) %}
+          {% if item.display == nil %}
+            <li{%- if item.url == page.url %} class="active"{%- endif -%}> 
                 {%- if item.url contains 'http' -%}
                   {%- assign is_external = true -%}
                 {%- else -%}
@@ -24,6 +25,7 @@
                   {% include navigation-subnavigation.html items=item.items %}
                 {% endif -%}
             </li>
+            {% endif -%}
             {% endif -%}
           {% endfor %}
       </ul>

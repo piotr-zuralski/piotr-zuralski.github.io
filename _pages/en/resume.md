@@ -9,6 +9,6 @@ tags: ["curriculum vitae", "cv"]
 
 # Resume
 
-Temporary available <a href="https://registry.jsonresume.org/piotr-zuralski" title="resume" target="_blank" rel="me">resume</a>.
+{% include resume.html %}
 
 {% include _autolink.md %}

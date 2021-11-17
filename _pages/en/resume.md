@@ -10,5 +10,3 @@ tags: ["curriculum vitae", "cv"]
 # Resume
 
 {% include resume.html %}
-
-{% include _autolink.md %}

@@ -1,4 +1,5 @@
 SHELL := /bin/bash
+.DEFAULT_GOAL := lint-build-test
 .PHONY: lint-build-test
 default: lint-build-test
 

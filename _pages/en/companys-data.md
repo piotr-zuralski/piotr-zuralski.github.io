@@ -1,5 +1,5 @@
 ---
-description: "Data on business owner zuralski.net Piotr Żuralski"
+description: "Data on sole proprietorship zuralski.net Piotr Żuralski"
 date: 2015-10-05 10:35
 last_modified_at: 2021-10-30 10:35
 published: true
@@ -19,6 +19,7 @@ Tax ID: (NIP/VAT-ID): PL5851426606<br />
 REGON number: 362536148<br />
 Registry: <abbr title="Central Register and Information on Economic Activity (pl. Centralna Ewidencja i Informacja o Działalności Gospodarczej)">CEIDG</abbr><br />
 Registration authority: Minister of Economy (pl. Minister Gospodarki)<br />
+Legal form: sole proprietorship<br />
 Incorporated: 05-10-2015<br />
 
 <abbr title="International Bank Account Number">IBAN</abbr>: PL 30 1050 1764 1000 0092 8608 6062<br />

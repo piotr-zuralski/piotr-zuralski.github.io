@@ -31,8 +31,11 @@ author:
   twitter: piotr_zuralski
   github: piotr-zuralski
 
-social:
+seo:
   name: Piotr Żuralski
+  publisher:
+    type: Person
+    name: Piotr Żuralski
   links:
     - https://registry.jsonresume.org/piotr-zuralski
     - https://www.linkedin.com/in/piotrzuralski/

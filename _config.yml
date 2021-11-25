@@ -21,11 +21,13 @@ repository: "piotr-zuralski/piotr-zuralski.github.io"
 github_username: "piotr-zuralski"
 twitter:
   username: piotr_zuralski
-author: piotr-zuralski
 excerpt_separator: "<!--more-->"
 
-social:
-  # name: Piotr Żuralski
+author:
+  name: Piotr Żuralski
+  twitter: piotr_zuralski
+# social:
+  # 
   links:
     - https://registry.jsonresume.org/piotr-zuralski
     - https://www.linkedin.com/in/piotrzuralski/

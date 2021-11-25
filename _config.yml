@@ -25,7 +25,7 @@ author: piotr-zuralski
 excerpt_separator: "<!--more-->"
 
 social:
-  name: Piotr Żuralski
+  # name: Piotr Żuralski
   links:
     - https://registry.jsonresume.org/piotr-zuralski
     - https://www.linkedin.com/in/piotrzuralski/

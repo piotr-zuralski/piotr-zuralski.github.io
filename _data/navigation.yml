@@ -65,7 +65,10 @@ social_links:
       title: "Piotr Żuralski at CodeWars"
     - url: https://angel.co/u/piotr-zuralski
       title: "Piotr Żuralski at AngelList"
-
+      
+    - url: https://www.codementor.io/@piotrzuralski
+      title: "Piotr Żuralski at CodeMentor"
+      display: false
     - url: https://twitter.com/piotr_zuralski
       title: "Piotr Żuralski at Twitter"
       display: false

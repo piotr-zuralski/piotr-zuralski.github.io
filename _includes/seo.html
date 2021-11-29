@@ -13,7 +13,7 @@
 {%- endif %}
 {%- assign author = site.data.authors[author_name] %}
 <meta name="author" content="{{ author.name }}"/>
-<meta name="description" content="{{ page.description }}"/>
+<meta name="description" content="{{ page.excerpt | default: site.description }}"/>
 <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"/>
 {% if site.google_site_verification -%}
 <meta name="google-site-verification" content="{{ site.google_site_verification }}"/>
@@ -36,7 +36,7 @@
 {% endif -%}
 {% endif -%}
 <meta name="generator" content="Jekyll {{ jekyll.version }}"/>
-<meta property="og:description" content="{{ page.description }}"/>
+<meta property="og:description" content="{{ page.excerpt | default: site.description }}"/>
 {% if seo_tag.image -%}
 <meta property="og:image" content="{{ seo_tag.image.path }}"/>
 {% if seo_tag.image.alt -%}
@@ -65,14 +65,14 @@
 
 {% if seo_tag.image -%}
 <meta property="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "
-  summary_large_image" }}"/>
+ summary_large_image" }}"/>
 {% else -%}
 <meta property="twitter:card" content="summary"/>
 {% endif -%}
 {% if author.twitter -%}
 <meta property="twitter:creator" content="@{{ author.twitter | remove:'@' }}"/>
 {% endif -%}
-<meta property="twitter:description" content="{{ page.description }}"/>
+<meta property="twitter:description" content="{{ page.excerpt | default: site.description }}"/>
 {% if seo_tag.image -%}
 <meta property="twitter:image" content="{{ seo_tag.image.path }}"/>
 {% endif -%}
@@ -185,7 +185,7 @@
         "publisher": {
           "@id": {%- if author.type == "Organization" %}{{ '/' | absolute_url | append: '#organization' | jsonify }}{% else %}{{ '/' | absolute_url | append: '#person' | jsonify }}{% endif %}
         },
-        "description": {{ page.description | jsonify }},
+        "description": {{ page.excerpt | default: site.description  | jsonify }},
         "isPartOf": {
           "@id": {{ '/' | absolute_url | append: '#webpage' | jsonify }}
         },

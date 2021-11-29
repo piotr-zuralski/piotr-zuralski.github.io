@@ -494,3 +494,4 @@ $RECYCLE.BIN/
 
 vendor/
 .bundle/
+.history/

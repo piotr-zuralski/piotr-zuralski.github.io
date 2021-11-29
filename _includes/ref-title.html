@@ -1,0 +1,8 @@
+{%- if include.ref -%}
+  {%- assign _locale = include.locale | default: page.locale -%}
+  {%- assign _pages = site.posts | concat: site.pages | concat: site.collections -%}
+  {%- assign _page = _pages | where: 'locale', _locale | where: 'ref', include.ref | first -%}
+  {%- if _page.title -%}
+  {{ _page.title }}
+  {%- endif -%}
+{%- endif -%}

@@ -1,0 +1,19 @@
+---
+layout: null
+search: exclude
+sitemap: false
+permalink: /.well-known/security.txt
+published: true
+---
+Canonical: {{ '/.well-known/security.txt' | absolute_url }}
+Contact: https://keybase.io/piotr_zuralski
+Contact: https://twitter.com/piotr_zuralski
+
+# OpenPGP key
+Encryption: https://github.com/piotr-zuralski.gpg
+Encryption: https://keybase.io/piotr_zuralski
+{% comment %}
+Encryption: openpgp4fpr:5f2de5521c63a801ab59ccb603d49de44b29100f
+{% endcomment %}
+
+Preferred-Languages: en, pl

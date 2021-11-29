@@ -7,16 +7,17 @@ piotr-zuralski:
   image: https://gravatar.com/avatar/9b06f3431adec60bef1540a479e3c49e
   picture: https://gravatar.com/avatar/9b06f3431adec60bef1540a479e3c49e
   web: https://piotr.zuralski.net/
-  url: https://piotr.zuralski.net/
-  github: piotr-zuralski
-  gitlab: piotr-zuralski
-  twitter: piotr_zuralski
-  social:
-    # github: piotr-zuralski
-    # gitlab: piotr-zuralski
-    # twitter: piotr_zuralski
-    - url: https://mastodon.social/@piotr_zuralski
+  url: https://piotr.zuralski.net/piotr-zuralski/
+  # github: piotr-zuralski
+  # gitlab: piotr-zuralski
+  # twitter: piotr_zuralski
+  # social:
+  #   # github: piotr-zuralski
+  #   # gitlab: piotr-zuralski
+  #   # twitter: piotr_zuralski
+  #   - url: https://mastodon.social/@piotr_zuralski
   seo:
+    type: Person
     links:
       - https://registry.jsonresume.org/piotr-zuralski
       - https://www.linkedin.com/in/piotrzuralski/

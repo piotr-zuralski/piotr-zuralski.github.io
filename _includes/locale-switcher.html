@@ -5,7 +5,7 @@
 <ul>
     {% for locale in site.data.navigation.locales.items %}
         <li {%- if locale.locale == page.locale %} class="active"{%- endif -%}>
-            <a href="{{ locale.url }}" title="{{ locale.title }}" lang="{{ locale.locale }}" hreflang="{{ locale.locale }}">
+            <a href="{% include ref-url.html ref=page.ref locale=locale.locale default=locale.url -%}" title="{{ locale.title }}" lang="{{ locale.locale }}" hreflang="{{ locale.locale }}">
                 {{ locale.title }}
             </a>
         </li>

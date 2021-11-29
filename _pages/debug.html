@@ -19,14 +19,16 @@ ref: debug
 
 <p>static_files stylesheet</p>
 <ul>
-    {% for file in site.static_files | where: "stylesheet", "true" %}
+    {%- assign static_files_stylesheet = site.static_files | where: "stylesheet", "true" -%}
+    {% for file in static_files_stylesheet %}
         <li><a href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"">{{ file.path }}?v={{ file.modified_time | date: '%s' }}</a></li>
     {% endfor %}
 </ul>
 
 <p>static_files javascript</p>
 <ul>
-    {% for file in site.static_files | where: "javascript", "true" %}
+    {%- assign static_files_javascript = site.static_files | where: "javascript", "true" -%}
+    {% for file in static_files_javascript %}
         <li><a href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"">{{ file.path }}?v={{ file.modified_time | date: '%s' }}</a></li>
     {% endfor %}
 </ul>

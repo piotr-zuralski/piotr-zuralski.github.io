@@ -13,62 +13,22 @@ markdown_ext: "md"
 #   options: ["SMART", "FOOTNOTES"]
 #   extensions: ["strikethrough", "autolink", "table"]
 
+author: piotr-zuralski
 title: "Piotr Żuralski – Senior Engineer"
 description: "Senior Engineer, Developer, with 13+ years of experience in commercial web development"
+excerpt_separator: "<!--more-->"
 
 url: https://piotr-zuralski.github.io
 repository: piotr-zuralski/piotr-zuralski.github.io
 github_username: piotr-zuralski
 
-twitter:
-  username: piotr_zuralski
-  card: summary
-
-excerpt_separator: "<!--more-->"
-
-author:
-  name: Piotr Żuralski
-  twitter: piotr_zuralski
-  github: piotr-zuralski
-
-seo:
-  name: Piotr Żuralski
-  publisher:
-    type: Person
-    name: Piotr Żuralski
-  links:
-    - https://registry.jsonresume.org/piotr-zuralski
-    - https://www.linkedin.com/in/piotrzuralski/
-    - https://github.com/piotr-zuralski
-    - https://profile.codersrank.io/user/piotr-zuralski
-    - https://nofluffjobs.com/profile/piotrzuralski
-    - https://stackoverflow.com/users/3580681/piotr-zuralski?tab=profile
-    - https://stackoverflow.com/cv/piotr-zuralski
-    - https://stackoverflow.com/story/piotr-zuralski
-    - https://www.hackerrank.com/piotr_zuralski
-    - https://gitconnected.com/piotr-zuralski
-    - https://twitter.com/piotr_zuralski
-    - https://www.crunchbase.com/person/piotr-%C5%BBuralski
-    - http://www.goldenline.pl/piotr-zuralski/
-    - https://medium.com/@piotr.zuralski
-    - https://dev.to/piotr_zuralski
-    - https://www.slideshare.net/Piotruralski
-    - https://about.me/piotr-zuralski
-    - https://linktr.ee/piotr_zuralski
-    - https://keybase.io/piotr_zuralski/
-    - https://gitlab.com/piotr-zuralski
-    - https://piotr.zuralski.net/
-    - https://piotr-zuralski.github.io/
-    - https://reddit.com/user/piotr-zuralski
-
+google_analytics: UA-2579235-14
 webmaster_verifications:
   google: "x_sZsZidR01cJyzgbqip2AHTGLgAvs-8f0razmbHUpM"
   bing: "057036BF9DB13D64C6CA4552C61AC17A"
 #  alexa: 1234
 #  yandex: 1234
 #  baidu: 1234
-
-google_analytics: UA-2579235-14
 
 copyright:
   sinceYear: 2007
@@ -173,6 +133,8 @@ exclude:
   - .history/
   - .jekyll-cache
   - .pre-commit-config.yaml
+  - Dockerfile
+  - docker-compose.yml
   - Gemfile
   - Gemfile.lock
   - Makefile

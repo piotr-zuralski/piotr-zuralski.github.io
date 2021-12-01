@@ -22,7 +22,8 @@ Registration authority: Minister of Economy (pl. Minister Gospodarki)<br />
 Legal form: sole proprietorship<br />
 Incorporated: 05-10-2015<br />
 
-<abbr title="International Bank Account Number">IBAN</abbr>: PL 30 1050 1764 1000 0092 8608 6062<br />
+<abbr title="International Bank Account Number">IBAN</abbr>: PL 30 1050 1764 1000 0092 8608 6062 (PLN)<br />
+<abbr title="International Bank Account Number">IBAN</abbr>: PL 95 1050 1764 1000 0097 4644 6310 (EUR)<br />
 Bank: ING Bank Śląski S.A.<br />
 <abbr title="Business Identifier Code">BIC</abbr>/Swift: INGBPLPW<br />
 

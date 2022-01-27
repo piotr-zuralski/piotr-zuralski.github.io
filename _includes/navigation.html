@@ -9,7 +9,7 @@
   {%- endif -%}
 
   {%- if menu.items -%}
-    <nav>
+    <nav id="menu-{{ menu_name }}">
       <ul {%- if include.list_class %} class="{{- include.list_class -}}"{%- endif -%}>
           {% for item in menu.items -%}
           {%- if (item.environment == nil or (item.environment != nil and (item.environment == jekyll.environment))) -%}

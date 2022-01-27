@@ -21,11 +21,11 @@ tags: [sitemap]
     {%- if page.search != 'exclude' and page.sitemap != false and title != '' and title != 'null' -%}
       <li><a href="{{ page.url | replace: 'index.html', '' | relative_url }}" title="{{ title }}">{{ title }}
       {% if jekyll.environment == "development" %}
-       ({{ page.locale | jsonify }})
-       ({{ page.search | jsonify }})
-       ({{ page.sitemap | jsonify }})
-       {% endif %}
-       </a></li>
+        ({{ page.locale | jsonify }})
+        ({{ page.search | jsonify }})
+        ({{ page.sitemap | jsonify }})
+      {% endif %}
+      </a></li>
     {%- endif -%}
   {%- endfor -%}
 </ul>

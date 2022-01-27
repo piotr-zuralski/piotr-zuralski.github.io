@@ -27,7 +27,6 @@ Backend developer with {{ experience }}+ years of experience in commercial web d
 Eager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for Continuous Integration with Continuous Deployment. Constantly delivers high quality code.<br/>
 
 ## Summary
-
   - {{ experience }}+ years of experience with commercial [PHP] programming
   - OOP PHP Developer ([PHP 5], [PHP 7])
   - Over 7 years experience with [PHP MVC Frameworks][PHP MVC framework]

@@ -20,7 +20,7 @@ jobs:
         env:
           DEFAULT_BRANCH: main
           GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/).*
+          FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/|*\.lock|resume\.html|resume\.json).*
 
   automate:
     runs-on: ubuntu-latest
@@ -40,28 +40,28 @@ jobs:
             const pr = context.payload.pull_request
             const repo = context.repo
 
-            await github.issues.addAssignees({
+            await github.rest.issues.addAssignees({
               owner: repo.owner,
               repo: repo.repo,
               issue_number: pr.number,
               assignees: [repo.owner],
             });
 
-            await github.pulls.requestReviewers({
+            await github.rest.pulls.requestReviewers({
               owner: repo.owner,
               repo: repo.repo,
               pull_number: pr.number,
               reviewers: [repo.owner],
             });
 
-            await github.pulls.createReview({
+            await github.rest.pulls.createReview({
               owner: repo.owner,
               repo: repo.repo,
               pull_number: pr.number,
               event: 'APPROVE',
             });
 
-            await github.pulls.merge({
+            await github.rest.pulls.merge({
               merge_method: "squash",
               owner: repo.owner,
               pull_number: pr.number,

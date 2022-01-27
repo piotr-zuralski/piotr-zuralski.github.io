@@ -13,20 +13,20 @@
   <a href="javascript:void()" onclick="toogleDebug();">show jekyll debug</a>
 </span>
 
-<div style="display: none;" id="jekyll-debug-container">
+<div style="display: none;" id="jdg-container">
   <p>jekyll debug: <a href="javascript:void();" onclick="jekyllDebugFormat();">format jekyll</a></p>
-  <p>content: <pre class="jekyll-debug" id="jekyll-debug-content">{{ content | jsonify | escape }}</pre></p>
-  <p>page: <pre class="jekyll-debug" id="jekyll-debug-page">{{ page | jsonify | escape }}</pre></p>
-  <p>jekyll: <pre class="jekyll-debug" id="jekyll-debug-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
-  <p>layout: <pre class="jekyll-debug" id="jekyll-debug-layout">{{ layout | jsonify | escape }}</pre></p>
-  <p>paginator: <pre class="jekyll-debug" id="jekyll-debug-paginator">{{ paginator | jsonify | escape }}</pre></p>
-  <p>site: <pre class="jekyll-debug" id="jekyll-debug-site">{{ site | jsonify | escape }}</pre></p>
-  <p>static_files: <pre class="jekyll-debug" id="jekyll-debug-static_files">{{ site.static_files | jsonify | escape }}</pre></p>
+  <p>content: <pre class="jdg" id="jdg-content">{{ content | jsonify | escape }}</pre></p>
+  <p>page: <pre class="jdg" id="jdg-page">{{ page | jsonify | escape }}</pre></p>
+  <p>jekyll: <pre class="jdg" id="jdg-jekyll">{{ jekyll | jsonify | escape }}</pre></p>
+  <p>layout: <pre class="jdg" id="jdg-layout">{{ layout | jsonify | escape }}</pre></p>
+  <p>paginator: <pre class="jdg" id="jdg-paginator">{{ paginator | jsonify | escape }}</pre></p>
+  <p>site: <pre class="jdg" id="jdg-site">{{ site | jsonify | escape }}</pre></p>
+  <p>static_files: <pre class="jdg" id="jdg-static_files">{{ site.static_files | jsonify | escape }}</pre></p>
 </div>
 
 <script>
     function toogleDebug() {
-        var debug = document.getElementById('jekyll-debug-container');
+        var debug = document.getElementById('jdg-container');
         if (debug.style.display == 'none') {
             debug.style.display = 'block';
         } else {
@@ -34,7 +34,7 @@
         }
     }
     function jekyllDebugFormat() {
-      let list = document.getElementsByClassName('jekyll-debug');
+      let list = document.getElementsByClassName('jdg');
       let element;
       Array.from(list).forEach(function(item) {
           element = document.getElementById(item.id);

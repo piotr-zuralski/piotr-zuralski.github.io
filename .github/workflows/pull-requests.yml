@@ -40,12 +40,14 @@ jobs:
               assignees: [repo.owner],
             });
 
-            await github.rest.pulls.requestReviewers({
-              owner: repo.owner,
-              repo: repo.repo,
-              pull_number: pr.number,
-              reviewers: [repo.owner],
-            });
+            try {
+              await github.rest.pulls.requestReviewers({
+                owner: repo.owner,
+                repo: repo.repo,
+                pull_number: pr.number,
+                reviewers: [repo.owner],
+              });
+            } catch (e) { }
 
       - uses: fountainhead/action-wait-for-check@v1.0.0
         with:

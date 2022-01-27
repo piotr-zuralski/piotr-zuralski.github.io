@@ -25,12 +25,6 @@ jobs:
   automate:
     runs-on: ubuntu-latest
     steps:
-      - uses: fountainhead/action-wait-for-check@v1.0.0
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          checkName: lint
-          ref: "${{ github.event.pull_request.head.sha || github.sha }}"
-
       - uses: "actions/github-script@v5"
         with:
           debug: true
@@ -52,6 +46,12 @@ jobs:
               pull_number: pr.number,
               reviewers: [repo.owner],
             });
+
+      - uses: fountainhead/action-wait-for-check@v1.0.0
+        with:
+          token: "${{ secrets.GITHUB_TOKEN }}"
+          checkName: lint
+          ref: "${{ github.event.pull_request.head.sha || github.sha }}"
 
       - uses: "actions/github-script@v5"
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')

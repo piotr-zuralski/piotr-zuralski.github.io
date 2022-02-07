@@ -24,8 +24,29 @@ jobs:
 
   automate:
     runs-on: ubuntu-latest
-    if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
     steps:
+      - uses: "actions/github-script@v5"
+        with:
+          script: |
+            const pr = context.payload.pull_request
+            const repo = context.repo
+
+            await github.rest.issues.addAssignees({
+              owner: repo.owner,
+              repo: repo.repo,
+              issue_number: pr.number,
+              assignees: [repo.owner],
+            });
+
+            try {
+              await github.rest.pulls.requestReviewers({
+                owner: repo.owner,
+                repo: repo.repo,
+                pull_number: pr.number,
+                reviewers: [repo.owner],
+              });
+            } catch (e) { }
+
       - uses: fountainhead/action-wait-for-check@v1.0.0
         with:
           token: "${{ secrets.GITHUB_TOKEN }}"
@@ -33,35 +54,20 @@ jobs:
           ref: "${{ github.event.pull_request.head.sha || github.sha }}"
 
       - uses: "actions/github-script@v5"
+        if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         with:
-          debug: true
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
 
-            await github.issues.addAssignees({
-              owner: repo.owner,
-              repo: repo.repo,
-              issue_number: pr.number,
-              assignees: [repo.owner],
-            });
-
-            await github.pulls.requestReviewers({
-              owner: repo.owner,
-              repo: repo.repo,
-              pull_number: pr.number,
-              reviewers: [repo.owner],
-            });
-
-            await github.pulls.createReview({
+            await github.rest.pulls.createReview({
               owner: repo.owner,
               repo: repo.repo,
               pull_number: pr.number,
               event: 'APPROVE',
             });
 
-            await github.pulls.merge({
+            await github.rest.pulls.merge({
               merge_method: "squash",
               owner: repo.owner,
               pull_number: pr.number,

@@ -14,7 +14,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - uses: github/super-linter@v4.8.7
         id: lint
         env:
@@ -77,7 +77,7 @@ jobs:
   pr-automation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: PR Automation
         uses: devjoes/pr-automation@v0.1.0
         with:

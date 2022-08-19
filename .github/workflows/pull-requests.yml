@@ -7,15 +7,12 @@ permissions:
   pull-requests: write
   statuses: write
 
-jobs:
-  cancel:
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    steps:
-      - uses: styfle/cancel-workflow-action@0.10.0
-        with:
-          access_token: "${{ secrets.GITHUB_TOKEN }}"
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
 
+jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
@@ -24,17 +21,18 @@ jobs:
         id: lint
         env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/).*
 
   automate:
+    needs: lint
     runs-on: ubuntu-latest
     steps:
-      - uses: "actions/github-script@v6"
+      - uses: actions/github-script@v6
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
@@ -53,19 +51,12 @@ jobs:
               reviewers: [repo.owner],
             });
 
-
-      - uses: fountainhead/action-wait-for-check@v1.0.0
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          checkName: lint
-          ref: "${{ github.event.pull_request.head.sha || github.sha }}"
-
-      - uses: "actions/github-script@v6"
+      - uses: actions/github-script@v6
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         env:
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
@@ -91,7 +82,7 @@ jobs:
       - name: PR Automation
         uses: devjoes/pr-automation@v0.1.0
         with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
           deleteOnMerge: true
           deleteOnClose: true
           branchBlackList: "totally-random-branch"

@@ -36,20 +36,24 @@ jobs:
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
-
-            await github.rest.issues.addAssignees({
-              owner: repo.owner,
-              repo: repo.repo,
-              issue_number: pr.number,
-              assignees: [repo.owner],
-            });
             
-            await github.rest.pulls.requestReviewers({
-              owner: repo.owner,
-              repo: repo.repo,
-              pull_number: pr.number,
-              reviewers: [repo.owner],
-            });
+            try {
+              await github.rest.issues.addAssignees({
+                owner: repo.owner,
+                repo: repo.repo,
+                issue_number: pr.number,
+                assignees: [repo.owner],
+              });
+            } catch (e) { } 
+
+            try {            
+              await github.rest.pulls.requestReviewers({
+                owner: repo.owner,
+                repo: repo.repo,
+                pull_number: pr.number,
+                reviewers: [repo.owner],
+              });
+            } catch (e) { }
 
       - name: dependabot - Add review
         uses: actions/github-script@v6

@@ -8,7 +8,7 @@ permalink: /search.json
 {
 {%- for page in pages -%}
     {%- assign title = page.title | flatify | jsonify | replace: '"', '' | replace: 'null', '' | strip -%}
-    {%- assign content = page.content | flatify | markdownify | strip_html | replace: '\n', ' ' | jsonify | replace: '"', '' | replace: 'null', '' | replace: '\n', ' ' | strip -%}
+    {%- assign content = page.content | flatify | markdownify | strip_html | replace: '\n', ' ' | replace: '\t', '' | jsonify | replace: '"', '' | replace: 'null', '' | replace: '\n', ' ' | strip -%}
     {{ page.url | xml_escape | slugify | jsonify }}: {
       "title": {{ title | jsonify }},
       "locale": {{ page.locale | jsonify }},

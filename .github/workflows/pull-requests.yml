@@ -2,45 +2,51 @@
 on:
   pull_request:
 
-jobs:
-  cancel:
-    runs-on: ubuntu-latest
-    timeout-minutes: 3
-    steps:
-      - uses: styfle/cancel-workflow-action@0.9.1
-        with:
-          access_token: "${{ secrets.GITHUB_TOKEN }}"
+permissions: # https://docs.github.com/en/actions/security-guides/automatic-token-authentication#permissions-for-the-github_token
+  contents: write
+  pull-requests: write
+  statuses: write
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+  
+
+jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: github/super-linter@v4.8.4
-        id: lint
-        env:
-          DEFAULT_BRANCH: main
-          GITHUB_TOKEN: "${{ secrets.GITHUB_TOKEN }}"
-          FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/|*\.lock|resume\.html|resume\.json).*
+      - uses: actions/checkout@v3
+#       - uses: github/super-linter@v4.9.6
+#         id: lint
+#         env:
+#           DEFAULT_BRANCH: main
+#           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#           FILTER_REGEX_EXCLUDE: .*(vendor|\.old|\.vscode|\.idea/|*\.lock|resume\.html|resume\.json).*
 
   automate:
+    needs: lint
+    if: ${{ always() }}
     runs-on: ubuntu-latest
     steps:
-      - uses: "actions/github-script@v5"
+      - name: Add assignee and request reviewer
+        uses: actions/github-script@v6
         with:
-          debug: true
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
-
-            await github.rest.issues.addAssignees({
-              owner: repo.owner,
-              repo: repo.repo,
-              issue_number: pr.number,
-              assignees: [repo.owner],
-            });
-
+            
             try {
+              await github.rest.issues.addAssignees({
+                owner: repo.owner,
+                repo: repo.repo,
+                issue_number: pr.number,
+                assignees: [repo.owner],
+              });
+            } catch (e) { } 
+
+            try {            
               await github.rest.pulls.requestReviewers({
                 owner: repo.owner,
                 repo: repo.repo,
@@ -49,43 +55,53 @@ jobs:
               });
             } catch (e) { }
 
-      - uses: fountainhead/action-wait-for-check@v1.0.0
-        with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
-          checkName: lint
-          ref: "${{ github.event.pull_request.head.sha || github.sha }}"
-
-      - uses: "actions/github-script@v5"
+      - name: dependabot - Add review
+        uses: actions/github-script@v6
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         with:
-          debug: true
-          github-token: "${{ secrets.GITHUB_TOKEN }}"
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
-
+            
             await github.rest.pulls.createReview({
               owner: repo.owner,
               repo: repo.repo,
               pull_number: pr.number,
               event: 'APPROVE',
             });
-
+            
+      - name: owner - Add review and merge PR
+        uses: actions/github-script@v6
+        if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
+        with:
+          github-token: ${{ secrets.GH_AUTOMERGE_TOKEN }}
+          script: |
+            const pr = context.payload.pull_request
+            const repo = context.repo
+            
+            await github.rest.pulls.createReview({
+              owner: repo.owner,
+              repo: repo.repo,
+              pull_number: pr.number,
+              event: 'APPROVE',
+            });
+            
             await github.rest.pulls.merge({
               merge_method: "squash",
               owner: repo.owner,
               pull_number: pr.number,
               repo: repo.repo
-            })
+            });
 
   pr-automation:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
       - name: PR Automation
         uses: devjoes/pr-automation@v0.1.0
         with:
-          token: "${{ secrets.GITHUB_TOKEN }}"
+          token: ${{ secrets.GITHUB_TOKEN }}
           deleteOnMerge: true
           deleteOnClose: true
           branchBlackList: "totally-random-branch"

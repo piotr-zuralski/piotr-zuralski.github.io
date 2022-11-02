@@ -67,13 +67,13 @@ search: exclude
           item.idx = key;
 
           this.add(item);
-          console.log(searchIndex);
+          console.log('searchIndex', searchIndex);
         }
       })
 
       if (searchTerm) {
         var results = searchIndex.search(searchTerm);
-        console.log(results);
+        console.log('results', results);
         displaySearchResults(results, searchDocuments);
       }
 

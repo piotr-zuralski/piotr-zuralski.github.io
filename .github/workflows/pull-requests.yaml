@@ -75,7 +75,7 @@ jobs:
         uses: actions/github-script@v6
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         with:
-#           github-token: ${{ secrets.GH_AUTOMERGE_TOKEN }}
+          github-token: ${{ secrets.AUTOMERGE_GITHUB_TOKEN }}
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo

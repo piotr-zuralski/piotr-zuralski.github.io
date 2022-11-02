@@ -12,13 +12,14 @@
   overflow: auto;
 }
 
-/* */
-.list-unstyled, .list-inline {
+/* lists styles */
+.list-unstyled,
+.list-inline {
   padding-left: 0;
   list-style: none;
 }
 
 .list-inline li {
   display: inline-block;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }

@@ -64,8 +64,7 @@
 {% endif -%}
 
 {% if seo_tag.image -%}
-<meta property="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "
- summary_large_image" }}"/>
+<meta property="twitter:card" content="{{ page.twitter.card | default: site.twitter.card | default: "summary_large_image" }}"/>
 {% else -%}
 <meta property="twitter:card" content="summary"/>
 {% endif -%}

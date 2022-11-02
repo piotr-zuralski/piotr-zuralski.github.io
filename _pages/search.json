@@ -4,21 +4,20 @@ search: exclude
 sitemap: false
 permalink: /search.json
 ---
-{%- assign pages = site.posts | concat: site.pages -%}
-[
+{%- assign pages = site.posts | concat: site.pages | where_exp: "item", "item.title != nil" | where_exp: "item", "item.search != 'exclude'" | where_exp: "item", "item.sitemap != 'false'" -%}
+{
 {%- for page in pages -%}
-    {%- assign title = page.title | jsonify | replace: '"', '' | replace: 'null', '' | strip -%}
-    {%- assign content = page.content | markdownify | strip_html | jsonify | replace: '"', '' | replace: 'null', '' | replace: '\n', ' ' | strip -%}
-    {% if page.search != 'exclude' and page.sitemap != false and title != '' and title != 'null' %}
-    {
-    "title": "{{ title }}",
-    "dateCreated": "{{ page.date | date_to_xmlschema }}",
-    "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
-    "category": "{{ page.category | jsonify }}",
-    "tags": "{{ page.tags | jsonify }}",
-    "url": "{{ site.baseurl }}{{ page.url }}",
-    "content": "{{ content }}"
+    {%- assign title = page.title | flatify | jsonify | replace: '"', '' | replace: 'null', '' | strip -%}
+    {%- assign content = page.content | flatify | markdownify | strip_html | replace: '\n', ' ' | jsonify | replace: '"', '' | replace: 'null', '' | replace: '\n', ' ' | strip -%}
+    {{ page.url | xml_escape | slugify | jsonify }}: {
+      "title": {{ title | jsonify }},
+      "locale": {{ page.locale | jsonify }},
+      "dateCreated": "{{ page.date | date_to_xmlschema }}",
+      "dateModified": "{{ page.last_modified_at | date_to_xmlschema }}",
+      "category": {{ page.category | jsonify }},
+      "tags": {{ page.tags | jsonify }},
+      "url": "{{ site.baseurl }}{{ page.url }}",
+      "content": {{ content | jsonify }}
     } {%- unless forloop.last -%}, {%- endunless -%}
-    {% endif %}
 {%- endfor -%}
-]
+}

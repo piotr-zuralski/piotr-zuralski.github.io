@@ -75,7 +75,7 @@ jobs:
         uses: actions/github-script@v6
         if: (github.actor == 'dependabot' || github.actor == 'dependabot[bot]' || github.actor == 'dependabot-preview[bot]')
         with:
-          github-token: ${{ secrets.GH_AUTOMERGE_TOKEN }}
+#           github-token: ${{ secrets.GH_AUTOMERGE_TOKEN }}
           script: |
             const pr = context.payload.pull_request
             const repo = context.repo
@@ -87,12 +87,14 @@ jobs:
               event: 'APPROVE',
             });
             
+            /*
             await github.rest.pulls.merge({
               merge_method: "squash",
               owner: repo.owner,
               pull_number: pr.number,
               repo: repo.repo
             });
+            */
 
   pr-automation:
     runs-on: ubuntu-latest

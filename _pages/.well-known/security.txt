@@ -1,13 +1,14 @@
 ---
 layout: null
 search: exclude
-sitemap: false
 permalink: /.well-known/security.txt
 published: true
 ---
 Canonical: {{ '/.well-known/security.txt' | absolute_url }}
 Contact: https://keybase.io/piotr_zuralski
+{% comment %}
 Contact: https://twitter.com/piotr_zuralski
+{% endcomment %}
 
 # OpenPGP key
 Encryption: https://github.com/piotr-zuralski.gpg

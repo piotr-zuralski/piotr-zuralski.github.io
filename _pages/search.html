@@ -3,11 +3,14 @@ published: true
 permalink: /_search.html
 ref: search
 search: exclude
+sitemap: false
 ---
 
 <h1>Search</h1>
 
-<div id="search-results"></div>
+<div id="search-results">
+  <p>Empty search query</p>
+</div>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js" integrity="sha512-4xUl/d6D6THrAnXAwGajXkoWaeMNwEKK4iNfq5DotEbLPAfk6FSxSP3ydNxqDgCw1c/0Z1Jg6L8h2j+++9BZmg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -15,13 +18,13 @@ search: exclude
   let displaySearchResults = function(results, store) {
     var searchResults = document.getElementById('search-results');
 
-    if (results.length) { // Are there any results?
+    if (results.length) {
       var appendString = '';
 
-      for (var i = 0; i < results.length; i++) {  // Iterate over the results
+      for (var i = 0; i < results.length; i++) {
         var item = store[results[i].ref];
         appendString += '<li><a href="' + item.url + '" title="' + item.title + '">' + item.title + '</a>';
-        appendString += '<p>' + item.content.substring(0, 250) + '...</p></li>';
+        appendString += '<p>' + item.content.substring(0, 250) + '&hellip;</p></li>';
       }
 
       searchResults.innerHTML = appendString;

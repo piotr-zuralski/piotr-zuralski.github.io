@@ -14,7 +14,7 @@ ref: companys-data
 
 USŁUGI IT – Outsourcing, aplikacja webowe
 
-Adres wykonywania działalności:<br />
+Adres rejestrowy:<br />
 ul. Powstania Kościuszkowskiego 1/2<br />
 80-288 Gdańsk, pomorskie, Polska<br />
 
@@ -28,5 +28,8 @@ Data rozpoczęcia działalności: 05-10-2015<br />
 <abbr title="International Bank Account Number">IBAN</abbr>: PL 95 1050 1764 1000 0097 4644 6310 (EUR)<br />
 Bank: ING Bank Śląski S.A.<br />
 <abbr title="Business Identifier Code">BIC</abbr>/Swift: INGBPLPW<br />
+
+Avenida Moliere 18B, Oficina 1<br />
+29004 Málaga, Spain<br />
 
 {% include _autolink.md %}

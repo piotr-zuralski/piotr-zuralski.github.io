@@ -2,6 +2,7 @@
 permalink: /search.html
 ref: search
 search: exclude
+sitemap: false
 ---
 
 # Search

@@ -28,6 +28,6 @@ Bank: ING Bank Śląski S.A.<br />
 <abbr title="Business Identifier Code">BIC</abbr>/Swift: INGBPLPW<br />
 
 Avenida Moliere 18B, Oficina 1<br />
-29004 Málaga, Spain<br />
+29004 Málaga, Andalucía, Spain<br />
 
 {% include _autolink.md %}

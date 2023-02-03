@@ -100,7 +100,7 @@
       {
         {%- if author.type == "Organization" %}
           "@type": "Organization",
-          "@id": {{ '/' | absolute_url | append: '#organization' | jsonify }},
+          "@id": "{{ '/' | absolute_url | append: '#organization' | jsonify }},
           "name": {{ author.name | default: seo_tag.name | default: site.name | jsonify }},
           "url": {{ author.url | jsonify }},
           "location": {
@@ -127,9 +127,39 @@
         "query-input": "required name=search_term_string"
       },
       {
+        "@type": "Organization",
+        "@id": {{ '/' | absolute_url | append: '#organization' | jsonify }},
+        "name": "zuralski.net Piotr Żuralski",
+        "url": "{% include ref-url.html ref='companys-data' locale=page.locale -%}",
+        "foundingDate": "2015-10-05",
+        "vatID": "PL5851426606",
+        "address": {
+          {% comment -%}
+          "@id": "{% include ref-url.html ref='companys-data' locale=page.locale -%}#organization-register-address",
+          {% endcomment -%}
+          "@type": "PostalAddress",
+          "streetAddress": "Powstania Kościuszkowskiego 1/2",
+          "postalCode": "80-288",
+          "addressLocality": "Gdańsk",
+          "addressRegion": "pomorskie",
+          "addressCountry": "PL"
+        },
+        "deliveryAddress": {
+          "@type": "PostalAddress",
+          "streetAddress": "Bolesława Chrobrego 14/2",
+          "postalCode": "81-783",
+          "addressLocality": "Sopot",
+          "addressRegion": "pomorskie",
+          "addressCountry": "PL"
+        },
+        "location": {
+          "@id": "{% include ref-url.html ref='companys-data' locale=page.locale -%}#organization-location"
+        }
+      },
+      {
         "@type": "WebSite",
         "@id": {{ '/' | absolute_url | append: '#website' | jsonify }},
-        "url": {{ '/' | absolute_url | jsonify }},
+        "url": "{% include ref-url.html ref='index' locale=page.locale -%}",
         "name": {{ site.title | jsonify }},
         "publisher": {
           "@id": {%- if author.type == "Organization" %}{{ '/' | absolute_url | append: '#organization' | jsonify }}{% else %}{{ '/' | absolute_url | append: '#person' | jsonify }}{% endif %}

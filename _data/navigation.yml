@@ -110,9 +110,9 @@ footer:
     - title: About
       url: /piotr-zuralski/
       ref: about
-    - title: Company's data
-      url: /en/companys-data.html
-      ref: companys-data
+    - title: Company data
+      url: /en/company-data.html
+      ref: company-data
     - title: Privacy policy
       url: /en/legal/privacy-policy.html
       ref: privacy-policy

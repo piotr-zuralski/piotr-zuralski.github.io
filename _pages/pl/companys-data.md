@@ -5,7 +5,7 @@ last_modified_at: 2021-10-30 10:35
 published: true
 permalink: /pl/dane-firmy.html
 locale: pl
-ref: companys-data
+ref: company-data
 ---
 
 # Dane firmy

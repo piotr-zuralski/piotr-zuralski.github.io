@@ -10,26 +10,14 @@ ref: company-data
 
 # Dane firmy
 
-## zuralski.net Piotr Żuralski
+<div itemscope itemtype="https://schema.org/Organization">
+  <h2 itemprop="name">zuralski.net Piotr Żuralski</h2>
 
-USŁUGI IT – Outsourcing, aplikacja webowe
-
-Adres rejestrowy:<br />
-ul. Powstania Kościuszkowskiego 1/2<br />
-80-288 Gdańsk, pomorskie, Polska<br />
-
-NIP (VAT-ID): PL5851426606<br />
-REGON: 362536148<br />
-Rejestr: <abbr title="Centralna Ewidencja i Informacja o Działalności Gospodarczej">CEIDG</abbr><br />
-Organ rejestrowy: Minister Gospodarki<br />
-Data rozpoczęcia działalności: 05-10-2015<br />
-
-<abbr title="International Bank Account Number">IBAN</abbr>: PL 30 1050 1764 1000 0092 8608 6062 (PLN)<br />
-<abbr title="International Bank Account Number">IBAN</abbr>: PL 95 1050 1764 1000 0097 4644 6310 (EUR)<br />
-Bank: ING Bank Śląski S.A.<br />
-<abbr title="Business Identifier Code">BIC</abbr>/Swift: INGBPLPW<br />
-
-Avenida Moliere 18B, Oficina 1<br />
-29004 Málaga, Andalucía, Spain<br />
+  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <span itemprop="streetAddress">Avenida Moliere, 18B, Oficina 1</span><br />
+    <span itemprop="postalCode">29004</span>
+    <span itemprop="addressLocality">Málaga, Andalucía</span>,
+    <span itemprop="addressRegion">Spain</span>
+</div>
 
 {% include _autolink.md %}

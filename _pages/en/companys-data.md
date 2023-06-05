@@ -11,25 +11,14 @@ ref: company-data
 
 # Company data
 
-## zuralski.net Piotr Żuralski
+<div itemscope itemtype="https://schema.org/Organization">
+  <h2 itemprop="name">zuralski.net Piotr Żuralski</h2>
 
-Business address:<br />
-ul. Powstania Kościuszkowskiego 1/2<br />
-80-288 Gdańsk, pomorskie, Poland<br />
-
-Tax ID: (NIP/VAT-ID): PL5851426606<br />
-REGON number: 362536148<br />
-Registry: <abbr title="Central Register and Information on Economic Activity (pl. Centralna Ewidencja i Informacja o Działalności Gospodarczej)">CEIDG</abbr><br />
-Registration authority: Minister of Economy (pl. Minister Gospodarki)<br />
-Legal form: sole proprietorship<br />
-Incorporated: 05-10-2015<br />
-
-<abbr title="International Bank Account Number">IBAN</abbr>: PL 30 1050 1764 1000 0092 8608 6062 (PLN)<br />
-<abbr title="International Bank Account Number">IBAN</abbr>: PL 95 1050 1764 1000 0097 4644 6310 (EUR)<br />
-Bank: ING Bank Śląski S.A.<br />
-<abbr title="Business Identifier Code">BIC</abbr>/Swift: INGBPLPW<br />
-
-Avenida Moliere 18B, Oficina 1<br />
-29004 Málaga, Andalucía, Spain<br />
+  <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
+    <span itemprop="streetAddress">Avenida Moliere, 18B, Oficina 1</span><br />
+    <span itemprop="postalCode">29004</span>
+    <span itemprop="addressLocality">Málaga, Andalucía</span>,
+    <span itemprop="addressRegion">Spain</span>
+</div>
 
 {% include _autolink.md %}

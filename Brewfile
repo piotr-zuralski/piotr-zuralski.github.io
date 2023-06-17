@@ -5,6 +5,7 @@ brew "pipenv"
 brew "act"
 brew "rbenv"
 brew "ruby-build"
+brew "node"
 brew "yarn"
 cask "chromium", link: true
 brew "gnu-sed", link: '/usr/bin/sed'

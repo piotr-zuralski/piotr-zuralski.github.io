@@ -23,3 +23,7 @@
   display: inline-block;
   margin-right: 0.5rem;
 }
+
+.hide, .hidden {
+  display: none;
+}

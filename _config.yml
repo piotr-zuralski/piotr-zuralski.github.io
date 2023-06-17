@@ -15,7 +15,7 @@ markdown_ext: "md"
 
 author: piotr-zuralski
 title: "Piotr Żuralski – Senior Engineer"
-description: "Senior Engineer, Developer, with 13+ years of experience in commercial web development"
+description: "Senior Engineer, Developer, with 15+ years of experience in commercial web development"
 excerpt_separator: "<!--more-->"
 
 url: https://piotr-zuralski.github.io
@@ -32,12 +32,12 @@ webmaster_verifications:
 
 copyright:
   sinceYear: 2007
-  currentYear: 2020
+  currentYear: 2023
 
 experience:
   sinceYear: 2008
-  currentYear: 2020
-  experience: 13
+  currentYear: 2023
+  experience: 15
 
 languages: ["en", "pl", "es", "de"]
 exclude_from_localizations: ["files", "assets", "resources"]

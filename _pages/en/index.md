@@ -27,10 +27,10 @@ Backend developer with {{ experience }}+ years of experience in commercial web d
 Eager to achieve set goals and successfully complete the product lifecycle by developing applications and providing solutions for Continuous Integration with Continuous Deployment. Constantly delivers high quality code.<br/>
 
 ## Summary
-  - {{ experience }}+ years of experience with commercial [PHP] programming
+  - {{ experience }}+ years of experience with commercial programming
   - OOP PHP Developer ([PHP 5], [PHP 7])
-  - Over 7 years experience with [PHP MVC Frameworks][PHP MVC framework]
-  - RDBMS experience: [PostgreSQL] (4 years), [MySQL] (3 years), [SQLite] (2 years)
+  - More than 7 years experience with [PHP MVC Frameworks][PHP MVC framework]
+  - RDBMS experience: [PostgreSQL] (4+ years), [MySQL] (3+ years), [SQLite] (2+ years)
   - More than 3 years experience working in project teams using [Scrum] (Agile), [Kanban] or Waterfall
   - [High Traffic] optimisation (70k requests/min), application [Horizontal Scaling], [High Availability]
   - Experience with caching solutions (file cache, APC, [Memcached], [Redis], [Varnish])
@@ -41,28 +41,28 @@ Eager to achieve set goals and successfully complete the product lifecycle by de
 
 ## Skills
   - Foreign Languages: Polish (native), English (fluent), German (intermediate), Spanish (basic)
-  - Programming languages: PHP ([PHP 4], PHP 5, PHP 7), [SQL], [JS], [Bash], Shell, Python 3.4
-  - RDBMS: [PostgreSQL] (PostgreSQL 7, PostgreSQL 8, PostgreSQL 9), [MySQL] (MySQL 5), [SQLite]
+  - Programming languages: PHP ([PHP 4], PHP 5, PHP 7), [SQL], [JS], [Bash], Shell, Python (2.8, 3.4)
+  - RDBMS: [PostgreSQL] (PostgreSQL 7, PostgreSQL 8, PostgreSQL 9), [MySQL] (MySQL 5, MySQL 8), [SQLite]
   - [NoSQL]: [MongoDB], [ElasticSearch]
-  - PHP Frameworks: [Zend Framework] 1, [Symfony Framework] 2.x, Symfony Framework 3.x, [Laravel] 5, in-house [PHP MVC framework]
-  - PHP Templating Engines: [Twig], [Smarty]
+  - PHP Frameworks: [Zend Framework] 1, [Symfony Framework] (2, 3, 4), [Laravel] 5, in-house [PHP MVC framework]
+  - PHP Templating Engines: [Smarty], [Twig]
   - PHP Testing Tools: [PHPUnit], [Behat], [PHPSpec], [Codeception]
   - PHP Quality tools: PHP Code Sniffer, PHP Mess Detector
   - Caching solutions: (file cache, APC, Memcached, Redis, Varnish)
   - Package managers: composer (PHP), npm (node.js), yarn (node.js), Bower, PyPI (Python)
   - Data exchange: SOAP, REST API, FTP, SSH, JSON (JSON Schema, JSON Linked Data), XML, CSV
-  - VCS: Git, Mercurial (hg), SVN, CVS
+  - VCS: git, Mercurial (hg), SVN, CVS
   - Web Servers: Apache HTTP Server 1.x, thttpd, Apache HTTP Server 2.x, Nginx
-  - OS: Linux (Ubuntu, Debian, CentOS), Unix (FreeBSD, Slackware) and some MS Windows
+  - OS: Linux (CentOS, RedHat/RHEL, Debian, Ubuntu), Unix (FreeBSD, Slackware) and some MS Windows
   - Virtualization: Docker, Vagrant, VirtualBox
   - Working in team: Scrum (Agile), Kanban, Waterfall, Pair programming
   - Front-end: [HTML 4], [HTML 5], [XHTML 1], [JS], [AJAX], [CSS 2], [CSS 3]
   - Front-end Frameworks and Libraries: [jQuery], [jQuery UI], [MooTools], [Twitter Bootstrap]
-  - CI: GitLab, Jenkins, GitHub Actions, Travis CI
+  - CI: GitLab CI, Jenkins, GitHub Actions, Travis CI
   - Building tools: Make, [Apache Ant], [Phing] (PHP)
   - Application Testing: [Selenium], [jMeter]
-  - Collaboration/Wiki software: DokuWiki, MediaWiki, TWiki, Redmine, Atlassian Confluence, GitHub, GitLab
-  - Issue trackers:  dotProject, Mantis Bug Tracker, RT, Redmine, Atlassian JIRA, GitHub, GitLab
+  - Collaboration/Wiki software: DokuWiki, MediaWiki, TWiki, Redmine, Atlassian Confluence, GitHub Wiki, GitLab wiki
+  - Issue trackers: dotProject, Mantis Bug Tracker, Request Tracker (RT), Redmine, Atlassian JIRA, GitHub Issues, GitLab issues
   - Tools: RabbitMQ, webpack (node.js)
   - IDE: JetBrains PhpStorm, JetBrains PyCharm, JetBrains IntelliJ, Visual Studio Code, NetBeans, Eclipse
   - Knowledge of issues related to SEO and UX

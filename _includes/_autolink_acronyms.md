@@ -29,3 +29,4 @@
 *[OS]: Operating system
 *[Phing]: PHing Is Not GNU make
 *[WP]: Wirtualna Polska
+*[TIN]: Tax identification number

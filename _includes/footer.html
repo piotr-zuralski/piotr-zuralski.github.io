@@ -18,14 +18,14 @@
       <a href="{{ locale_page | absolute_url }}" title="{{ site.name | default: site.title }}">{{ site.name | default: site.title }}</a>.
   </span>
 
-  <span class="site-footer-links text-left">
+  <div class="site-footer-links text-left">
     {% include navigation.html menu='footer' display_menu_name=false list_class='list-inline' %}
-  </span>
+  </div>
 
   {% if site.github.private != true and site.github.license %}
-      <div class="text-right text-gray">
-        This site is open source. <a href="{% github_edit_link %}" rel="nofollow noindex">Improve this page</a>.
-      </div>
+    <div class="text-right text-gray">
+      This site is open source. <a href="{% github_edit_link %}" rel="nofollow noindex">Improve this page</a>.
+    </div>
   {% endif %}
   <br><br>
 

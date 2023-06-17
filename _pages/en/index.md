@@ -67,6 +67,6 @@ Eager to achieve set goals and successfully complete the product lifecycle by de
   - IDE: JetBrains PhpStorm, JetBrains PyCharm, JetBrains IntelliJ, Visual Studio Code, NetBeans, Eclipse
   - Knowledge of issues related to SEO and UX
 
-<p><small>(Spanish: <a href="/es/" title="Ingeniero de programación superior" lang="es">Ingeniero de programación superior</a>, <a href="/es/" title="Desarrollador de software" lang="es">Desarrollador de software</a>; German: <a href="/de/" title="Senior-Software-Entwickler" lang="de">Senior-Software-Entwickler</a>, <a href="/de/" title="Softwareentwickler" lang="de">Softwareentwickler</a>)</small></p>
+{% comment %}<p><small>(Spanish: <a href="/es/" title="Ingeniero de programación superior" lang="es">Ingeniero de programación superior</a>, <a href="/es/" title="Desarrollador de software" lang="es">Desarrollador de software</a>; German: <a href="/de/" title="Senior-Software-Entwickler" lang="de">Senior-Software-Entwickler</a>, <a href="/de/" title="Softwareentwickler" lang="de">Softwareentwickler</a>)</small></p>{% endcomment %}
 
 {% include _autolink.md %}

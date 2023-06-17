@@ -13,8 +13,8 @@ permalink: /sitemap.xsl
 
         <head>
             <title>XML Sitemap</title>
-            <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}" />
-            <meta name="robots" content="noindex,follow" />
+            <meta http-equiv="Content-Type" content="text/html; charset={{ site.encoding|default:'UTF-8' }}">
+            <meta name="robots" content="noindex,follow">
             <style type="text/css">
                 body {
                     font-family: "Lucida Grande", "Lucida Sans Unicode", Tahoma, Verdana;
@@ -128,8 +128,8 @@ permalink: /sitemap.xsl
         <div id="intro">
             <p>
                 This is a XML Sitemap which is supposed to be processed by search engines which follow the XML Sitemap standard like Ask.com, Bing, Google and Yahoo.
-                <br />
-                <br />
+                <br>
+                <br>
                 This file contains links to sub-sitemaps, follow them to see the actual sitemap content.
             </p>
         </div>

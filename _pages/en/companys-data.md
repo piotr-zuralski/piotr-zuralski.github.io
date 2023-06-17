@@ -18,7 +18,7 @@ ref: company-data
   <p>IT services - Outsourcing, web applications</p>
 
   <div itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">
-    {% comment %}<span itemprop="streetAddress">Avenida Moliere, 18B, Oficina 1</span><br />{% endcomment %}
+    {% comment %}<span itemprop="streetAddress">Avenida Moliere, 18B, Oficina 1</span><br>{% endcomment %}
     <span itemprop="postalCode">29014</span>
     <span itemprop="addressLocality">Málaga, MALAGA</span>,
     <span itemprop="addressRegion">Spain</span>

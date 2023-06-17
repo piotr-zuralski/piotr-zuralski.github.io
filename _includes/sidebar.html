@@ -5,25 +5,25 @@
   {%- if site.data.navigation.locales -%}
     <aside id="locale-switcher-2" class="widget widget_locale-switcher">
       {% include locale-switcher.html locale=locale %}
-    </aside><br/>
+    </aside><br>
   {%- endif -%}
 
   <aside id="search-2" class="widget widget_search hidden">
       <form role="search" method="get" id="searchform" class="searchform" action="/search.html" accept-charset="UTF-8">
           <div>
               <label class="screen-reader-text" for="s">Search for:</label>
-              <input type="text" value="" name="s" id="s" placeholder="Search" />
-              <input type="hidden" value="{{ locale }}" name="locale" />
-              <input type="submit" id="searchsubmit" value="Search" />
+              <input type="text" value="" name="s" id="s" placeholder="Search">
+              <input type="hidden" value="{{ locale }}" name="locale">
+              <input type="submit" id="searchsubmit" value="Search">
           </div>
       </form>
-  </aside><br/>
+  </aside><br>
 
   <aside id="text-4" class="widget widget_text">
       <div class="textwidget">
         {% include navigation.html menu='social_links' heading='h3' %}
       </div>
-  </aside><br/>
+  </aside><br>
 
   {% if jekyll.environment == "development" %}
     <aside id="text-5" class="widget widget_text">
@@ -38,7 +38,7 @@
               </span>
             {% endfor %}
         </div>
-    </aside><br/>
+    </aside><br>
   {% endif %}
   <!-- /sidebar -->
 </aside>

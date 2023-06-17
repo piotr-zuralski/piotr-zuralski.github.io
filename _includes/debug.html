@@ -25,15 +25,15 @@
     {% endif %}
   {% endfor %}
 
-  {% comment %}comment{% endcomment %}<br/>
-  <!-- html comment --><br/>
-  jekyll.environment: {{ jekyll.environment }}<br/>
-  page.locale: {{ page.locale | jsonify }}, page.lang: {{ page.lang | jsonify }}<br/>
-  site.locale: {{ site.locale | jsonify }}, site.lang: {{ site.lang | jsonify }}<br/>
-  page.ref: {{ page.ref | jsonify }}<br/>
-  page.tag: {{ page.tag | jsonify }}, page.tags: {{ page.tags | jsonify }}<br/>
-  site.tags: {{ site.tags | jsonify }}<br/>
-  rawtags: {{ rawtags | jsonify }}<br/>
+  {% comment %}comment{% endcomment %}<br>
+  <!-- html comment --><br>
+  jekyll.environment: {{ jekyll.environment }}<br>
+  page.locale: {{ page.locale | jsonify }}, page.lang: {{ page.lang | jsonify }}<br>
+  site.locale: {{ site.locale | jsonify }}, site.lang: {{ site.lang | jsonify }}<br>
+  page.ref: {{ page.ref | jsonify }}<br>
+  page.tag: {{ page.tag | jsonify }}, page.tags: {{ page.tags | jsonify }}<br>
+  site.tags: {{ site.tags | jsonify }}<br>
+  rawtags: {{ rawtags | jsonify }}<br>
   {% include _experience.html %}
 </pre>
 

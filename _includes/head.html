@@ -5,46 +5,46 @@
 <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
 <meta name="theme-color" content="#191919" media="(prefers-color-scheme: dark)">
 {% include seo.html -%}
-<link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://cdn.polyfill.io" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin="anonymous"/>
-<link rel="preconnect" href="https://browser-update.org" crossorigin="anonymous"/>
-<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"/>
-<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}"/>
+<link rel="preconnect" href="https://www.googletagmanager.com/" crossorigin="anonymous">
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin="anonymous">
+<link rel="preconnect" href="https://cdn.polyfill.io" crossorigin="anonymous">
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin="anonymous">
+<link rel="preconnect" href="https://stats.g.doubleclick.net" crossorigin="anonymous">
+<link rel="preconnect" href="https://browser-update.org" crossorigin="anonymous">
+<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+<link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ '/assets/css/main.css?v=' | append: site.github.build_revision | relative_url }}">
 <!-- static_files
 {% for file in site.static_files %}
   {%- if file.extname == '.css' or file.extname == '.scss' -%}
-    <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}"/>
+    <link rel="preload" onload="this.onload=null;this.rel='stylesheet'" as="style" type="text/css" href="{{ file.path }}?v={{ file.modified_time | date: '%s' }}">
   {% endif %}
 {%- endfor -%}
 /static_files -->
 {%- comment -%}
-<link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-icon-114.png" type="image/png">
-<link rel="icon" href="/favicon.ico"/>
-<link rel="icon" href="/favicon.svg" type="image/svg+xml"/>
+<link rel="icon" href="/favicon.ico">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
 {%- endcomment %}
-<link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="{{ '/feed.xml' | relative_url }}"/>
+<link rel="alternate" type="application/rss+xml" title="{{ site.title }} feed" href="{{ '/feed.xml' | relative_url }}">
 {%- assign locale = include.locale | default: page.locale | default: site.locale -%}
 {% for locale in site.data.navigation.locales.items %}
     {%- if locale.locale != page.locale -%}
-      <link rel="alternate" type="text/html" href="{% include ref-url.html ref=page.ref locale=locale.locale -%}" hreflang="{{ locale.locale }}" rev="{% include ref-url.html ref=page.ref locale=page.locale -%}"/>
+      <link rel="alternate" type="text/html" href="{% include ref-url.html ref=page.ref locale=locale.locale -%}" hreflang="{{ locale.locale }}" rev="{% include ref-url.html ref=page.ref locale=page.locale -%}">
     {%- endif %}
 {% endfor -%}
-<link rel="archives" type="text/html" href="{{ '/en/sitemap.html' | relative_url }}"/>
-<link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}"/>
-{% comment -%}<!-- <link rel="icon shortcut" href="/favicon.ico"/> -->{%- endcomment -%}
-<link rel="manifest" type="application/json" href="{{ '/manifest.json' | relative_url }}"/>
-<link rel="robots" type="text/plain" href="{{ '/robots.txt' | relative_url }}"/>
-<link rel="search" type="application/opensearchdescription+xml" href="{{ '/opensearch.xml' | relative_url }}"/>
-<link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}"/>
-<link rel="sidebar" type="text/html" href="#sidebar"/>
+<link rel="archives" type="text/html" href="{{ '/en/sitemap.html' | relative_url }}">
+<link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}">
+{% comment -%}<!-- <link rel="icon shortcut" href="/favicon.ico"> -->{%- endcomment -%}
+<link rel="manifest" type="application/json" href="{{ '/manifest.json' | relative_url }}">
+<link rel="robots" type="text/plain" href="{{ '/robots.txt' | relative_url }}">
+<link rel="search" type="application/opensearchdescription+xml" href="{{ '/opensearch.xml' | relative_url }}">
+<link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}">
+<link rel="sidebar" type="text/html" href="#sidebar">
 {%- if jekyll.environment == "development" -%}
   {%- if page.tags -%}
     {% for tag in page.tags %}
-      <link rel="tag" type="text/html" href="{{ '/en/tag/' | append: tag | append: '.html' | relative_url }}"/>
+      <link rel="tag" type="text/html" href="{{ '/en/tag/' | append: tag | append: '.html' | relative_url }}">
     {% endfor %}
   {%- endif -%}
 {%- endif -%}

@@ -49,39 +49,8 @@ social_links:
       title: "Piotr Żuralski at LinkedIn"
     - url: https://github.com/piotr-zuralski
       title: "Piotr Żuralski at GitHub"
-    - url: https://profile.codersrank.io/user/piotr-zuralski
-      title: "Piotr Żuralski at CodersRank"
-    - url: https://nofluffjobs.com/profile/piotrzuralski
-      title: "Piotr Żuralski at NoFluffJobs"
     - url: https://stackoverflow.com/users/3580681/piotr-zuralski?tab=profile
       title: "Piotr Żuralski at StackOverflow"
-    - url: https://gitconnected.com/piotr-zuralski
-      title: "Piotr Żuralski at Gitconnected"
-    #
-    - url: https://www.hackerrank.com/piotr_zuralski
-      title: "Piotr Żuralski at HackerRank"
-      display: false
-    - url: https://app.codesignal.com/profile/piotr-zuralski
-      title: "Piotr Żuralski at CodeSignal"
-      display: false
-    - url: https://www.codewars.com/users/piotr-zuralski
-      title: "Piotr Żuralski at CodeWars"
-      display: false
-    - url: https://angel.co/u/piotr-zuralski
-      title: "Piotr Żuralski at AngelList"
-      display: false
-    #
-    - url: https://www.codementor.io/@piotr-zuralski
-      title: "Piotr Żuralski at CodeMentor"
-      display: false
-    - url: https://twitter.com/piotr_zuralski
-      title: "Piotr Żuralski at Twitter"
-      display: false
-    - url: https://www.crunchbase.com/person/piotr-%C5%BBuralski
-      title: "Piotr Żuralski at Crunchbase"
-      display: false
-    - url: https://www.goldenline.pl/piotr-zuralski/
-      title: "Piotr Żuralski at GoldenLine"
       display: false
     - url: https://medium.com/@piotr.zuralski
       title: "Piotr Żuralski at Medium"
@@ -89,20 +58,40 @@ social_links:
     - url: https://dev.to/piotr_zuralski
       title: "Piotr Żuralski at Dev.to"
       display: false
+    - url: https://twitter.com/piotr_zuralski
+      title: "Piotr Żuralski at Twitter"
+      display: false
+    - url: https://profile.codersrank.io/user/piotr-zuralski
+      title: "Piotr Żuralski at CodersRank"
+    - url: https://cv.codersrank.io/piotr-zuralski
+      title: "Piotr Żuralski at CodersRank"
+      display: false
+    - url: https://nofluffjobs.com/profile/piotrzuralski
+      title: "Piotr Żuralski at NoFluffJobs"
+      display: false
+    - url: https://www.hackerrank.com/piotr_zuralski
+    - url: https://app.codesignal.com/profile/piotr-zuralski
+    - url: https://www.codewars.com/users/piotr-zuralski
+    - url: https://angel.co/u/piotr-zuralski
+    - url: https://www.codementor.io/@piotr-zuralski
+    - url: https://gitconnected.com/piotr-zuralski
+    - url: https://www.crunchbase.com/person/piotr-%C5%BBuralski
     - url: https://www.slideshare.net/Piotruralski
-      title: "Piotr Żuralski at SlideShare"
-      display: false
-    - url: https://about.me/piotr-zuralski
-      title: "Piotr Żuralski at About.me"
-      display: false
-    - url: https://linktr.ee/piotr_zuralski
-      title: "Piotr Żuralski at linktr.ee"
-      display: false
     - url: https://keybase.io/piotr_zuralski/
-      title: "Piotr Żuralski at KeyBase"
-      display: false
     - url: https://gitlab.com/piotr-zuralski
       title: "Piotr Żuralski at GitLab"
+      display: false
+    - url: https://piotr.zuralski.net/
+    - url: https://piotr-zuralski.github.io/
+    - url: https://reddit.com/user/piotr-zuralski
+    - url: https://mastodon.social/@piotr_zuralski
+    - url: https://about.me/piotr-zuralski
+    - url: https://linktr.ee/piotr_zuralski
+    - url: https://gravatar.com/piotrzuralski
+      title: "Piotr Żuralski at Gravatar"
+      display: false
+    - url: https://www.goldenline.pl/piotr-zuralski/
+      title: "Piotr Żuralski at GoldenLine"
       display: false
 
 footer:

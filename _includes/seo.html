@@ -89,6 +89,13 @@
 {% endif -%}
 {% endif -%}
 
+
+{% if == 'piotr-zuralski' %}
+author.seo.links
+{% for social_link in site.data.navigation.social_links.items -%}
+<link rel="me" type="text/html" href="{{ social_link.url }}">
+{%- endfor -%}
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",

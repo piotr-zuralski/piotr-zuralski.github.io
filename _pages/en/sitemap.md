@@ -2,10 +2,10 @@
 date: 2015-10-05 10:35
 last_modified_at: 2021-11-16 10:35
 published: true
-permalink: /en/sitemap.html
+permalink: "/en/sitemap.html"
 redirect_from:
-  - /sitemap.html
-  - /sitemap/
+- "/sitemap.html"
+- "/sitemap/"
 ref: sitemap
 tags: [sitemap]
 ---

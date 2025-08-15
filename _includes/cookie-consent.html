@@ -1,13 +1,37 @@
 <!-- cookie-consent.html -->
-<div id="cookie-notice" class="text-center" style="display: none;">
-    <div>
-        <span>
-            🍪  This website use cookies. You can specify the conditions for
-            storing and accessing cookies in your browser settings.
-            <a class="cookie-notice-policy" tabindex=0 target="_blank" href=""
-             title="Polityka prywatności">Polityka prywatności</a>
-        </span>
-        <button id="cookie-notice-accept" tabindex=0>OK</button>
-    </div>
-</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.js" integrity="sha512-yXXqOFjdjHNH1GND+1EO0jbvvebABpzGKD66djnUfiKlYME5HGMUJHoCaeE4D5PTG2YsSJf6dwqyUUvQvS0vaA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent/3.1.1/cookieconsent.min.css" integrity="sha512-LQ97camar/lOliT/MqjcQs5kWgy6Qz/cCRzzRzUCfv0fotsCTC9ZHXaPQmJV8Xu/PVALfJZ7BDezl5lW3/qBxg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+{%- capture page_privacy_policy -%}
+  {%- include ref-url.html ref='privacy-policy' locale=locale.locale -%}
+{%- endcapture -%}
+
+<script>
+window.cookieconsent.initialise({
+    palette: {
+        popup: { background: '#6c757d', text: '#fff', link: '#fff' },
+        highlight: { background: '#dc3545', border: '#dc3545' },
+        button: { background: '#198754', border: '#198754' }
+    },
+    type: "info",
+    theme: "classic",
+    location: true,
+    revokable: true,
+    law: { regionalLaw: true },
+    cookie: { expiryDays: 90 },
+    content: {
+        message: "🍪 " + "This website use cookies. You can specify the conditions for storing and accessing cookies in your browser settings.",
+        allow: "&#x2714; allow",
+        deny: "&#x274c; decline",
+        dismiss: "&#x2715; close",
+        close: "&#x2715;",
+        link: "Find out more in privacy policy",
+        href: "{{ page_privacy_policy }}",
+        policy: "Manage Cookie choices",
+    },
+    onStatusChange: function(status) {
+        console.log(this.hasConsented() ? 'enable cookies' : 'disable cookies');
+    }
+});
+</script>
 <!-- /cookie-consent.html -->

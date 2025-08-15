@@ -31,7 +31,9 @@
   page.locale: {{ page.locale | jsonify }}, page.lang: {{ page.lang | jsonify }}<br>
   site.locale: {{ site.locale | jsonify }}, site.lang: {{ site.lang | jsonify }}<br>
   page.ref: {{ page.ref | jsonify }}<br>
-  page.tag: {{ page.tag | jsonify }}, page.tags: {{ page.tags | jsonify }}<br>
+  page.tag: {{ page.tag | jsonify }}<br>
+  page.tags: {{ page.tags | jsonify }}<br>
+  site.tag: {{ site.tag | jsonify }}<br>
   site.tags: {{ site.tags | jsonify }}<br>
   rawtags: {{ rawtags | jsonify }}<br>
   {% include _experience.html %}

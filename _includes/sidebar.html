@@ -28,11 +28,12 @@
   {% if jekyll.environment == "development" %}
     <aside id="text-5" class="widget widget_text">
         <div class="textwidget">
-          <h3 class="no-anchorjs">Tag Cloud</h1>
+          <h3 class="no-anchorjs">Tag Cloud</h3>
             {% assign tags = site.tags | sort %}
             {% for tag in tags %}
+              {% assign tagName = tag[0] %}
               <span class="site-tag">
-                  <a href="{{ locale }}/tag/{{ tag | first | slugify }}/" title="{{ tag }}" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
+                  <a href="{{ locale }}/tag/{{ tagName | slugify }}/" title="{{ tagName }}" style="font-size: {{ tag | last | size  |  times: 4 | plus: 80  }}%">
                         {{ tag[0] | replace:'-', ' ' }} ({{ tag | last | size }})
                   </a>
               </span>

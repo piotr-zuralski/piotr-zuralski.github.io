@@ -42,9 +42,13 @@
 <link rel="author" type="text/plain" href="{{ '/humans.txt' | relative_url }}">
 {% comment -%}<!-- <link rel="icon shortcut" href="/favicon.ico"> -->{%- endcomment -%}
 <link rel="manifest" type="application/json" href="{{ '/manifest.json' | relative_url }}">
+{% for social_link in site.data.navigation.social_links.items -%}
+  <link rel="me" type="text/html" href="{{ social_link.url }}">
+{%- endfor -%}
 <link rel="robots" type="text/plain" href="{{ '/robots.txt' | relative_url }}">
 <link rel="search" type="application/opensearchdescription+xml" href="{{ '/opensearch.xml' | relative_url }}">
 <link rel="sitemap" type="application/xml" href="{{ '/sitemap.xml' | relative_url }}">
+
 <link rel="sidebar" type="text/html" href="#sidebar">
 {%- if jekyll.environment == "development" -%}
   {%- if page.tags -%}
